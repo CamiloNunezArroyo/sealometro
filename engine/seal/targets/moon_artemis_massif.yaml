@@ -1,0 +1,14 @@
+# Hecho con asistencia de IA (Claude) — Seal Hackathon Team, NASA Space Apps Sucre 2026
+# Fuentes buscadas y comprobadas el 2026-11-14 (Claude Fable 5.2). Ver docs/VALORES_A_VERIFICAR.md.
+id: moon_artemis_massif
+body: moon
+name: "Artemis III – macizo/montaña (Malapert Massif, Mons Mouton, Peak near Cabeus B)"
+group: artemis_iii
+gravity: {value: 1.62, unit: "m/s²", status: literature, source: "NASA NSSDC Moon Fact Sheet", ref: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html", retrieved: "2026-11-14"}
+note: "Regiones según la NASA (28-oct-2024): https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/ . Agrupación nuestra, por el nombre."
+inherit_from: moon_global
+inherit_dims: [pressure, precip, ndvi, soil_moisture]
+values:
+  t_mean: {unit: K, status: pending, source: "", note: "Candidata: Williams et al. 2019, JGR Planets (Diviner polar), doi:10.1029/2019JE006028."}
+  slope_p50_100m: {unit: grados, status: pending, source: "", note: "Candidata: Barker et al. 2021, PSS (mapas LOLA del polo sur), doi:10.1016/j.pss.2020.105119."}
+  mineral_classes: {unit: "1", classes: [anortosita], status: estimated, source: "Ohtake et al. 2009, Nature (corteza de tierras altas rica en plagioclasa; estudio global)", ref: "https://doi.org/10.1038/nature08317", retrieved: "2026-11-14", note: "Generalización de tierras altas, no un estudio de este sitio."}

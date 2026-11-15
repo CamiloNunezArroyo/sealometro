@@ -1,0 +1,160 @@
+{
+  "id": "lava_beds_ca",
+  "name": "Lava Beds — Medicine Lake",
+  "country": "Estados Unidos",
+  "region": "California, EE. UU.",
+  "coords": {
+    "lat": 41.711889,
+    "lon": -121.505535
+  },
+  "biome": "volcanic",
+  "analogFor": [
+    "moon",
+    "mars"
+  ],
+  "analogRationale": {
+    "text": "NASA lo rotula \"Moon and Mars Analog\": se estudian tubos de lava como posible refugio y se prueban métodos para detectarlos desde la superficie. Coordenadas: Coordenadas del centro de visitantes (americansouthwest.net), no de un tubo concreto.",
+    "refs": [
+      "https://science.nasa.gov/solar-system/planetary-analogs/"
+    ]
+  },
+  "terrain": {
+    "file": "data/terrain/lava_beds_ca_height.bin",
+    "width": 256,
+    "height": 256,
+    "metersPerPixel": 23.4375,
+    "minElevationM": 1378.304,
+    "maxElevationM": 1429.254,
+    "status": "gameplay",
+    "source": "TERRENO SINTÉTICO de relleno (tools/make_placeholder_terrain.mjs). No es el relieve real.",
+    "slopeMean": {
+      "value": null,
+      "unit": "°",
+      "status": "pending",
+      "source": "Se calcula con el DEM real (node tools/build_site.mjs --site public/data/sites/lava_beds_ca.json)"
+    },
+    "note": "Forma ilustrativa generada por código. Ejecuta `node tools/build_site.mjs --site public/data/sites/lava_beds_ca.json` para reemplazarlo por el DEM Copernicus GLO-30 real; el juego detecta el cambio solo."
+  },
+  "elevation": {
+    "value": 1400,
+    "unit": "m",
+    "status": "estimated",
+    "source": "Valor provisional pasado por el usuario (--base-elev 1400 m), sin fuente",
+    "note": "Se reemplaza por la elevación del DEM Copernicus GLO-30 al ejecutar `node tools/build_site.mjs --site public/data/sites/lava_beds_ca.json`."
+  },
+  "climate": {
+    "meanTemp": {
+      "value": null,
+      "unit": "K",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "dailyRange": {
+      "value": null,
+      "unit": "K",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "pressure": {
+      "value": 85.6,
+      "unit": "kPa",
+      "status": "derived",
+      "source": "Atmósfera estándar internacional (ISA) evaluada a 1400 m (elevación provisional)",
+      "note": "Aproximación. NASA POWER (PS) la reemplaza al ejecutar el comando de datos del sitio."
+    },
+    "humidity": {
+      "value": null,
+      "unit": "%",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "wind": {
+      "value": null,
+      "unit": "m/s",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "albedo": {
+      "value": null,
+      "unit": "-",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "monthly": {
+      "tMaxC": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "tMinC": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada"
+    }
+  },
+  "radiation": {
+    "solarSurface": {
+      "value": null,
+      "unit": "kWh/m²/día",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "uvIndex": {
+      "value": null,
+      "unit": "índice UV",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    }
+  },
+  "soil": {
+    "claySandSilt": {
+      "value": null,
+      "unit": "%",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "ph": {
+      "value": null,
+      "unit": "pH",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "minerals": []
+  },
+  "water": {
+    "precipitation": {
+      "value": null,
+      "unit": "mm/año",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "note": "Sin información cargada."
+  },
+  "gameplay": {
+    "sampleSeed": 3392354584,
+    "sampleCount": 8,
+    "missionSamplesRequired": 4,
+    "sampleStatus": "gameplay"
+  }
+}

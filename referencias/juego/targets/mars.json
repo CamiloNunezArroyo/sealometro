@@ -1,0 +1,174 @@
+{
+  "id": "mars",
+  "name": "Marte",
+  "gravity": {
+    "value": 3.73,
+    "unit": "m/s²",
+    "status": "literature",
+    "source": "NASA NSSDC Mars Fact Sheet (gravedad superficial media)",
+    "retrieved": "2026-11-09",
+    "ref": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+    "note": "La misma ficha lista 3.69 m/s² para la aceleración en el ecuador. No se usa en el puntaje; reservado para la física del rover en la Fase 2."
+  },
+  "categories": [
+    {
+      "id": "thermal",
+      "label": "Térmico",
+      "weight": 0.2,
+      "note": "Los pesos son un juicio de diseño (estimated), no un resultado científico. Se pueden cambiar en el informe.",
+      "criteria": [
+        {
+          "id": "mean_temp",
+          "label": "Temperatura media",
+          "kind": "linear",
+          "tolerance": 100,
+          "sitePath": "climate.meanTemp",
+          "target": {
+            "value": 214,
+            "unit": "K",
+            "status": "literature",
+            "source": "NASA NSSDC Mars Fact Sheet (temperatura media ~214 K, -59 °C)",
+            "retrieved": "2026-11-09",
+            "ref": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+            "note": "Tolerancia 100 K = diferencia que lleva la similitud a 0; elegida para cubrir el rango de temperaturas medias terrestres (decisión de diseño, estimated)."
+          }
+        },
+        {
+          "id": "diurnal_range",
+          "label": "Amplitud térmica diaria",
+          "kind": "linear",
+          "tolerance": 60,
+          "sitePath": "climate.dailyRange",
+          "target": {
+            "value": 58,
+            "unit": "K",
+            "range": [
+              184,
+              242
+            ],
+            "status": "literature",
+            "source": "NASA NSSDC Mars Fact Sheet (rango diurno 184-242 K en el sitio del Viking 1)",
+            "retrieved": "2026-11-09",
+            "ref": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+            "note": "Es un sitio concreto (Viking 1), no un promedio global. La amplitud es 242 - 184 = 58 K (derivado de la ficha). Tolerancia 60 K: decisión de diseño."
+          }
+        }
+      ]
+    },
+    {
+      "id": "radiation",
+      "label": "Radiación",
+      "weight": 0.2,
+      "note": "PENDIENTE: no se encontró un valor de Marte expresado en el mismo índice UV que usa el sitio. Patel et al. (2002) y Cockell & Catling (2000) modelan el UV superficial, pero con ponderaciones biológicas distintas del índice UV terrestre; convertirlas sin una referencia sería inventar. Fuentes previstas: REMS UV (Curiosity, PDS).",
+      "criteria": [
+        {
+          "id": "uv",
+          "label": "Radiación UV en superficie",
+          "kind": "log",
+          "tolerance": 2,
+          "sitePath": "radiation.uvIndex",
+          "target": {
+            "value": null,
+            "unit": "índice UV",
+            "status": "pending",
+            "source": "Pendiente: REMS UV (PDS Atmospheres Node); modelos candidatos: Patel et al. 2002, Cockell & Catling 2000"
+          }
+        }
+      ]
+    },
+    {
+      "id": "soil",
+      "label": "Suelo y mineralogía",
+      "weight": 0.2,
+      "note": "pH: valor medido por Phoenix (un solo sitio, llanuras del norte). La comparación de mineralogía (CheMin/SAM de Curiosity, CRISM) sigue PENDIENTE: aquí solo se compara el pH.",
+      "criteria": [
+        {
+          "id": "ph",
+          "label": "pH del suelo",
+          "kind": "linear",
+          "tolerance": 4,
+          "sitePath": "soil.ph",
+          "target": {
+            "value": 7.7,
+            "unit": "pH",
+            "status": "literature",
+            "source": "Hecht et al. (2009), Science 325(5936):64-67; instrumento WCL de Phoenix: pH 7.7 ± 0.5, \"consistente con una solución tamponada por carbonato\"",
+            "retrieved": "2026-11-11",
+            "ref": "https://doi.org/10.1126/science.1172466",
+            "note": "Es una solución de suelo de UN solo lugar de Marte (68°N), no un promedio global. Incertidumbre ±0,5. Tolerancia 4 unidades de pH: decisión de diseño (estimated)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "label": "Agua",
+      "weight": 0.15,
+      "note": "Simplificación: en el Marte actual no hay precipitación líquida, por eso el objetivo es 0 mm/año. La disponibilidad real de agua (hielo, salmueras) se añadirá con literatura.",
+      "criteria": [
+        {
+          "id": "precipitation",
+          "label": "Precipitación anual",
+          "kind": "linear",
+          "tolerance": 600,
+          "sitePath": "water.precipitation",
+          "target": {
+            "value": 0,
+            "unit": "mm/año",
+            "status": "estimated",
+            "source": "Simplificación: sin precipitación líquida en el clima actual de Marte",
+            "note": "Tolerancia 600 mm/año: decisión de diseño."
+          }
+        }
+      ]
+    },
+    {
+      "id": "terrain",
+      "label": "Terreno y movilidad",
+      "weight": 0.15,
+      "note": "PENDIENTE: hay valores publicados (Beyer et al. 2003, doi:10.1029/2003JE002120, pendientes RMS de ~1-9° a escala de metros en Gusev y Meridiani), pero están medidos a ~1-12 m por píxel y la pendiente del sitio se calcula con un DEM de ~23 m por píxel. Compararlas directamente mezclaría escalas distintas, así que se deja pendiente hasta definir un criterio comparable.",
+      "criteria": [
+        {
+          "id": "slope",
+          "label": "Pendiente media",
+          "kind": "linear",
+          "tolerance": 15,
+          "sitePath": "terrain.slopeMean",
+          "target": {
+            "value": null,
+            "unit": "°",
+            "status": "pending",
+            "source": "Pendiente: criterio comparable (ver nota de la categoría)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pressure",
+      "label": "Presión atmosférica",
+      "weight": 0.1,
+      "criteria": [
+        {
+          "id": "pressure",
+          "label": "Presión en superficie",
+          "kind": "log",
+          "tolerance": 3,
+          "sitePath": "climate.pressure",
+          "target": {
+            "value": 0.636,
+            "unit": "kPa",
+            "range": [
+              0.4,
+              0.87
+            ],
+            "status": "literature",
+            "source": "NASA NSSDC Mars Fact Sheet (6.36 mb a radio medio; varía de 4.0 a 8.7 mb según la estación)",
+            "retrieved": "2026-11-09",
+            "ref": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+            "note": "Conversión: 1 mb = 0.1 kPa. Tolerancia de 3 décadas: decisión de diseño."
+          }
+        }
+      ]
+    }
+  ]
+}

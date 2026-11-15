@@ -1,0 +1,14 @@
+# Hecho con asistencia de IA (Claude) — Seal Hackathon Team, NASA Space Apps Sucre 2026
+# Fuentes buscadas y comprobadas el 2026-11-14 (Claude Fable 5.2). Ver docs/VALORES_A_VERIFICAR.md.
+id: mars_gusev_homeplate
+body: mars
+name: "Gusev – Home Plate (Spirit)"
+group: astrobiologia
+gravity: {value: 3.73, unit: "m/s²", status: literature, source: "NASA NSSDC Mars Fact Sheet", ref: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html", retrieved: "2026-11-14"}
+note: "Ruff & Farmer 2016 (Nat. Commun. 7:13554, doi:10.1038/ncomms13554): sílice opalina con estructuras comparables a los sínteres de El Tatio (Chile). Spirit no tenía sensor de presión: se hereda de mars_global. Sin meteorología local verificada."
+inherit_from: mars_global
+inherit_dims: [pressure, precip, ndvi, soil_moisture]
+values:
+  t_mean: {unit: K, status: pending, source: "", note: "Candidata: Martínez et al. 2017 (Mini-TES de los MER), doi:10.1007/s11214-017-0360-x."}
+  slope_p50_100m: {unit: grados, status: pending, source: "", note: "Candidata: Golombek et al. 2005, Nature, doi:10.1038/nature03600."}
+  mineral_classes: {unit: "1", classes: [silice_hidratada, basalto], status: literature, source: "Ruff & Farmer 2016 (sílice opalina); Squyres et al. 2008, Science (hasta 91 % SiO2, doi:10.1126/science.1155429); Squyres et al. 2007, Science (basalto alcalino, doi:10.1126/science.1139045)", ref: "https://doi.org/10.1038/ncomms13554", retrieved: "2026-11-14", note: "Leídos solo los resúmenes. El carbonato de Comanche (Morris et al. 2010) no es de Home Plate: no se incluye."}

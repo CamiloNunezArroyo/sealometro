@@ -1,0 +1,44 @@
+{
+  "name": "seal-analogos",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Hecho con asistencia de IA (Claude) \u2014 Seal Hackathon Team, NASA Space Apps Sucre 2026. Web + juego del rover sobre los an\u00e1logos terrestres de Marte y la Luna.",
+  "type": "module",
+  "scripts": {
+    "data": "node scripts/sync-data.mjs",
+    "predev": "node scripts/sync-data.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/sync-data.mjs",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "dev:https": "vite --host --mode https",
+    "deploy": "npm run build && cd .. && npx firebase-tools@13.29.1 deploy --only hosting,database"
+  },
+  "dependencies": {
+    "@fontsource/atkinson-hyperlegible": "^5.1.1",
+    "@fontsource/space-grotesk": "^5.1.1",
+    "d3-geo": "^3.1.1",
+    "firebase": "^11.10.0",
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.170.0",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/d3-geo": "^3.1.0",
+    "@types/node": "^20.17.6",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "^0.170.0",
+    "@types/topojson-client": "^3.1.5",
+    "@vitejs/plugin-basic-ssl": "^1.2.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}

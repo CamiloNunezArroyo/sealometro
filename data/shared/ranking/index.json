@@ -1,0 +1,259 @@
+{
+ "generated": "2026-11-14T19:30:29-06:00",
+ "engine_version": "0.1.0",
+ "validation": {
+  "auc": 0.5638461538461539,
+  "auc_ci90": [
+   0.44639743589743586,
+   0.6815897435897436
+  ],
+  "n_pos": 13,
+  "n_rand": 300,
+  "target": "mars_global",
+  "note": "Advertencia: las dimensiones se eligieron sabiendo que los desiertos fríos y secos son análogos de Marte; un AUC alto muestra coherencia con esa idea, no un descubrimiento independiente.",
+  "by_target": {
+   "mars_gale": {
+    "auc": 0.44256410256410256,
+    "auc_ci90": [
+     0.2743076923076923,
+     0.6064358974358973
+    ],
+    "n_pos": 13,
+    "n_rand": 300
+   },
+   "mars_global": {
+    "auc": 0.5638461538461539,
+    "auc_ci90": [
+     0.44639743589743586,
+     0.6815897435897436
+    ],
+    "n_pos": 13,
+    "n_rand": 300
+   },
+   "mars_gusev_homeplate": {
+    "auc": null,
+    "auc_ci90": null,
+    "n_pos": null,
+    "n_rand": null
+   },
+   "mars_ice_arcadia": {
+    "auc": null,
+    "auc_ci90": null,
+    "n_pos": null,
+    "n_rand": null
+   },
+   "mars_jezero": {
+    "auc": 0.46205128205128204,
+    "auc_ci90": [
+     0.2953846153846154,
+     0.6254102564102564
+    ],
+    "n_pos": 13,
+    "n_rand": 300
+   },
+   "mars_meridiani": {
+    "auc": null,
+    "auc_ci90": null,
+    "n_pos": null,
+    "n_rand": null
+   },
+   "moon_artemis_massif": {
+    "auc": null,
+    "auc_ci90": null,
+    "n_pos": null,
+    "n_rand": null
+   },
+   "moon_artemis_plateau": {
+    "auc": null,
+    "auc_ci90": null,
+    "n_pos": null,
+    "n_rand": null
+   },
+   "moon_artemis_rim": {
+    "auc": null,
+    "auc_ci90": null,
+    "n_pos": null,
+    "n_rand": null
+   },
+   "moon_global": {
+    "auc": 0.5038095238095238,
+    "auc_ci90": [
+     0.3433095238095238,
+     0.6600952380952381
+    ],
+    "n_pos": 7,
+    "n_rand": 300
+   },
+   "moon_lava_tube_pit": {
+    "auc": null,
+    "auc_ci90": null,
+    "n_pos": null,
+    "n_rand": null
+   },
+   "moon_shackleton_degerlache": {
+    "auc": null,
+    "auc_ci90": null,
+    "n_pos": null,
+    "n_rand": null
+   }
+  }
+ },
+ "targets": [
+  {
+   "id": "mars_gale",
+   "body": "mars",
+   "name": "Cráter Gale (Curiosity)",
+   "group": "aterrizaje",
+   "file": "ranking/mars_gale.json",
+   "n": 41,
+   "top3": [
+    "atacama_yungay",
+    "siloli",
+    "namib_sossusvlei"
+   ]
+  },
+  {
+   "id": "mars_global",
+   "body": "mars",
+   "name": "Marte (valores globales)",
+   "group": "global",
+   "file": "ranking/mars_global.json",
+   "n": 41,
+   "top3": [
+    "atacama_yungay",
+    "desierto_blanco",
+    "siloli"
+   ]
+  },
+  {
+   "id": "mars_gusev_homeplate",
+   "body": "mars",
+   "name": "Gusev – Home Plate (Spirit)",
+   "group": "astrobiologia",
+   "file": "ranking/mars_gusev_homeplate.json",
+   "n": 41,
+   "top3": [
+    "atacama_yungay",
+    "desierto_blanco",
+    "askja_iceland"
+   ]
+  },
+  {
+   "id": "mars_ice_arcadia",
+   "body": "mars",
+   "name": "Arcadia Planitia (hielo enterrado)",
+   "group": "hielo",
+   "file": "ranking/mars_ice_arcadia.json",
+   "n": 41,
+   "top3": [
+    "atacama_yungay",
+    "desierto_blanco",
+    "siloli"
+   ]
+  },
+  {
+   "id": "mars_jezero",
+   "body": "mars",
+   "name": "Cráter Jezero (Perseverance)",
+   "group": "aterrizaje",
+   "file": "ranking/mars_jezero.json",
+   "n": 41,
+   "top3": [
+    "atacama_yungay",
+    "siloli",
+    "namib_sossusvlei"
+   ]
+  },
+  {
+   "id": "mars_meridiani",
+   "body": "mars",
+   "name": "Meridiani Planum (Opportunity)",
+   "group": "astrobiologia",
+   "file": "ranking/mars_meridiani.json",
+   "n": 41,
+   "top3": [
+    "atacama_yungay",
+    "siloli",
+    "namib_sossusvlei"
+   ]
+  },
+  {
+   "id": "moon_artemis_massif",
+   "body": "moon",
+   "name": "Artemis III – macizo/montaña (Malapert Massif, Mons Mouton, Peak near Cabeus B)",
+   "group": "artemis_iii",
+   "file": "ranking/moon_artemis_massif.json",
+   "n": 41,
+   "top3": [
+    "atacama_yungay",
+    "desierto_blanco",
+    "siloli"
+   ]
+  },
+  {
+   "id": "moon_artemis_plateau",
+   "body": "moon",
+   "name": "Artemis III – meseta/llanura (Mons Mouton Plateau, Slater Plain)",
+   "group": "artemis_iii",
+   "file": "ranking/moon_artemis_plateau.json",
+   "n": 41,
+   "top3": [
+    "atacama_yungay",
+    "desierto_blanco",
+    "siloli"
+   ]
+  },
+  {
+   "id": "moon_artemis_rim",
+   "body": "moon",
+   "name": "Artemis III – borde de cráter (Nobile Rim 1, Nobile Rim 2, de Gerlache Rim 2, Haworth)",
+   "group": "artemis_iii",
+   "file": "ranking/moon_artemis_rim.json",
+   "n": 41,
+   "top3": [
+    "atacama_yungay",
+    "desierto_blanco",
+    "siloli"
+   ]
+  },
+  {
+   "id": "moon_global",
+   "body": "moon",
+   "name": "Luna (valores globales)",
+   "group": "global",
+   "file": "ranking/moon_global.json",
+   "n": 41,
+   "top3": [
+    "atacama_yungay",
+    "desierto_blanco",
+    "siloli"
+   ]
+  },
+  {
+   "id": "moon_lava_tube_pit",
+   "body": "moon",
+   "name": "Pozo de Mare Tranquillitatis (hábitat subterráneo)",
+   "group": "tubo_de_lava",
+   "file": "ranking/moon_lava_tube_pit.json",
+   "n": 41,
+   "top3": [
+    "atacama_yungay",
+    "lava_beds_ca",
+    "desierto_blanco"
+   ]
+  },
+  {
+   "id": "moon_shackleton_degerlache",
+   "body": "moon",
+   "name": "Cresta Shackleton–de Gerlache",
+   "group": "polo_sur",
+   "file": "ranking/moon_shackleton_degerlache.json",
+   "n": 41,
+   "top3": [
+    "atacama_yungay",
+    "desierto_blanco",
+    "siloli"
+   ]
+  }
+ ]
+}

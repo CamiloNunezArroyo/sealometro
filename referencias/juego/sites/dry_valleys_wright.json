@@ -1,0 +1,160 @@
+{
+  "id": "dry_valleys_wright",
+  "name": "Valles Secos de McMurdo — Wright/Victoria",
+  "country": "Antártida",
+  "region": "Tierra de Victoria, Antártida",
+  "coords": {
+    "lat": -77.5,
+    "lon": 162
+  },
+  "biome": "polar",
+  "analogFor": [
+    "mars"
+  ],
+  "analogRationale": {
+    "text": "\"Los científicos consideran los Valles Secos el entorno terrestre más cercano a Marte\" (NASA/JPL, PIA12461). Coordenadas: Coordenadas aproximadas del centro de la imagen PIA12461 (77,5°S, 162°E), no de un punto de estudio.",
+    "refs": [
+      "https://www.jpl.nasa.gov/images/pia12461-dry-valleys-antarctica/",
+      "https://www.atlasobscura.com/articles/planetary-analogues-space-on-earth"
+    ]
+  },
+  "terrain": {
+    "file": "data/terrain/dry_valleys_wright_height.bin",
+    "width": 256,
+    "height": 256,
+    "metersPerPixel": 23.4375,
+    "minElevationM": 369.413,
+    "maxElevationM": 426.685,
+    "status": "gameplay",
+    "source": "TERRENO SINTÉTICO de relleno (tools/make_placeholder_terrain.mjs). No es el relieve real.",
+    "slopeMean": {
+      "value": null,
+      "unit": "°",
+      "status": "pending",
+      "source": "Se calcula con el DEM real (node tools/build_site.mjs --site public/data/sites/dry_valleys_wright.json)"
+    },
+    "note": "Forma ilustrativa generada por código. Ejecuta `node tools/build_site.mjs --site public/data/sites/dry_valleys_wright.json` para reemplazarlo por el DEM Copernicus GLO-30 real; el juego detecta el cambio solo."
+  },
+  "elevation": {
+    "value": 400,
+    "unit": "m",
+    "status": "estimated",
+    "source": "Valor provisional pasado por el usuario (--base-elev 400 m), sin fuente",
+    "note": "Se reemplaza por la elevación del DEM Copernicus GLO-30 al ejecutar `node tools/build_site.mjs --site public/data/sites/dry_valleys_wright.json`."
+  },
+  "climate": {
+    "meanTemp": {
+      "value": null,
+      "unit": "K",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "dailyRange": {
+      "value": null,
+      "unit": "K",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "pressure": {
+      "value": 96.61,
+      "unit": "kPa",
+      "status": "derived",
+      "source": "Atmósfera estándar internacional (ISA) evaluada a 400 m (elevación provisional)",
+      "note": "Aproximación. NASA POWER (PS) la reemplaza al ejecutar el comando de datos del sitio."
+    },
+    "humidity": {
+      "value": null,
+      "unit": "%",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "wind": {
+      "value": null,
+      "unit": "m/s",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "albedo": {
+      "value": null,
+      "unit": "-",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "monthly": {
+      "tMaxC": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "tMinC": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada"
+    }
+  },
+  "radiation": {
+    "solarSurface": {
+      "value": null,
+      "unit": "kWh/m²/día",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "uvIndex": {
+      "value": null,
+      "unit": "índice UV",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    }
+  },
+  "soil": {
+    "claySandSilt": {
+      "value": null,
+      "unit": "%",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "ph": {
+      "value": null,
+      "unit": "pH",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "minerals": []
+  },
+  "water": {
+    "precipitation": {
+      "value": null,
+      "unit": "mm/año",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "note": "Sin información cargada."
+  },
+  "gameplay": {
+    "sampleSeed": 1251642768,
+    "sampleCount": 8,
+    "missionSamplesRequired": 4,
+    "sampleStatus": "gameplay"
+  }
+}

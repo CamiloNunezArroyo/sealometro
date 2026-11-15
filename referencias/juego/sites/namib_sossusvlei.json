@@ -1,0 +1,159 @@
+{
+  "id": "namib_sossusvlei",
+  "name": "Namib — dunas de Sossusvlei",
+  "country": "Namibia",
+  "region": "Desierto del Namib, Namibia",
+  "coords": {
+    "lat": -24.72739,
+    "lon": 15.342391
+  },
+  "biome": "desert",
+  "analogFor": [
+    "mars"
+  ],
+  "analogRationale": {
+    "text": "Dunas de hasta unos 300 m, el mejor parecido terrestre con el tamaño de las dunas marcianas según Atlas Obscura. Pendiente una referencia primaria. Coordenadas: Coordenadas de latlong.net para Sossusvlei (-24.727390, 15.342391).",
+    "refs": [
+      "https://www.atlasobscura.com/articles/planetary-analogues-space-on-earth"
+    ]
+  },
+  "terrain": {
+    "file": "data/terrain/namib_sossusvlei_height.bin",
+    "width": 256,
+    "height": 256,
+    "metersPerPixel": 23.4375,
+    "minElevationM": 878.717,
+    "maxElevationM": 920.521,
+    "status": "gameplay",
+    "source": "TERRENO SINTÉTICO de relleno (tools/make_placeholder_terrain.mjs). No es el relieve real.",
+    "slopeMean": {
+      "value": null,
+      "unit": "°",
+      "status": "pending",
+      "source": "Se calcula con el DEM real (node tools/build_site.mjs --site public/data/sites/namib_sossusvlei.json)"
+    },
+    "note": "Forma ilustrativa generada por código. Ejecuta `node tools/build_site.mjs --site public/data/sites/namib_sossusvlei.json` para reemplazarlo por el DEM Copernicus GLO-30 real; el juego detecta el cambio solo."
+  },
+  "elevation": {
+    "value": 900,
+    "unit": "m",
+    "status": "estimated",
+    "source": "Valor provisional pasado por el usuario (--base-elev 900 m), sin fuente",
+    "note": "Se reemplaza por la elevación del DEM Copernicus GLO-30 al ejecutar `node tools/build_site.mjs --site public/data/sites/namib_sossusvlei.json`."
+  },
+  "climate": {
+    "meanTemp": {
+      "value": null,
+      "unit": "K",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "dailyRange": {
+      "value": null,
+      "unit": "K",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "pressure": {
+      "value": 90.97,
+      "unit": "kPa",
+      "status": "derived",
+      "source": "Atmósfera estándar internacional (ISA) evaluada a 900 m (elevación provisional)",
+      "note": "Aproximación. NASA POWER (PS) la reemplaza al ejecutar el comando de datos del sitio."
+    },
+    "humidity": {
+      "value": null,
+      "unit": "%",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "wind": {
+      "value": null,
+      "unit": "m/s",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "albedo": {
+      "value": null,
+      "unit": "-",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "monthly": {
+      "tMaxC": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "tMinC": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada"
+    }
+  },
+  "radiation": {
+    "solarSurface": {
+      "value": null,
+      "unit": "kWh/m²/día",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "uvIndex": {
+      "value": null,
+      "unit": "índice UV",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    }
+  },
+  "soil": {
+    "claySandSilt": {
+      "value": null,
+      "unit": "%",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "ph": {
+      "value": null,
+      "unit": "pH",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "minerals": []
+  },
+  "water": {
+    "precipitation": {
+      "value": null,
+      "unit": "mm/año",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "note": "Sin información cargada."
+  },
+  "gameplay": {
+    "sampleSeed": 955603980,
+    "sampleCount": 8,
+    "missionSamplesRequired": 4,
+    "sampleStatus": "gameplay"
+  }
+}

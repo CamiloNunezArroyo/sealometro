@@ -1,0 +1,24 @@
+# Hecho con asistencia de IA (Claude) — Seal Hackathon Team, NASA Space Apps Sucre 2026
+# Valores copiados de referencias/juego/targets/moon.json (verificados por el equipo el 2026-11-11).
+id: moon_global
+body: moon
+name: "Luna (valores globales)"
+group: global
+gravity: {value: 1.62, unit: "m/s²", status: literature, source: "NASA NSSDC Moon Fact Sheet", ref: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html", retrieved: "2026-11-11"}
+note: "Sin atmósfera: humedad y viento no aplican (pending). La temperatura lunar es de la SUPERFICIE; la terrestre (POWER) es del aire."
+values:
+  t_mean: {unit: K, status: pending, source: "", note: "La ficha NSSDC no da temperatura media superficial (la de cuerpo negro, 270,4 K, no es la media del suelo). Fuente prevista: LRO Diviner (PDS)."}
+  t_range_diurnal: {value: 295, unit: K, status: derived, source: "NASA NSSDC Moon Fact Sheet (rango diurno en el ecuador: 95 K a 390 K)", ref: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html", retrieved: "2026-11-11", note: "Amplitud = 390 − 95 = 295 K, en el ecuador lunar; temperatura de superficie, no de aire."}
+  pressure: {value: 3.0e-13, unit: kPa, status: literature, source: "NASA NSSDC Moon Fact Sheet (presión superficial nocturna: 3 × 10⁻¹⁵ bar)", ref: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html", retrieved: "2026-11-11", note: "1 bar = 100 kPa. Es la presión NOCTURNA (casi vacío)."}
+  uv_index: {unit: "1", status: pending, source: "", note: "Sin atmósfera: UV solar completo; no se expresa en índice UV."}
+  precip: {value: 0, unit: "mm/año", status: estimated, source: "Simplificación: sin atmósfera ni precipitación en la Luna", retrieved: "2026-11-11"}
+  soil_moisture: {value: 0, unit: "1", status: estimated, source: "Simplificación: sin agua líquida en el regolito lunar (no es una medición)", retrieved: "2026-11-14"}
+  rh: {unit: "%", status: pending, source: "", note: "No aplica (sin atmósfera)."}
+  wind: {unit: "m/s", status: pending, source: "", note: "No aplica (sin atmósfera)."}
+  albedo: {unit: "1", status: pending, source: "", note: "El albedo de Bond (0,11) es de todo el disco lunar, no de un sitio. Fuente candidata: LROC/Diviner por región."}
+  slope_p50_100m: {unit: grados, status: pending, source: ""}
+  slope_p90_100m: {unit: grados, status: pending, source: ""}
+  roughness_100m: {unit: m, status: pending, source: ""}
+  ndvi: {range: [-0.2, 0.1], unit: "1", status: design, source: "Sin vegetación = rango de suelo desnudo, roca, arena o nieve: NASA Earth Observatory, Measuring Vegetation (NDVI 0,1 o menos)", ref: "https://earthobservatory.nasa.gov/features/MeasuringVegetation/measuring_vegetation_2.php", retrieved: "2026-11-14", note: "Decisión de diseño: con objetivo 0 exacto, el suelo desnudo (NDVI 0,05–0,15) salía castigado; se compara con el rango de superficies sin vegetación."}
+  cave_lava_tube: {unit: "1", status: pending, source: "", note: "No aplica a un objetivo global."}
+  mineral_classes: {unit: "1", status: pending, source: "", note: "No aplica a un objetivo global: ver objetivos por sitio."}

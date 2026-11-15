@@ -1,0 +1,91 @@
+{
+  "targets": [
+    {
+      "id": "mars",
+      "name": "Marte",
+      "file": "data/targets/mars.json"
+    },
+    {
+      "id": "moon",
+      "name": "Luna",
+      "file": "data/targets/moon.json"
+    }
+  ],
+  "ivo": "data/ivo.json",
+  "regions": [
+    {
+      "id": "altiplano_sur",
+      "name": "Altiplano sur",
+      "country": "Bolivia",
+      "sites": [
+        "data/sites/uyuni.json",
+        "data/sites/laguna_verde.json",
+        "data/sites/sol_de_manana.json"
+      ]
+    },
+    {
+      "id": "hawai",
+      "name": "Hawái",
+      "country": "Estados Unidos",
+      "sites": [
+        "data/sites/mauna_kea.json"
+      ]
+    },
+    {
+      "id": "atacama",
+      "name": "Atacama",
+      "country": "Chile",
+      "sites": [
+        "data/sites/atacama_yungay.json"
+      ]
+    },
+    {
+      "id": "islandia",
+      "name": "Islandia",
+      "country": "Islandia",
+      "sites": [
+        "data/sites/askja_iceland.json"
+      ]
+    },
+    {
+      "id": "california",
+      "name": "California",
+      "country": "Estados Unidos",
+      "sites": [
+        "data/sites/lava_beds_ca.json"
+      ]
+    },
+    {
+      "id": "arizona",
+      "name": "Arizona",
+      "country": "Estados Unidos",
+      "sites": [
+        "data/sites/cinder_lake_az.json"
+      ]
+    },
+    {
+      "id": "sicilia",
+      "name": "Sicilia",
+      "country": "Italia",
+      "sites": [
+        "data/sites/etna_italy.json"
+      ]
+    },
+    {
+      "id": "namibia",
+      "name": "Namibia",
+      "country": "Namibia",
+      "sites": [
+        "data/sites/namib_sossusvlei.json"
+      ]
+    },
+    {
+      "id": "antartida",
+      "name": "Antártida",
+      "country": "Antártida",
+      "sites": [
+        "data/sites/dry_valleys_wright.json"
+      ]
+    }
+  ]
+}

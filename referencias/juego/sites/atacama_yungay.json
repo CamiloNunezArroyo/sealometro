@@ -1,0 +1,160 @@
+{
+  "id": "atacama_yungay",
+  "name": "Desierto de Atacama — Yungay",
+  "country": "Chile",
+  "region": "Región de Antofagasta, Chile",
+  "coords": {
+    "lat": -24.0786,
+    "lon": -69.9431
+  },
+  "biome": "desert",
+  "analogFor": [
+    "mars"
+  ],
+  "analogRationale": {
+    "text": "Núcleo hiperárido del Atacama (zona de Yungay), propuesto en 2003 como análogo para estudios de Marte; NASA lo rotula \"Mars Analog\". Azua-Bustos et al. (2018) lo usan como análogo del ciclo del nitrógeno en Marte. Coordenadas: Coordenadas de la laguna grande de la Tabla 2 de Azua-Bustos et al. (2018), Sci. Rep. 8:16706 (24°04′43.1″S, 69°56′35.2″W).",
+    "refs": [
+      "https://science.nasa.gov/solar-system/planetary-analogs/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6232106"
+    ]
+  },
+  "terrain": {
+    "file": "data/terrain/atacama_yungay_height.bin",
+    "width": 256,
+    "height": 256,
+    "metersPerPixel": 23.4375,
+    "minElevationM": 979.257,
+    "maxElevationM": 1025.267,
+    "status": "gameplay",
+    "source": "TERRENO SINTÉTICO de relleno (tools/make_placeholder_terrain.mjs). No es el relieve real.",
+    "slopeMean": {
+      "value": null,
+      "unit": "°",
+      "status": "pending",
+      "source": "Se calcula con el DEM real (node tools/build_site.mjs --site public/data/sites/atacama_yungay.json)"
+    },
+    "note": "Forma ilustrativa generada por código. Ejecuta `node tools/build_site.mjs --site public/data/sites/atacama_yungay.json` para reemplazarlo por el DEM Copernicus GLO-30 real; el juego detecta el cambio solo."
+  },
+  "elevation": {
+    "value": 1000,
+    "unit": "m",
+    "status": "estimated",
+    "source": "Valor provisional pasado por el usuario (--base-elev 1000 m), sin fuente",
+    "note": "Se reemplaza por la elevación del DEM Copernicus GLO-30 al ejecutar `node tools/build_site.mjs --site public/data/sites/atacama_yungay.json`."
+  },
+  "climate": {
+    "meanTemp": {
+      "value": null,
+      "unit": "K",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "dailyRange": {
+      "value": null,
+      "unit": "K",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "pressure": {
+      "value": 89.87,
+      "unit": "kPa",
+      "status": "derived",
+      "source": "Atmósfera estándar internacional (ISA) evaluada a 1000 m (elevación provisional)",
+      "note": "Aproximación. NASA POWER (PS) la reemplaza al ejecutar el comando de datos del sitio."
+    },
+    "humidity": {
+      "value": null,
+      "unit": "%",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "wind": {
+      "value": null,
+      "unit": "m/s",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "albedo": {
+      "value": null,
+      "unit": "-",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "monthly": {
+      "tMaxC": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "tMinC": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada"
+    }
+  },
+  "radiation": {
+    "solarSurface": {
+      "value": null,
+      "unit": "kWh/m²/día",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "uvIndex": {
+      "value": null,
+      "unit": "índice UV",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    }
+  },
+  "soil": {
+    "claySandSilt": {
+      "value": null,
+      "unit": "%",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "ph": {
+      "value": null,
+      "unit": "pH",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "minerals": []
+  },
+  "water": {
+    "precipitation": {
+      "value": null,
+      "unit": "mm/año",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "note": "Sin información cargada."
+  },
+  "gameplay": {
+    "sampleSeed": 1017774264,
+    "sampleCount": 8,
+    "missionSamplesRequired": 4,
+    "sampleStatus": "gameplay"
+  }
+}

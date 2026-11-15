@@ -1,0 +1,54 @@
+{
+  "rules": {
+    "stations": {
+      "$device": {
+        ".read": "auth != null",
+        ".write": "auth != null && $device.length <= 40"
+      }
+    },
+    "sessions": {
+      "$code": {
+        ".read": "auth != null",
+        ".write": "auth != null && $code.length <= 12"
+      }
+    },
+    "tracks": {
+      "$code": {
+        ".read": "auth != null",
+        "$pt": {
+          ".write": "auth != null",
+          ".validate": "newData.hasChildren(['lat', 'lon', 'acc', 't']) && newData.child('lat').isNumber() && newData.child('lon').isNumber()"
+        }
+      }
+    },
+    "scanmeta": {
+      "$code": {
+        ".read": "auth != null",
+        "$id": {
+          ".write": "auth != null",
+          ".validate": "newData.hasChildren(['name', 'bytes', 'chunks']) && newData.child('bytes').isNumber() && newData.child('bytes').val() <= 31457280 && newData.child('chunks').val() <= 60"
+        }
+      }
+    },
+    "scandata": {
+      "$code": {
+        "$id": {
+          ".read": "auth != null",
+          "$i": {
+            ".write": "auth != null && !data.exists()",
+            ".validate": "newData.isString() && newData.val().length <= 700000"
+          }
+        }
+      }
+    },
+    "media": {
+      "$code": {
+        ".read": "auth != null",
+        "$m": {
+          ".write": "auth != null && !data.exists()",
+          ".validate": "newData.child('data').isString() && newData.child('data').val().beginsWith('data:image/jpeg') && newData.child('data').val().length < 1500000"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "id": "sol_de_manana",
+  "name": "Sol de Mañana — campo geotérmico",
+  "country": "Bolivia",
+  "region": "Potosí, Sur Lípez",
+  "coords": {
+    "lat": -22.426,
+    "lon": -67.76
+  },
+  "biome": "volcanic",
+  "analogFor": [
+    "mars"
+  ],
+  "analogRationale": {
+    "text": "Campo geotérmico de altura (fumarolas, aguas termales, pozas de barro) en el altiplano sur. ANALOGÍA CON MARTE NO VERIFICADA: la fuente consultada (Wikipedia) describe el campo pero no lo menciona como análogo de Marte; se lista como candidato por sus ambientes hidrotermales y de altura, y falta una referencia que lo respalde antes de darlo por válido.",
+    "refs": [
+      "https://en.wikipedia.org/wiki/Sol_de_Ma%C3%B1ana"
+    ]
+  },
+  "terrain": {
+    "file": "data/terrain/sol_de_manana_height.bin",
+    "width": 256,
+    "height": 256,
+    "metersPerPixel": 23.4375,
+    "minElevationM": 4881.99,
+    "maxElevationM": 4933.821,
+    "status": "gameplay",
+    "source": "TERRENO SINTÉTICO de relleno (tools/make_placeholder_terrain.mjs). No es el relieve real.",
+    "note": "Forma ilustrativa generada por código. Ejecuta `npm run data:sol` para reemplazarlo por el DEM Copernicus GLO-30 real; el juego detecta el cambio solo.",
+    "slopeMean": {
+      "value": null,
+      "unit": "°",
+      "status": "pending",
+      "source": "Se calcula con el DEM real (npm run data:sol)"
+    }
+  },
+  "elevation": {
+    "value": 4900,
+    "unit": "m",
+    "status": "estimated",
+    "source": "Cifra de Wikipedia (~4900 m), sin fuente primaria cargada",
+    "note": "Se reemplaza por la elevación del DEM Copernicus GLO-30 al ejecutar `npm run data:sol`."
+  },
+  "climate": {
+    "meanTemp": {
+      "value": null,
+      "unit": "K",
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:sol` (DEM Copernicus GLO-30 y NASA POWER)"
+    },
+    "dailyRange": {
+      "value": null,
+      "unit": "K",
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:sol` (DEM Copernicus GLO-30 y NASA POWER)"
+    },
+    "pressure": {
+      "value": 54.75,
+      "unit": "kPa",
+      "status": "derived",
+      "source": "Atmósfera estándar internacional (ISA) evaluada a 4900 m (elevación estimada)",
+      "note": "Aproximación. NASA POWER (PS) la reemplaza al ejecutar el comando de datos del sitio."
+    },
+    "humidity": {
+      "value": null,
+      "unit": "%",
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:sol` (DEM Copernicus GLO-30 y NASA POWER)"
+    },
+    "wind": {
+      "value": null,
+      "unit": "m/s",
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:sol` (DEM Copernicus GLO-30 y NASA POWER)"
+    },
+    "albedo": {
+      "value": null,
+      "unit": "-",
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:sol` (DEM Copernicus GLO-30 y NASA POWER)"
+    },
+    "monthly": {
+      "tMaxC": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "tMinC": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:sol` (DEM Copernicus GLO-30 y NASA POWER)"
+    }
+  },
+  "radiation": {
+    "solarSurface": {
+      "value": null,
+      "unit": "kWh/m²/día",
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:sol` (DEM Copernicus GLO-30 y NASA POWER)"
+    },
+    "uvIndex": {
+      "value": null,
+      "unit": "índice UV",
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:sol` (DEM Copernicus GLO-30 y NASA POWER)"
+    }
+  },
+  "soil": {
+    "claySandSilt": {
+      "value": null,
+      "unit": "%",
+      "status": "pending",
+      "source": "Pendiente: aún no hay fuente de suelo en el pipeline (candidata: ISRIC SoilGrids). Este dato NO lo trae `npm run data:*`."
+    },
+    "ph": {
+      "value": null,
+      "unit": "pH",
+      "status": "pending",
+      "source": "Pendiente: aún no hay fuente de suelo en el pipeline (candidata: ISRIC SoilGrids). Este dato NO lo trae `npm run data:*`."
+    },
+    "minerals": []
+  },
+  "water": {
+    "precipitation": {
+      "value": null,
+      "unit": "mm/año",
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:sol` (DEM Copernicus GLO-30 y NASA POWER)"
+    },
+    "note": "Información pendiente de referencia."
+  },
+  "gameplay": {
+    "sampleSeed": 20260203,
+    "sampleCount": 8,
+    "missionSamplesRequired": 4,
+    "sampleStatus": "gameplay"
+  }
+}

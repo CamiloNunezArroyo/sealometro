@@ -1,0 +1,24 @@
+# Hecho con asistencia de IA (Claude) — Seal Hackathon Team, NASA Space Apps Sucre 2026
+# Valores copiados de referencias/juego/targets/mars.json (verificados por el equipo el 2026-11-09/11).
+id: mars_global
+body: mars
+name: "Marte (valores globales)"
+group: global
+gravity: {value: 3.73, unit: "m/s²", status: literature, source: "NASA NSSDC Mars Fact Sheet (gravedad superficial media)", ref: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html", retrieved: "2026-11-09", note: "La ficha lista 3,69 m/s² en el ecuador."}
+note: "Valores globales o de un solo sitio (Viking 1): no representan la variabilidad real de Marte. Por eso existen los objetivos por sitio."
+values:
+  t_mean: {value: 214, unit: K, status: literature, source: "NASA NSSDC Mars Fact Sheet (temperatura media ~214 K, -59 °C)", ref: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html", retrieved: "2026-11-09"}
+  t_range_diurnal: {value: 58, unit: K, status: derived, source: "NASA NSSDC Mars Fact Sheet (rango diurno 184–242 K en el sitio del Viking 1)", ref: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html", retrieved: "2026-11-09", note: "Amplitud = 242 − 184 = 58 K. Es un sitio concreto (Viking 1), no un promedio global. Temperaturas del aire mín/máx: [184, 242] K."}
+  pressure: {value: 0.636, range: [0.40, 0.87], unit: kPa, status: literature, source: "NASA NSSDC Mars Fact Sheet (6,36 mb a radio medio; 4,0–8,7 mb según la estación)", ref: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html", retrieved: "2026-11-09", note: "1 mb = 0,1 kPa."}
+  uv_index: {unit: "1", status: pending, source: "", note: "Fuente candidata: REMS UV (PDS Atmospheres Node); modelos: Patel et al. 2002, Cockell & Catling 2000. No hay valor en 'índice UV'."}
+  precip: {value: 0, unit: "mm/año", status: estimated, source: "Simplificación: sin precipitación líquida en el clima actual de Marte", retrieved: "2026-11-09"}
+  soil_moisture: {value: 0, unit: "1", status: estimated, source: "Simplificación: sin agua líquida en el suelo de Marte (no es una medición)", retrieved: "2026-11-14"}
+  rh: {unit: "%", status: pending, source: "", note: "Global no definido; ver objetivos por sitio (REMS/MEDA)."}
+  wind: {range: [2, 7], unit: "m/s", status: literature, source: "NASA NSSDC Mars Fact Sheet (vientos en los sitios Viking: 2–7 m/s en verano)", ref: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html", retrieved: "2026-11-14", note: "Otoño 5–10 m/s; tormentas de polvo 17–30 m/s. Solo rango, sin valor único. Altura del sensor distinta de los 10 m de POWER."}
+  albedo: {unit: "1", status: pending, source: "", note: "El albedo de Bond de la ficha NSSDC (0,250) es del PLANETA con su atmósfera, no de la superficie: comparado con el albedo de superficie de POWER era la dimensión que más hundía la validación (revisión 2026-11-14). Fuente candidata: mapa TES (Christensen et al. 2001)."}
+  slope_p50_100m: {unit: grados, status: pending, source: ""}
+  slope_p90_100m: {unit: grados, status: pending, source: ""}
+  roughness_100m: {unit: m, status: pending, source: ""}
+  ndvi: {range: [-0.2, 0.1], unit: "1", status: design, source: "Sin vegetación = rango de suelo desnudo, roca, arena o nieve: NASA Earth Observatory, Measuring Vegetation (NDVI 0,1 o menos)", ref: "https://earthobservatory.nasa.gov/features/MeasuringVegetation/measuring_vegetation_2.php", retrieved: "2026-11-14", note: "Decisión de diseño: con objetivo 0 exacto, el suelo desnudo (NDVI 0,05–0,15) salía castigado; se compara con el rango de superficies sin vegetación."}
+  cave_lava_tube: {unit: "1", status: pending, source: "", note: "No aplica a un objetivo global."}
+  mineral_classes: {unit: "1", status: pending, source: "", note: "No aplica a un objetivo global: ver objetivos por sitio."}

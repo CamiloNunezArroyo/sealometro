@@ -1,0 +1,190 @@
+# Hecho con asistencia de IA (Claude) — Seal Hackathon Team, NASA Space Apps Sucre 2026
+# Catálogo de dimensiones T1 (docs/MOTOR_SIMILITUD.md §3).
+# - space: linear | log (log10 x) | log1p (log10(1 + x)). tau va en ese espacio (décadas para log y log1p).
+# - tau y weight son DECISIONES DE DISEÑO (status: design), no resultados científicos; se prueban con la robustez (§5.4).
+# - analogable: false = brecha (la Tierra no puede acercarse) → no entra al IFA; solo progreso (PO) y percentil terrestre.
+# - Con el núcleo gaussiano: s = 0,61 cuando la distancia al rango del objetivo es 1·tau y s = 0,14 cuando es 2·tau.
+features:
+  - id: t_mean
+    label: Temperatura media
+    unit: K
+    group: termico
+    space: linear
+    tau: 20
+    tau_note: "≈ un tercio del recorrido de temperaturas medias anuales en tierra firme (~-30 a +30 °C); 20 K de diferencia ya es otro clima."
+    sigma: 1.5
+    sigma_note: "Incertidumbre típica de una climatología de reanálisis de celda (~1–2 K). (estimated, en el espacio de 'space')"
+    weight: 1.0
+    earth_source: "NASA POWER T2M, corregida por elevación (6,5 K/km)"
+    note: "Tierra y Marte: temperatura del aire; Luna: temperatura de la superficie (Diviner). No es la misma magnitud física: se marca en la ficha."
+
+  - id: t_range_diurnal
+    label: Amplitud térmica día-noche
+    unit: K
+    group: termico
+    space: linear
+    tau: 15
+    tau_note: "Las amplitudes del aire en la Tierra van de ~5 K (costa húmeda) a ~30 K (desierto de altura); 15 K separa esos regímenes."
+    sigma: 1.5
+    sigma_note: "Igual que t_mean: ~1–2 K. (estimated, en el espacio de 'space')"
+    weight: 1.0
+    earth_source: "NASA POWER T2M_MAX − T2M_MIN (climatología)"
+    note: "Aire en la Tierra (POWER) vs superficie en la Luna: brecha de magnitud física; T2 usa MODIS LST (superficie)."
+
+  - id: pressure
+    label: Presión del aire
+    unit: kPa
+    group: atmosfera
+    space: log
+    tau: 0.5
+    tau_note: "Media década (factor ~3). Da igual: ningún sitio terrestre se acerca a Marte (~2 décadas) ni a la Luna; se informa como brecha."
+    sigma: 0.01
+    sigma_note: "~2 % (0,01 décadas) por la corrección de elevación aproximada. (estimated, en el espacio de 'space')"
+    analogable: false
+    weight: 0.0
+    earth_source: "NASA POWER PS, corregida por elevación (barométrica)"
+
+  - id: uv_index
+    label: Índice UV
+    unit: "1"
+    group: radiacion
+    space: linear
+    tau: 3
+    tau_note: "3 puntos de índice UV = una categoría de la escala OMS (p. ej. 'alto' vs 'muy alto')."
+    sigma: 0.3
+    sigma_note: "~10–20 % del promedio de POWER. (estimated, en el espacio de 'space')"
+    analogable: false
+    weight: 0.0
+    earth_source: "NASA POWER ALLSKY_SFC_UV_INDEX"
+    note: "Brecha: Marte y la Luna reciben UV-C que en la Tierra no llega al suelo; el índice UV no describe ese espectro. Solo PO y percentil cuando el objetivo tenga valor con fuente."
+
+  - id: precip
+    label: Lluvia anual
+    unit: mm/año
+    group: agua
+    space: log1p
+    tau: 1.0
+    tau_note: "Una década en log10(1+P). Con objetivo 0 mm, τ = 0,5 daba s ≈ 0 a toda la Tierra salvo Atacama (revisión 2026-11-14); con 1,0: 10 mm/año → s ≈ 0,56, 100 mm/año → s ≈ 0,13, 1000 mm/año → s ≈ 0,0003."
+    sigma: 0.1
+    sigma_note: "Lluvia muy variable entre años: ~25 % (0,1 décadas). (estimated, en el espacio de 'space')"
+    weight: 1.5
+    earth_source: "NASA POWER PRECTOTCORR (mm/día × 365,25)"
+
+  - id: soil_moisture
+    label: Humedad de la superficie del suelo
+    unit: "1"
+    group: agua
+    space: linear
+    tau: 0.15
+    tau_note: "0,15 de fracción de saturación separa un desierto (~0,1) de una estepa (~0,25–0,3); el bosque boreal (~0,55) y la selva (~0,8) quedan lejos."
+    sigma: 0.05
+    sigma_note: "Diferencias entre reanálisis: ~0,05 (estimated, en el espacio de 'space')"
+    weight: 1.0
+    tier: T2
+    earth_source: "NASA POWER GWETTOP (MERRA-2, humedad de la capa superficial, 0–1)"
+    note: "Separa el bosque y la selva del desierto aunque no haya NDVI. MERRA-2 rara vez baja de ~0,1 aun en desiertos hiperáridos: la Tierra no llega a 0 en el modelo."
+
+  - id: rh
+    label: Humedad relativa
+    unit: "%"
+    group: agua
+    space: linear
+    tau: 15
+    tau_note: "15 puntos de humedad relativa separan un clima hiperárido (<20 %) de uno semiárido (~35–40 %)."
+    sigma: 5
+    sigma_note: "~5 puntos entre reanálisis. (estimated, en el espacio de 'space')"
+    weight: 1.0
+    earth_source: "NASA POWER RH2M"
+
+  - id: wind
+    label: Viento medio a 10 m
+    unit: m/s
+    group: atmosfera
+    space: linear
+    tau: 3
+    tau_note: "3 m/s ≈ un escalón de la escala de Beaufort en el rango de vientos medios (2–8 m/s)."
+    sigma: 0.5
+    sigma_note: "~0,5 m/s entre reanálisis y altura del sensor. (estimated, en el espacio de 'space')"
+    weight: 0.0
+    earth_source: "NASA POWER WS10M"
+    note: "SOLO CONTEXTO (peso 0, revisión 2026-11-14): el objetivo (2–7 m/s, Viking, ~1,6 m) contra POWER a 10 m daba s ≥ 0,99 a 40 de 41 sitios, y en Marte el mismo m/s no es la misma fuerza (aire ~100 veces menos denso)."
+
+  - id: albedo
+    label: Albedo de la superficie
+    unit: "1"
+    group: superficie
+    space: linear
+    tau: 0.08
+    tau_note: "0,08 ≈ la diferencia entre basalto oscuro (~0,1) y arena/regolito medio (~0,2–0,25)."
+    sigma: 0.03
+    sigma_note: "Albedo de celda vs local: ±0,03. (estimated, en el espacio de 'space')"
+    weight: 1.0
+    earth_source: "NASA POWER ALLSKY_SRF_ALB"
+    note: "POWER es albedo de celda (~50 km) y se satura con nieve o salares; MODIS MCD43 (T2) es local."
+
+  - id: slope_p50_100m
+    label: Pendiente mediana (base 100 m)
+    unit: grados
+    group: terreno
+    space: linear
+    tau: 3
+    tau_note: "3° en la mediana a 100 m separa una planicie (≤2°) de un terreno ondulado (≥5°)."
+    sigma: 1.0
+    sigma_note: "Ruido del DEM GLO-30 (~2–4 m) a 100 m: ~1°. (estimated, en el espacio de 'space')"
+    weight: 1.0
+    earth_source: "Copernicus GLO-30 (ESA) remuestreado a 100 m"
+    note: "GLO-30 es un modelo de superficie (incluye vegetación/edificios) con ruido de ~2–4 m."
+
+  - id: slope_p90_100m
+    label: Pendiente percentil 90 (base 100 m)
+    unit: grados
+    group: terreno
+    space: linear
+    tau: 5
+    tau_note: "5° en el p90: las pendientes extremas cambian más entre terrenos; 15° vs 25° ya cambia la traficabilidad de un rover."
+    sigma: 2.0
+    sigma_note: "Ruido del DEM y elección de ventana: ~2°. (estimated, en el espacio de 'space')"
+    weight: 1.0
+    earth_source: "Copernicus GLO-30 (ESA) remuestreado a 100 m"
+
+  - id: roughness_100m
+    label: Rugosidad (desv. estándar de la elevación sin tendencia, 100 m)
+    unit: m
+    group: terreno
+    space: log
+    tau: 0.3
+    tau_note: "0,3 décadas = factor 2: la rugosidad abarca órdenes de magnitud y un factor 2 ya es otro tipo de terreno."
+    sigma: 0.15
+    sigma_note: "Ruido del DEM: factor ~1,4 (0,15 décadas). (estimated, en el espacio de 'space')"
+    weight: 1.0
+    earth_source: "Copernicus GLO-30 (ESA) remuestreado a 100 m, plano de tendencia restado"
+
+  - id: ndvi
+    label: Vegetación (NDVI)
+    unit: "1"
+    group: vida
+    space: linear
+    tau: 0.1
+    tau_note: "0,1 de NDVI separa suelo desnudo (<0,1) de pastizal ralo (~0,2)."
+    weight: 1.0
+    tier: T1
+    earth_source: "MODIS MOD13Q1 v061 (250 m) vía ORNL MODIS subsets: mediana de 2023, solo para los sitios (la muestra al azar no lo tiene)"
+    note: "La Luna y Marte tienen NDVI 0 por definición (sin vegetación)."
+
+  - id: cave_lava_tube
+    label: Cuevas o tubos de lava accesibles
+    unit: "1"
+    group: subsuelo
+    kind: binary
+    weight: 0.5
+    earth_source: "Literatura (por sitio)"
+    note: "1 = hay tubo de lava/cueva accesible documentada; 0 = no documentada. s = 1 si coincide con el objetivo, 0 si no."
+
+  - id: mineral_classes
+    label: Clases de minerales
+    unit: "1"
+    group: composicion
+    kind: set
+    weight: 1.5
+    earth_source: "Literatura por sitio (T1); EMIT (T2)"
+    note: "Clases: sulfato, cloruro, arcilla, carbonato, silice_hidratada, oxido_fe, basalto, anortosita. s = fracción de las clases del objetivo presentes en el sitio."

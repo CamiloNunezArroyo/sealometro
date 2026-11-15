@@ -1,0 +1,15 @@
+# Hecho con asistencia de IA (Claude) — Seal Hackathon Team, NASA Space Apps Sucre 2026
+# Fuentes buscadas y comprobadas el 2026-11-14 (Claude Fable 5.2). Ver docs/VALORES_A_VERIFICAR.md.
+id: moon_lava_tube_pit
+body: moon
+name: "Pozo de Mare Tranquillitatis (hábitat subterráneo)"
+group: tubo_de_lava
+gravity: {value: 1.62, unit: "m/s²", status: literature, source: "NASA NSSDC Moon Fact Sheet", ref: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html", retrieved: "2026-11-14"}
+note: "Robinson et al. 2012, PSS (doi:10.1016/j.pss.2012.05.008); Horvath et al. 2022, GRL (doi:10.1029/2022GL099710). Haruyama et al. 2009 (doi:10.1029/2009GL040635) trata del pozo de Marius Hills, no de este. Que el pozo dé a un tubo de lava es HIPÓTESIS (vacío de extensión desconocida)."
+inherit_from: moon_global
+inherit_dims: [pressure, precip, ndvi, soil_moisture]
+values:
+  t_mean: {unit: K, status: pending, source: "", note: "Horvath et al. 2022 (GRL, doi:10.1029/2022GL099710) modela ~290 K en la sombra bajo el saliente: es temperatura DENTRO del pozo, no comparable con la media anual del AIRE de POWER (revisión 2026-11-14). Comparar solo con una medición dentro de una cueva (caja de campo)."}
+  t_range_diurnal: {unit: K, status: pending, source: "", note: "Horvath et al. 2022: casi constante en la sombra; el piso iluminado supera 420 K de día. No hay una amplitud única publicada."}
+  cave_lava_tube: {value: 1, unit: "1", status: literature, source: "Robinson et al. 2012, PSS (vacíos bajo el piso de los pozos); Horvath et al. 2022", ref: "https://doi.org/10.1016/j.pss.2012.05.008", retrieved: "2026-11-14", note: "Pozo de colapso con vacío bajo el saliente; extensión lateral desconocida."}
+  mineral_classes: {unit: "1", classes: [basalto], status: literature, source: "Robinson et al. 2012, PSS (capas de basalto de mare de 3–14 m en las paredes)", ref: "https://doi.org/10.1016/j.pss.2012.05.008", retrieved: "2026-11-14", note: "Leído solo en un extracto del resumen."}

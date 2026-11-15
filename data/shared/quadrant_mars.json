@@ -1,0 +1,222 @@
+{
+ "generated": "2026-11-14T16:48:37",
+ "target": "mars_global",
+ "dims": [
+  "t_mean",
+  "t_range_diurnal",
+  "precip",
+  "soil_moisture"
+ ],
+ "y_threshold": 8.594054067414728,
+ "y_threshold_rule": "percentil 75 del IFA de la muestra terrestre al azar",
+ "x_threshold": 5.0,
+ "x_status": "estimated",
+ "x_source": "Votación del equipo con fotos (0–10)",
+ "sites": {
+  "siloli": {
+   "ifa": 24.87316394056853,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "laguna_colorada": {
+   "ifa": 10.673304854302986,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "coipasa": {
+   "ifa": 4.276464633500052,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "poopo": {
+   "ifa": 1.9310796829104635,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "sajama": {
+   "ifa": 4.489761749647495,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "valle_de_la_luna": {
+   "ifa": 0.933707291022889,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "valle_de_las_animas": {
+   "ifa": 0.9737336032138997,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "canones_de_palca": {
+   "ifa": 0.9737336032138997,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "chacaltaya": {
+   "ifa": 1.2206663050732804,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "torotoro_umajalanta": {
+   "ifa": 2.464222043784772,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "cordillera_real_glaciar_roca": {
+   "ifa": 0.9150495392655045,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "sol_de_manana": {
+   "ifa": 10.931202506575636,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "laguna_verde_licancabur": {
+   "ifa": 28.836054032139057,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "uyuni_incahuasi": {
+   "ifa": 3.0215244102150525,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "atacama_yungay": {
+   "ifa": 39.996995444557996,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "dry_valleys_wright": {
+   "ifa": 11.643182645284405,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "mauna_kea_puu_hiwahine": {
+   "ifa": 0.33630819373856013,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "cinder_lake_az": {
+   "ifa": 3.2561846138749093,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "askja_iceland": {
+   "ifa": 0.9048062875323014,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "lava_beds_ca": {
+   "ifa": 0.9759579091034577,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "etna_italy": {
+   "ifa": 1.0677914661133678,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "haughton_devon": {
+   "ifa": 3.3780431130244994,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "rio_tinto": {
+   "ifa": 1.2935738451890646,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "amazonia_manaus": {
+   "ifa": 0.21004639508309245,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "pantanal": {
+   "ifa": 0.9862231054611902,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "ciudad_santa_cruz": {
+   "ifa": 1.085460857282898,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "namib_sossusvlei": {
+   "ifa": 24.38877915787182,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "campo_piedra_pomez": {
+   "ifa": 1.7406964410136208,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "payunia": {
+   "ifa": 3.200633836761197,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "pinacate": {
+   "ifa": 10.52375194937638,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "teide": {
+   "ifa": 2.295764926976801,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "lanzarote": {
+   "ifa": 8.053273278346767,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "svalbard_bockfjorden": {
+   "ifa": 1.4541944752913674,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "ries": {
+   "ifa": 0.7122547373693952,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "vatnajokull_kverkfjoll": {
+   "ifa": 1.0498676288676627,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "danakil_dallol": {
+   "ifa": 5.0777250130332465,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "desierto_blanco": {
+   "ifa": 34.47042212553735,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "wadi_rum": {
+   "ifa": 21.210683028055097,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "dasht_e_lut": {
+   "ifa": 21.68972423036962,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "capadocia": {
+   "ifa": 1.956461683964845,
+   "visual": null,
+   "class": "sin_votos"
+  },
+  "bromo": {
+   "ifa": 0.2749364099244846,
+   "visual": null,
+   "class": "sin_votos"
+  }
+ }
+}

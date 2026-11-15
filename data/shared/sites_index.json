@@ -1,0 +1,658 @@
+{
+ "generated": "2026-11-14T19:30:29-06:00",
+ "sites": [
+  {
+   "id": "siloli",
+   "name": "Desierto de Siloli – Árbol de Piedra",
+   "country": "Bolivia",
+   "region": "reserva_eduardo_avaroa",
+   "lat": -22.06,
+   "lon": -67.8833,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [],
+   "processed": true
+  },
+  {
+   "id": "laguna_colorada",
+   "name": "Laguna Colorada – orilla (mirador)",
+   "country": "Bolivia",
+   "region": "reserva_eduardo_avaroa",
+   "lat": -22.1704,
+   "lon": -67.8046,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [
+    "https://en.wikipedia.org/wiki/Laguna_Colorada"
+   ],
+   "processed": true
+  },
+  {
+   "id": "coipasa",
+   "name": "Salar de Coipasa",
+   "country": "Bolivia",
+   "region": "altiplano_oruro",
+   "lat": -19.3833,
+   "lon": -68.1667,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [
+    "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_6/b_fdi_43-44/010005592.pdf",
+    "https://pubs.usgs.gov/publication/70012613"
+   ],
+   "processed": true
+  },
+  {
+   "id": "poopo",
+   "name": "Lago Poopó – lecho",
+   "country": "Bolivia",
+   "region": "altiplano_oruro",
+   "lat": -18.55,
+   "lon": -67.083,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [],
+   "processed": true
+  },
+  {
+   "id": "uturuncu",
+   "name": "Volcán Uturuncu – falda baja",
+   "country": "Bolivia",
+   "region": "sur_lipez",
+   "lat": null,
+   "lon": null,
+   "coord_status": "pending",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [],
+   "processed": false
+  },
+  {
+   "id": "sajama",
+   "name": "Parque Nacional Sajama – puna al pie del volcán",
+   "country": "Bolivia",
+   "region": "sajama",
+   "lat": -18.0833,
+   "lon": -68.9167,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [
+    "https://repositorio.umsa.bo/xmlui/handle/123456789/35517"
+   ],
+   "processed": true
+  },
+  {
+   "id": "valle_de_la_luna",
+   "name": "Valle de la Luna (La Paz)",
+   "country": "Bolivia",
+   "region": "la_paz",
+   "lat": -16.5672,
+   "lon": -68.0944,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [],
+   "processed": true
+  },
+  {
+   "id": "valle_de_las_animas",
+   "name": "Valle de las Ánimas (La Paz)",
+   "country": "Bolivia",
+   "region": "la_paz",
+   "lat": -16.5286,
+   "lon": -68.0264,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [],
+   "processed": true
+  },
+  {
+   "id": "canones_de_palca",
+   "name": "Cañón de Palca",
+   "country": "Bolivia",
+   "region": "la_paz",
+   "lat": -16.5651,
+   "lon": -67.9715,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [],
+   "processed": true
+  },
+  {
+   "id": "chacaltaya",
+   "name": "Chacaltaya – estación GAW (5240 m)",
+   "country": "Bolivia",
+   "region": "la_paz",
+   "lat": -16.3505,
+   "lon": -68.1314,
+   "coord_status": "literature",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [
+    "https://acp.copernicus.org/articles/24/2837/2024/acp-24-2837-2024.html"
+   ],
+   "processed": true
+  },
+  {
+   "id": "torotoro_umajalanta",
+   "name": "Caverna de Umajalanta (Torotoro)",
+   "country": "Bolivia",
+   "region": "torotoro",
+   "lat": -18.1145,
+   "lon": -65.8115,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [],
+   "processed": true
+  },
+  {
+   "id": "cordillera_real_glaciar_roca",
+   "name": "Glaciar de roca de Pico Austria (Cordillera Real)",
+   "country": "Bolivia",
+   "region": "cordillera_real",
+   "lat": -16.1931,
+   "lon": -68.2647,
+   "coord_status": "literature",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [
+    "https://doi.org/10.1657/AAAR0014-029"
+   ],
+   "processed": true
+  },
+  {
+   "id": "sol_de_manana",
+   "name": "Sol de Mañana – campo geotérmico",
+   "country": "Bolivia",
+   "region": "reserva_eduardo_avaroa",
+   "lat": -22.426,
+   "lon": -67.76,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [
+    "https://doi.org/10.1038/ncomms13554"
+   ],
+   "processed": true
+  },
+  {
+   "id": "laguna_verde_licancabur",
+   "name": "Laguna Verde – Volcán Licancabur",
+   "country": "Bolivia",
+   "region": "reserva_eduardo_avaroa",
+   "lat": -22.795,
+   "lon": -67.825,
+   "coord_status": "estimated",
+   "role": "control_pos",
+   "analog_for": [
+    "mars"
+   ],
+   "refs": [
+    "https://doi.org/10.1029/2008JG000818",
+    "https://astrobiology.nasa.gov/news/2008-high-lakes-project-from-early-mars-to-todays-earth/"
+   ],
+   "processed": true
+  },
+  {
+   "id": "uyuni_incahuasi",
+   "name": "Salar de Uyuni – Isla Incahuasi",
+   "country": "Bolivia",
+   "region": "salar_de_uyuni",
+   "lat": -20.2417,
+   "lon": -67.6197,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [
+    "https://meetingorganizer.copernicus.org/EPSC2024/EPSC2024-483.html"
+   ],
+   "processed": true
+  },
+  {
+   "id": "atacama_yungay",
+   "name": "Desierto de Atacama – Yungay",
+   "country": "Chile",
+   "region": "atacama",
+   "lat": -24.0786,
+   "lon": -69.9431,
+   "coord_status": "estimated",
+   "role": "control_pos",
+   "analog_for": [
+    "mars"
+   ],
+   "refs": [
+    "https://doi.org/10.1126/science.1089143"
+   ],
+   "processed": true
+  },
+  {
+   "id": "dry_valleys_wright",
+   "name": "Valles Secos de McMurdo – Wright Valley",
+   "country": "Antártida",
+   "region": "mcmurdo_dry_valleys",
+   "lat": -77.5,
+   "lon": 162.0,
+   "coord_status": "estimated",
+   "role": "control_pos",
+   "analog_for": [
+    "mars"
+   ],
+   "refs": [
+    "https://doi.org/10.1016/j.epsl.2022.117582",
+    "https://doi.org/10.2138/am-2022-8381"
+   ],
+   "processed": true
+  },
+  {
+   "id": "mauna_kea_puu_hiwahine",
+   "name": "Mauna Kea – Pu'u Hiwahine",
+   "country": "Estados Unidos",
+   "region": "hawai",
+   "lat": 19.7609,
+   "lon": -155.4707,
+   "coord_status": "literature",
+   "role": "control_pos",
+   "analog_for": [
+    "moon",
+    "mars"
+   ],
+   "refs": [
+    "https://ntrs.nasa.gov/citations/20140008708"
+   ],
+   "processed": true
+  },
+  {
+   "id": "cinder_lake_az",
+   "name": "Cinder Lake – campo de cráteres",
+   "country": "Estados Unidos",
+   "region": "arizona",
+   "lat": 35.319732,
+   "lon": -111.517103,
+   "coord_status": "estimated",
+   "role": "control_pos",
+   "analog_for": [
+    "moon"
+   ],
+   "refs": [
+    "https://www.usgs.gov/node/279552"
+   ],
+   "processed": true
+  },
+  {
+   "id": "askja_iceland",
+   "name": "Askja – Dyngjufjöll",
+   "country": "Islandia",
+   "region": "islandia",
+   "lat": 65.03,
+   "lon": -16.75,
+   "coord_status": "estimated",
+   "role": "control_pos",
+   "analog_for": [
+    "moon",
+    "mars"
+   ],
+   "refs": [
+    "https://doi.org/10.1016/j.jvolgeores.2013.02.009",
+    "https://www.nasa.gov/wp-content/uploads/static/history/alsj/AstronautGeologyTraining.pdf"
+   ],
+   "processed": true
+  },
+  {
+   "id": "lava_beds_ca",
+   "name": "Lava Beds – Medicine Lake",
+   "country": "Estados Unidos",
+   "region": "california",
+   "lat": 41.711889,
+   "lon": -121.505535,
+   "coord_status": "estimated",
+   "role": "control_pos",
+   "analog_for": [
+    "mars"
+   ],
+   "refs": [
+    "https://www.nasa.gov/feature/ames/braille"
+   ],
+   "processed": true
+  },
+  {
+   "id": "etna_italy",
+   "name": "Monte Etna",
+   "country": "Italia",
+   "region": "sicilia",
+   "lat": 37.75,
+   "lon": 15.0,
+   "coord_status": "estimated",
+   "role": "control_pos",
+   "analog_for": [
+    "moon"
+   ],
+   "refs": [
+    "https://www.dlr.de/en/research-and-transfer/projects-and-missions/arches/arches-space-analogue-demonstration-mission"
+   ],
+   "processed": true
+  },
+  {
+   "id": "haughton_devon",
+   "name": "Cráter Haughton – estación HMP (isla Devon)",
+   "country": "Canadá",
+   "region": "isla_devon",
+   "lat": 75.4333,
+   "lon": -89.8667,
+   "coord_status": "literature",
+   "role": "control_pos",
+   "analog_for": [
+    "moon",
+    "mars"
+   ],
+   "refs": [
+    "https://www.marsinstitute.no/hmp",
+    "https://ntrs.nasa.gov/citations/20050170975"
+   ],
+   "processed": true
+  },
+  {
+   "id": "rio_tinto",
+   "name": "Río Tinto – Peña de Hierro (cabecera)",
+   "country": "España",
+   "region": "huelva",
+   "lat": 37.7207,
+   "lon": -6.5547,
+   "coord_status": "estimated",
+   "role": "control_pos",
+   "analog_for": [
+    "mars"
+   ],
+   "refs": [
+    "https://doi.org/10.1016/j.epsl.2005.09.043"
+   ],
+   "processed": true
+  },
+  {
+   "id": "amazonia_manaus",
+   "name": "Amazonía – torre K34 (Reserva Cuieiras)",
+   "country": "Brasil",
+   "region": "amazonas",
+   "lat": -2.6091,
+   "lon": -60.2093,
+   "coord_status": "literature",
+   "role": "control_neg",
+   "analog_for": [],
+   "refs": [],
+   "processed": true
+  },
+  {
+   "id": "pantanal",
+   "name": "Pantanal",
+   "country": "Brasil",
+   "region": "pantanal",
+   "lat": -17.4,
+   "lon": -57.5,
+   "coord_status": "estimated",
+   "role": "control_neg",
+   "analog_for": [],
+   "refs": [],
+   "processed": true
+  },
+  {
+   "id": "ciudad_santa_cruz",
+   "name": "Santa Cruz de la Sierra – Plaza 24 de Septiembre",
+   "country": "Bolivia",
+   "region": "santa_cruz",
+   "lat": -17.7833,
+   "lon": -63.1821,
+   "coord_status": "estimated",
+   "role": "control_neg",
+   "analog_for": [],
+   "refs": [],
+   "processed": true
+  },
+  {
+   "id": "namib_sossusvlei",
+   "name": "Namib – dunas de Sossusvlei",
+   "country": "Namibia",
+   "region": "namibia",
+   "lat": -24.72739,
+   "lon": 15.342391,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [],
+   "processed": true
+  },
+  {
+   "id": "pampas_la_joya",
+   "name": "Pampas de La Joya",
+   "country": "Perú",
+   "region": "arequipa",
+   "lat": null,
+   "lon": null,
+   "coord_status": "pending",
+   "role": "control_pos",
+   "analog_for": [
+    "mars"
+   ],
+   "refs": [
+    "https://doi.org/10.1016/j.gca.2011.01.017"
+   ],
+   "processed": false
+  },
+  {
+   "id": "campo_piedra_pomez",
+   "name": "Campo de Piedra Pómez",
+   "country": "Argentina",
+   "region": "catamarca",
+   "lat": -26.6597,
+   "lon": -67.5142,
+   "coord_status": "estimated",
+   "role": "control_pos",
+   "analog_for": [
+    "mars"
+   ],
+   "refs": [
+    "https://doi.org/10.1130/B30916.1",
+    "https://doi.org/10.1016/j.aeolia.2015.01.007"
+   ],
+   "processed": true
+  },
+  {
+   "id": "payunia",
+   "name": "La Payunia – Payún Matrú",
+   "country": "Argentina",
+   "region": "mendoza",
+   "lat": -36.422,
+   "lon": -69.241,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [],
+   "processed": true
+  },
+  {
+   "id": "pinacate",
+   "name": "El Pinacate",
+   "country": "México",
+   "region": "sonora",
+   "lat": 31.77,
+   "lon": -113.49,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [],
+   "processed": true
+  },
+  {
+   "id": "teide",
+   "name": "Parque Nacional del Teide",
+   "country": "España",
+   "region": "tenerife",
+   "lat": 28.2731,
+   "lon": -16.6394,
+   "coord_status": "estimated",
+   "role": "control_pos",
+   "analog_for": [
+    "moon"
+   ],
+   "refs": [
+    "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Rovers_drive_through_Tenerife_darkness"
+   ],
+   "processed": true
+  },
+  {
+   "id": "lanzarote",
+   "name": "Lanzarote – Cueva de los Verdes (tubo de La Corona)",
+   "country": "España",
+   "region": "lanzarote",
+   "lat": 29.1611,
+   "lon": -13.4389,
+   "coord_status": "estimated",
+   "role": "control_pos",
+   "analog_for": [
+    "moon",
+    "mars"
+   ],
+   "refs": [
+    "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/CAVES_and_PANGAEA/What_is_PANGAEA"
+   ],
+   "processed": true
+  },
+  {
+   "id": "svalbard_bockfjorden",
+   "name": "Svalbard – Sverrefjellet (Bockfjorden)",
+   "country": "Noruega",
+   "region": "svalbard",
+   "lat": 79.4317,
+   "lon": 13.305,
+   "coord_status": "estimated",
+   "role": "control_pos",
+   "analog_for": [
+    "mars"
+   ],
+   "refs": [
+    "https://astrobiology.nasa.gov/nai/annual-reports/2010/ciw/project-6-application-of-laboratory-experimentation-to-flight-instrument-testing/index.html"
+   ],
+   "processed": true
+  },
+  {
+   "id": "ries",
+   "name": "Cráter de Ries – Nördlingen",
+   "country": "Alemania",
+   "region": "baviera",
+   "lat": 48.8833,
+   "lon": 10.5667,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [
+    "https://www.nasa.gov/history/alsj/a14/a14ries-News3.html"
+   ],
+   "processed": true
+  },
+  {
+   "id": "vatnajokull_kverkfjoll",
+   "name": "Vatnajökull – Kverkfjöll (margen norte)",
+   "country": "Islandia",
+   "region": "vatnajokull",
+   "lat": 64.65,
+   "lon": -16.7167,
+   "coord_status": "estimated",
+   "role": "control_pos",
+   "analog_for": [
+    "mars"
+   ],
+   "refs": [
+    "https://doi.org/10.1016/j.jvolgeores.2013.02.009"
+   ],
+   "processed": true
+  },
+  {
+   "id": "danakil_dallol",
+   "name": "Dallol (Depresión de Danakil)",
+   "country": "Etiopía",
+   "region": "afar",
+   "lat": 14.2386,
+   "lon": 40.2936,
+   "coord_status": "estimated",
+   "role": "control_pos",
+   "analog_for": [
+    "mars"
+   ],
+   "refs": [
+    "https://doi.org/10.1089/ast.2018.1926"
+   ],
+   "processed": true
+  },
+  {
+   "id": "desierto_blanco",
+   "name": "Desierto Blanco (Farafra)",
+   "country": "Egipto",
+   "region": "farafra",
+   "lat": 27.2773,
+   "lon": 28.2004,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [],
+   "processed": true
+  },
+  {
+   "id": "wadi_rum",
+   "name": "Wadi Rum",
+   "country": "Jordania",
+   "region": "aqaba",
+   "lat": 29.5931,
+   "lon": 35.42,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [],
+   "processed": true
+  },
+  {
+   "id": "dasht_e_lut",
+   "name": "Dasht-e Lut",
+   "country": "Irán",
+   "region": "kerman",
+   "lat": 30.605,
+   "lon": 59.0678,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [],
+   "processed": true
+  },
+  {
+   "id": "capadocia",
+   "name": "Capadocia – Göreme",
+   "country": "Turquía",
+   "region": "nevsehir",
+   "lat": 38.6528,
+   "lon": 34.8631,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [],
+   "processed": true
+  },
+  {
+   "id": "bromo",
+   "name": "Monte Bromo",
+   "country": "Indonesia",
+   "region": "java_oriental",
+   "lat": -7.9417,
+   "lon": 112.95,
+   "coord_status": "estimated",
+   "role": "candidate",
+   "analog_for": [],
+   "refs": [],
+   "processed": true
+  }
+ ]
+}

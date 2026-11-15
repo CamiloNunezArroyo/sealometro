@@ -1,0 +1,14 @@
+# Hecho con asistencia de IA (Claude) — Seal Hackathon Team, NASA Space Apps Sucre 2026
+# Fuentes buscadas y comprobadas el 2026-11-14 (Claude Fable 5.2). Ver docs/VALORES_A_VERIFICAR.md.
+id: moon_shackleton_degerlache
+body: moon
+name: "Cresta Shackleton–de Gerlache"
+group: polo_sur
+gravity: {value: 1.62, unit: "m/s²", status: literature, source: "NASA NSSDC Moon Fact Sheet", ref: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html", retrieved: "2026-11-14"}
+note: "Williams et al. 2019 (JGR Planets, doi:10.1029/2019JE006028, sec. 4.2, leído por el equipo): en la cresta 'Connecting Ridge C2' (Gläser et al. 2018) la temperatura de SUPERFICIE es ~200 K en verano, con sombras breves (~20–22 h) y alternancia de luz y sombra en invierno. No se usa como t_mean (es superficie y solo verano; la Tierra se compara con aire). Candidata clásica a base permanente por su iluminación CASI continua: Bussey et al. 2010, Icarus, doi:10.1016/j.icarus.2010.03.028; Mazarico et al. 2011, Icarus, doi:10.1016/j.icarus.2010.10.030 (un punto cerca del borde de Shackleton recibe sol continuo ~240 días al año; mayor oscuridad total ~1,5 días)."
+inherit_from: moon_global
+inherit_dims: [pressure, precip, ndvi, soil_moisture]
+values:
+  t_mean: {unit: K, status: pending, source: "", note: "Candidata: Williams et al. 2019, JGR Planets (Diviner polar), doi:10.1029/2019JE006028."}
+  slope_p50_100m: {unit: grados, status: pending, source: "", note: "Candidata: Barker et al. 2021, PSS (mapas LOLA del polo sur), doi:10.1016/j.pss.2020.105119."}
+  mineral_classes: {unit: "1", classes: [anortosita], status: estimated, source: "Ohtake et al. 2009, Nature (corteza de tierras altas rica en plagioclasa; estudio global)", ref: "https://doi.org/10.1038/nature08317", retrieved: "2026-11-14", note: "Generalización de tierras altas, no un estudio de este sitio."}

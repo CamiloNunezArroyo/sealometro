@@ -1,0 +1,220 @@
+{
+  "id": "laguna_verde_licancabur",
+  "name": "Laguna Verde — Volcán Licancabur",
+  "country": "Bolivia",
+  "region": "Potosí, Sur Lípez",
+  "coords": {
+    "lat": -22.795,
+    "lon": -67.825
+  },
+  "biome": "volcanic",
+  "analogFor": [
+    "mars"
+  ],
+  "analogRationale": {
+    "text": "Laguna de altura al pie del volcán Licancabur (frontera Bolivia-Chile), con frío, aridez y alta radiación UV. Fuentes SECUNDARIAS (Wikipedia, que a su vez cita trabajos de Cabrol et al. 2003 y Cabrol, Grin & Hock 2007) la describen como un lugar con condiciones comparables a antiguos lagos marcianos. PENDIENTE: verificar las referencias primarias y añadir su DOI.",
+    "refs": [
+      "https://en.wikipedia.org/wiki/Licancabur",
+      "https://en.wikipedia.org/wiki/Laguna_Verde_(Bolivia)"
+    ]
+  },
+  "terrain": {
+    "file": "data/terrain/laguna_verde_height.bin",
+    "width": 256,
+    "height": 256,
+    "metersPerPixel": 23.4375,
+    "minElevationM": 4320,
+    "maxElevationM": 4660.704,
+    "status": "modeled",
+    "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data; recorte de 6000 m x 6000 m remuestreado a 256x256",
+    "note": "Es un modelo digital de SUPERFICIE (incluye vegetación y construcciones) y tiene ruido vertical de algunos metros; en terreno muy plano el ruido infla la pendiente. El recorte se ajusta al píxel entero más cercano (escala ±1 %).",
+    "slopeMean": {
+      "value": 4.614,
+      "unit": "°",
+      "status": "derived",
+      "source": "Calculada por este proyecto sobre el DEM (Copernicus DEM GLO-30 (ESA), AWS Open Data)",
+      "retrieved": "2026-11-12",
+      "note": "Incluye el ruido del DEM; compárala con la de otros sitios solo a igual resolución."
+    }
+  },
+  "elevation": {
+    "value": 4320,
+    "unit": "m",
+    "status": "modeled",
+    "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data, píxel central del recorte",
+    "retrieved": "2026-11-12",
+    "note": "Elevación del punto central (coordenadas del sitio), no del nivel medio del salar."
+  },
+  "climate": {
+    "meanTemp": {
+      "value": 277.37,
+      "unit": "K",
+      "status": "derived",
+      "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M, ajustada por elevación",
+      "retrieved": "2026-11-12",
+      "ref": "https://power.larc.nasa.gov/docs/",
+      "note": "Corregido por elevación: la celda de POWER está a 2881 m y el sitio (DEM) a 4320 m (+1439 m). Valor POWER sin corregir: 286.72 K. Método aproximado: gradiente estándar de 6,5 K/km; no considera inversiones térmicas ni efectos locales."
+    },
+    "dailyRange": {
+      "value": 39.57,
+      "unit": "K",
+      "status": "derived",
+      "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_MAX / T2M_MIN, rango ajustado por elevación",
+      "retrieved": "2026-11-12",
+      "ref": "https://power.larc.nasa.gov/docs/",
+      "range": [
+        257.06,
+        296.63
+      ],
+      "note": "Corregido por elevación: la celda de POWER está a 2881 m y el sitio (DEM) a 4320 m (+1439 m). La amplitud (valor) no cambia; el rango [mínima, máxima] se desplaza -9.35 K. Método aproximado: gradiente estándar de 6,5 K/km; no considera inversiones térmicas ni efectos locales."
+    },
+    "pressure": {
+      "value": 59.91,
+      "unit": "kPa",
+      "status": "derived",
+      "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS, ajustada por elevación (atmósfera estándar ISA)",
+      "retrieved": "2026-11-12",
+      "ref": "https://power.larc.nasa.gov/docs/",
+      "note": "Corregido por elevación: la celda de POWER está a 2881 m y el sitio (DEM) a 4320 m (+1439 m). Valor POWER sin corregir: 72.14 kPa (factor 0.831)."
+    },
+    "humidity": {
+      "value": 18.3,
+      "unit": "%",
+      "status": "modeled",
+      "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+      "retrieved": "2026-11-12",
+      "ref": "https://power.larc.nasa.gov/docs/",
+      "note": "Es un valor de celda de rejilla, no una medición en el punto exacto."
+    },
+    "wind": {
+      "value": 3.87,
+      "unit": "m/s",
+      "status": "modeled",
+      "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+      "retrieved": "2026-11-12",
+      "ref": "https://power.larc.nasa.gov/docs/",
+      "note": "Es un valor de celda de rejilla, no una medición en el punto exacto."
+    },
+    "albedo": {
+      "value": 0.2,
+      "unit": "-",
+      "status": "modeled",
+      "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SRF_ALB",
+      "retrieved": "2026-11-12",
+      "ref": "https://power.larc.nasa.gov/docs/",
+      "note": "Es un valor de celda de rejilla, no una medición en el punto exacto."
+    },
+    "monthly": {
+      "tMaxC": [
+        23.48,
+        23.31,
+        21.62,
+        20.36,
+        18.42,
+        17.06,
+        18.45,
+        20.38,
+        18.46,
+        21.8,
+        21.55,
+        22.58
+      ],
+      "tMinC": [
+        -4.08,
+        -4.63,
+        -7.32,
+        -9.3,
+        -14.53,
+        -13.81,
+        -16.09,
+        -14.68,
+        -13.19,
+        -11.01,
+        -9.11,
+        -7.35
+      ],
+      "status": "derived",
+      "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetros T2M_MAX / T2M_MIN (climatología mensual), ajustada por elevación",
+      "note": "Corregido por elevación: la celda de POWER está a 2881 m y el sitio (DEM) a 4320 m (+1439 m). Los valores mensuales se desplazan -9.35 °C. Método aproximado: gradiente estándar de 6,5 K/km; no considera inversiones térmicas ni efectos locales."
+    }
+  },
+  "radiation": {
+    "solarSurface": {
+      "value": 7.191,
+      "unit": "kWh/m²/día",
+      "status": "modeled",
+      "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_SW_DWN",
+      "retrieved": "2026-11-12",
+      "ref": "https://power.larc.nasa.gov/docs/",
+      "note": "Promedio anual, cielo real. Es un valor de celda de rejilla, no una medición en el punto exacto."
+    },
+    "uvIndex": {
+      "value": 2.85,
+      "unit": "índice UV",
+      "status": "modeled",
+      "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+      "retrieved": "2026-11-12",
+      "ref": "https://power.larc.nasa.gov/docs/",
+      "note": "Es un valor de celda de rejilla, no una medición en el punto exacto."
+    }
+  },
+  "soil": {
+    "claySandSilt": {
+      "value": null,
+      "unit": "%",
+      "status": "pending",
+      "source": "Pendiente: aún no hay fuente de suelo en el pipeline (candidata: ISRIC SoilGrids). Este dato NO lo trae `npm run data:*`."
+    },
+    "ph": {
+      "value": null,
+      "unit": "pH",
+      "status": "pending",
+      "source": "Pendiente: aún no hay fuente de suelo en el pipeline (candidata: ISRIC SoilGrids). Este dato NO lo trae `npm run data:*`."
+    },
+    "minerals": []
+  },
+  "water": {
+    "precipitation": {
+      "value": 29.22,
+      "unit": "mm/año",
+      "status": "modeled",
+      "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+      "retrieved": "2026-11-12",
+      "ref": "https://power.larc.nasa.gov/docs/",
+      "note": "Promedio diario anual (mm/día) multiplicado por 365,25. Es un valor de celda de rejilla, no una medición en el punto exacto."
+    },
+    "note": "Información pendiente de referencia.",
+    "surface": {
+      "value": 4320,
+      "unit": "m",
+      "status": "derived",
+      "source": "Derivada por este proyecto del Copernicus DEM GLO-30 (ESA), AWS Open Data: meseta plana de 7140 píxeles (~3.9 km² dentro del recorte) con la misma cota exacta, que corresponde a un cuerpo de agua aplanado por el modelo",
+      "retrieved": "2026-11-12",
+      "note": "Se detecta por la forma del DEM, no por una imagen satelital ni una medición del nivel. El borde de la máscara tiene la resolución del DEM (~30 m)."
+    },
+    "surfaces": [
+      {
+        "value": 4320,
+        "unit": "m",
+        "status": "derived",
+        "source": "Derivada por este proyecto del Copernicus DEM GLO-30 (ESA), AWS Open Data: meseta plana de 7140 píxeles (~3.9 km² dentro del recorte) con la misma cota exacta, que corresponde a un cuerpo de agua aplanado por el modelo",
+        "retrieved": "2026-11-12",
+        "note": "Se detecta por la forma del DEM, no por una imagen satelital ni una medición del nivel. El borde de la máscara tiene la resolución del DEM (~30 m)."
+      },
+      {
+        "value": 4321.5,
+        "unit": "m",
+        "status": "derived",
+        "source": "Derivada por este proyecto del Copernicus DEM GLO-30 (ESA), AWS Open Data: meseta plana de 6690 píxeles (~3.7 km² dentro del recorte) con la misma cota exacta, que corresponde a un cuerpo de agua aplanado por el modelo",
+        "retrieved": "2026-11-12",
+        "note": "Se detecta por la forma del DEM, no por una imagen satelital ni una medición del nivel. El borde de la máscara tiene la resolución del DEM (~30 m)."
+      }
+    ]
+  },
+  "gameplay": {
+    "sampleSeed": 20260202,
+    "sampleCount": 8,
+    "missionSamplesRequired": 4,
+    "sampleStatus": "gameplay"
+  }
+}

@@ -1,0 +1,363 @@
+{
+ "source_file": "ejemplo_sucre.json",
+ "example": true,
+ "lat": -19.04,
+ "lon": -65.26,
+ "warnings": [
+  "ESTE ARCHIVO ES UN EJEMPLO INVENTADO (\"ejemplo\": true): no son mediciones reales.",
+  "La humedad medida es de un momento; el satélite da el promedio del año.",
+  "UV sin calibrar: confianza baja.",
+  "El sensor de luz está saturado: no se usa."
+ ],
+ "confidence": {
+  "pressure": "alta",
+  "rh": "media",
+  "uv_index": "baja"
+ },
+ "comparison": [
+  {
+   "id": "pressure",
+   "satelite": 73.72,
+   "medido": 73.52,
+   "unit": "kPa"
+  },
+  {
+   "id": "rh",
+   "satelite": 65.82,
+   "medido": 38.0,
+   "unit": "%",
+   "nota": "satélite = promedio anual; medido = un momento"
+  },
+  {
+   "id": "uv_index",
+   "satelite": 2.57,
+   "medido": 8.2,
+   "unit": "1",
+   "nota": "POWER = promedio de 24 h; caja = lectura puntual (y sin calibrar)"
+  },
+  {
+   "id": "temperatura",
+   "satelite": 287.38,
+   "medido": 294.55,
+   "unit": "K",
+   "nota": "no es la misma magnitud: promedio anual vs un momento"
+  },
+  {
+   "id": "elevacion",
+   "satelite": 2794.7,
+   "medido": 2810.0,
+   "unit": "m",
+   "nota": "DEM GLO-30 vs GPS (el barómetro es derivado)"
+  }
+ ],
+ "results": [
+  {
+   "target_id": "moon_lava_tube_pit",
+   "ifa": 28.498074172381003,
+   "coverage": 0.2692307692307692,
+   "limiting": "precip",
+   "story": {
+    "explorador": "Punto de campo ejemplo_sucre se parece a la Luna en la temperatura. En la temperatura, se parece más a la Luna que 92 de cada 100 lugares de la Tierra. No se parece en la lluvia. En la Luna pesarías solo 16 de cada 100 partes de lo que pesas aquí. Y no hay aire para respirar.",
+    "cadete": "Parecido físico con Pozo de Mare Tranquillitatis (hábitat subterráneo) (IFA): 28 de 100, calculado con datos para el 27 % de las comparaciones (el resto falta y no se cuenta). Se parece en temperatura media: aquí 287 K; en la Luna 290 K. Lo que menos se parece: lluvia anual (aquí 573 mm/año; en la Luna 0 mm/año). En temperatura media, recorre el 41 % del camino entre un lugar típico de la Tierra y la Luna. Su mejor uso posible según el motor: buscar agua y recursos (ISRU) (43/100). La Tierra no puede imitar la gravedad: en la Luna es el 16 % de la terrestre.",
+    "cientifico": "IFA = 28.5/100 contra Pozo de Mare Tranquillitatis (hábitat subterráneo) (núcleo gaussiano, dimensiones analogables), cobertura 27 % del peso. Por dimensión — t_mean: s = 0.99 (sitio 287 K [modeled], objetivo 290 K [literature]), PO 41 %, percentil terrestre 92; pressure: s = 0.00 (sitio 73.5 kPa [measured], objetivo 3e-13 kPa [literature]), PO 1 %, percentil terrestre 92 [brecha, fuera del IFA]; precip: s = 0.00 (sitio 573 mm/año [modeled], objetivo 0 mm/año [estimated]), PO 0 %, percentil terrestre 49; soil_moisture: s = 0.01 (sitio 0.48 [modeled], objetivo 0 [estimated]), PO 21 %, percentil terrestre 62. Excluidas por falta de datos (pending): t_range_diurnal, rh, wind, albedo, slope_p50_100m, slope_p90_100m, roughness_100m, ndvi, cave_lava_tube, mineral_classes. Factor limitante: precip. Perfiles: rover — (cobertura 0 %), isru 43, astrobio — (cobertura 36 %), habitat — (cobertura 17 %), instrumentos — (cobertura 0 %). Límites: el clima de la Tierra viene de NASA POWER (celdas de ~50 km), el relieve de Copernicus GLO-30 (modelo de superficie); 2 de los 3 valores del objetivo usados son 'estimated'. Pesos y tolerancias son decisiones de diseño."
+   }
+  },
+  {
+   "target_id": "mars_jezero",
+   "ifa": 20.895826042430464,
+   "coverage": 0.38461538461538464,
+   "limiting": "precip",
+   "story": {
+    "explorador": "Punto de campo ejemplo_sucre se parece a Marte en el viento y en el color claro u oscuro del suelo. En el viento, se parece más a Marte que 100 de cada 100 lugares de la Tierra. No se parece en la lluvia. En Marte pesarías solo 38 de cada 100 partes de lo que pesas aquí. Y no podrías respirar: allá hay 95,1 % CO₂, 2,59 % nitrógeno, 1,94 % argón, 0,16 % oxígeno.",
+    "cadete": "Parecido físico con Cráter Jezero (Perseverance) (IFA): 21 de 100, calculado con datos para el 38 % de las comparaciones (el resto falta y no se cuenta). Se parece en viento medio a 10 m: aquí 3.2 m/s; en Marte 3.2 m/s. Se parece en albedo de la superficie: aquí 0.16; en Marte 0.25. Lo que menos se parece: lluvia anual (aquí 573 mm/año; en Marte 0 mm/año). En viento medio a 10 m, recorre el 100 % del camino entre un lugar típico de la Tierra y Marte. Su mejor uso posible según el motor: buscar agua y recursos (ISRU) (1/100). La Tierra no puede imitar la gravedad: en Marte es el 38 % de la terrestre.",
+    "cientifico": "IFA = 20.9/100 contra Cráter Jezero (Perseverance) (núcleo gaussiano, dimensiones analogables), cobertura 38 % del peso. Por dimensión — t_mean: s = 0.01 (sitio 287 K [modeled], objetivo 217 K (rango 209–225) [estimated]), PO 0 %, percentil terrestre 47; pressure: s = 0.00 (sitio 73.5 kPa [measured], objetivo 0.69 kPa (rango 0.625–0.761) [derived]), PO 6 %, percentil terrestre 92 [brecha, fuera del IFA]; precip: s = 0.00 (sitio 573 mm/año [modeled], objetivo 0 mm/año [estimated]), PO 0 %, percentil terrestre 49; soil_moisture: s = 0.01 (sitio 0.48 [modeled], objetivo 0 [estimated]), PO 21 %, percentil terrestre 62; wind: s = 1.00 (sitio 3.2 m/s [modeled], objetivo 3.2 m/s [literature]), PO 100 %, percentil terrestre 100; albedo: s = 0.53 (sitio 0.16 [modeled], objetivo 0.25 [estimated]), PO 0 %, percentil terrestre 63. Excluidas por falta de datos (pending): t_range_diurnal, rh, slope_p50_100m, slope_p90_100m, roughness_100m, ndvi, cave_lava_tube, mineral_classes. Factor limitante: precip. Perfiles: rover — (cobertura 14 %), isru 1, astrobio — (cobertura 36 %), habitat — (cobertura 33 %), instrumentos — (cobertura 20 %). Límites: el clima de la Tierra viene de NASA POWER (celdas de ~50 km), el relieve de Copernicus GLO-30 (modelo de superficie); 4 de los 5 valores del objetivo usados son 'estimated'. Pesos y tolerancias son decisiones de diseño."
+   }
+  },
+  {
+   "target_id": "moon_global",
+   "ifa": 18.412310022361314,
+   "coverage": 0.34615384615384615,
+   "limiting": "t_range_diurnal",
+   "story": {
+    "explorador": "Punto de campo ejemplo_sucre se parece a la Luna en el color claro u oscuro del suelo. En el aire (presión), se parece más a la Luna que 92 de cada 100 lugares de la Tierra. No se parece en la diferencia de temperatura entre el día y la noche. En la Luna pesarías solo 16 de cada 100 partes de lo que pesas aquí. Y no hay aire para respirar.",
+    "cadete": "Parecido físico con Luna (valores globales) (IFA): 18 de 100, calculado con datos para el 35 % de las comparaciones (el resto falta y no se cuenta). Se parece en albedo de la superficie: aquí 0.16; en la Luna 0.11. Lo que menos se parece: amplitud térmica día-noche (aquí 14.2 K; en la Luna 295 K). En albedo de la superficie, recorre el 47 % del camino entre un lugar típico de la Tierra y la Luna. La Tierra no puede imitar la gravedad: en la Luna es el 16 % de la terrestre.",
+    "cientifico": "IFA = 18.4/100 contra Luna (valores globales) (núcleo gaussiano, dimensiones analogables), cobertura 35 % del peso. Por dimensión — t_range_diurnal: s = 0.00 (sitio 14.2 K [modeled], objetivo 295 K [derived]), PO 1 %, percentil terrestre 82; pressure: s = 0.00 (sitio 73.5 kPa [measured], objetivo 3e-13 kPa [literature]), PO 1 %, percentil terrestre 92 [brecha, fuera del IFA]; precip: s = 0.00 (sitio 573 mm/año [modeled], objetivo 0 mm/año [estimated]), PO 0 %, percentil terrestre 49; soil_moisture: s = 0.01 (sitio 0.48 [modeled], objetivo 0 [estimated]), PO 21 %, percentil terrestre 62; albedo: s = 0.82 (sitio 0.16 [modeled], objetivo 0.11 [estimated]), PO 47 %, percentil terrestre 66. Excluidas por falta de datos (pending): t_mean, rh, wind, slope_p50_100m, slope_p90_100m, roughness_100m, ndvi, cave_lava_tube, mineral_classes. Factor limitante: t_range_diurnal. Perfiles: rover — (cobertura 7 %), isru — (cobertura 31 %), astrobio — (cobertura 43 %), habitat — (cobertura 25 %), instrumentos — (cobertura 40 %). Límites: el clima de la Tierra viene de NASA POWER (celdas de ~50 km), el relieve de Copernicus GLO-30 (modelo de superficie); 3 de los 4 valores del objetivo usados son 'estimated'. Pesos y tolerancias son decisiones de diseño."
+   }
+  },
+  {
+   "target_id": "mars_global",
+   "ifa": 17.536778886662255,
+   "coverage": 0.46153846153846156,
+   "limiting": "precip",
+   "story": {
+    "explorador": "Punto de campo ejemplo_sucre se parece a Marte en el viento y en el color claro u oscuro del suelo. En el aire (presión), se parece más a Marte que 92 de cada 100 lugares de la Tierra. No se parece en la lluvia. En Marte pesarías solo 38 de cada 100 partes de lo que pesas aquí. Y no podrías respirar: allá hay 95,1 % CO₂, 2,59 % nitrógeno, 1,94 % argón, 0,16 % oxígeno.",
+    "cadete": "Parecido físico con Marte (valores globales) (IFA): 18 de 100, calculado con datos para el 46 % de las comparaciones (el resto falta y no se cuenta). Se parece en viento medio a 10 m: aquí 3.2 m/s; en Marte 2–7 m/s. Se parece en albedo de la superficie: aquí 0.16; en Marte 0.25. Lo que menos se parece: lluvia anual (aquí 573 mm/año; en Marte 0 mm/año). En humedad de la superficie del suelo, recorre el 21 % del camino entre un lugar típico de la Tierra y Marte. Su mejor uso posible según el motor: ensayar hábitats y operaciones humanas (29/100). La Tierra no puede imitar la gravedad: en Marte es el 38 % de la terrestre.",
+    "cientifico": "IFA = 17.5/100 contra Marte (valores globales) (núcleo gaussiano, dimensiones analogables), cobertura 46 % del peso. Por dimensión — t_mean: s = 0.00 (sitio 287 K [modeled], objetivo 214 K [literature]), PO 0 %, percentil terrestre 47; t_range_diurnal: s = 0.01 (sitio 14.2 K [modeled], objetivo 58.0 K [derived]), PO 8 %, percentil terrestre 82; pressure: s = 0.00 (sitio 73.5 kPa [measured], objetivo 0.64 kPa (rango 0.4–0.87) [literature]), PO 6 %, percentil terrestre 92 [brecha, fuera del IFA]; precip: s = 0.00 (sitio 573 mm/año [modeled], objetivo 0 mm/año [estimated]), PO 0 %, percentil terrestre 49; soil_moisture: s = 0.01 (sitio 0.48 [modeled], objetivo 0 [estimated]), PO 21 %, percentil terrestre 62; wind: s = 1.00 (sitio 3.2 m/s [modeled], objetivo 2–7 m/s [literature]), percentil terrestre 59; albedo: s = 0.53 (sitio 0.16 [modeled], objetivo 0.25 [estimated]), PO 0 %, percentil terrestre 63. Excluidas por falta de datos (pending): rh, slope_p50_100m, slope_p90_100m, roughness_100m, ndvi, cave_lava_tube, mineral_classes. Factor limitante: precip. Perfiles: rover — (cobertura 14 %), isru 0, astrobio — (cobertura 43 %), habitat 29, instrumentos — (cobertura 40 %). Límites: el clima de la Tierra viene de NASA POWER (celdas de ~50 km), el relieve de Copernicus GLO-30 (modelo de superficie); 3 de los 6 valores del objetivo usados son 'estimated'. Pesos y tolerancias son decisiones de diseño."
+   }
+  },
+  {
+   "target_id": "mars_gusev_homeplate",
+   "ifa": 15.344925132655419,
+   "coverage": 0.2692307692307692,
+   "limiting": "precip",
+   "story": {
+    "explorador": "Punto de campo ejemplo_sucre se parece a Marte en el color claro u oscuro del suelo. En el aire (presión), se parece más a Marte que 92 de cada 100 lugares de la Tierra. No se parece en la lluvia. En Marte pesarías solo 38 de cada 100 partes de lo que pesas aquí. Y no podrías respirar: allá hay 95,1 % CO₂, 2,59 % nitrógeno, 1,94 % argón, 0,16 % oxígeno.",
+    "cadete": "Parecido físico con Gusev – Home Plate (Spirit) (IFA): 15 de 100, calculado con datos para el 27 % de las comparaciones (el resto falta y no se cuenta). Se parece en albedo de la superficie: aquí 0.16; en Marte 0.25. Lo que menos se parece: lluvia anual (aquí 573 mm/año; en Marte 0 mm/año). En humedad de la superficie del suelo, recorre el 21 % del camino entre un lugar típico de la Tierra y Marte. La Tierra no puede imitar la gravedad: en Marte es el 38 % de la terrestre.",
+    "cientifico": "IFA = 15.3/100 contra Gusev – Home Plate (Spirit) (núcleo gaussiano, dimensiones analogables), cobertura 27 % del peso. Por dimensión — pressure: s = 0.00 (sitio 73.5 kPa [measured], objetivo 0.64 kPa (rango 0.4–0.87) [literature]), PO 6 %, percentil terrestre 92 [brecha, fuera del IFA]; precip: s = 0.00 (sitio 573 mm/año [modeled], objetivo 0 mm/año [estimated]), PO 0 %, percentil terrestre 49; soil_moisture: s = 0.01 (sitio 0.48 [modeled], objetivo 0 [estimated]), PO 21 %, percentil terrestre 62; albedo: s = 0.53 (sitio 0.16 [modeled], objetivo 0.25 [estimated]), PO 0 %, percentil terrestre 63. Excluidas por falta de datos (pending): t_mean, t_range_diurnal, rh, wind, slope_p50_100m, slope_p90_100m, roughness_100m, ndvi, cave_lava_tube, mineral_classes. Factor limitante: precip. Perfiles: rover — (cobertura 7 %), isru — (cobertura 31 %), astrobio — (cobertura 36 %), habitat — (cobertura 0 %), instrumentos — (cobertura 20 %). Límites: el clima de la Tierra viene de NASA POWER (celdas de ~50 km), el relieve de Copernicus GLO-30 (modelo de superficie); 3 de los 3 valores del objetivo usados son 'estimated'. Pesos y tolerancias son decisiones de diseño."
+   }
+  },
+  {
+   "target_id": "mars_ice_arcadia",
+   "ifa": 15.344925132655419,
+   "coverage": 0.2692307692307692,
+   "limiting": "precip",
+   "story": {
+    "explorador": "Punto de campo ejemplo_sucre se parece a Marte en el color claro u oscuro del suelo. En el aire (presión), se parece más a Marte que 92 de cada 100 lugares de la Tierra. No se parece en la lluvia. En Marte pesarías solo 38 de cada 100 partes de lo que pesas aquí. Y no podrías respirar: allá hay 95,1 % CO₂, 2,59 % nitrógeno, 1,94 % argón, 0,16 % oxígeno.",
+    "cadete": "Parecido físico con Arcadia Planitia (hielo enterrado) (IFA): 15 de 100, calculado con datos para el 27 % de las comparaciones (el resto falta y no se cuenta). Se parece en albedo de la superficie: aquí 0.16; en Marte 0.25. Lo que menos se parece: lluvia anual (aquí 573 mm/año; en Marte 0 mm/año). En humedad de la superficie del suelo, recorre el 21 % del camino entre un lugar típico de la Tierra y Marte. La Tierra no puede imitar la gravedad: en Marte es el 38 % de la terrestre.",
+    "cientifico": "IFA = 15.3/100 contra Arcadia Planitia (hielo enterrado) (núcleo gaussiano, dimensiones analogables), cobertura 27 % del peso. Por dimensión — pressure: s = 0.00 (sitio 73.5 kPa [measured], objetivo 0.64 kPa (rango 0.4–0.87) [literature]), PO 6 %, percentil terrestre 92 [brecha, fuera del IFA]; precip: s = 0.00 (sitio 573 mm/año [modeled], objetivo 0 mm/año [estimated]), PO 0 %, percentil terrestre 49; soil_moisture: s = 0.01 (sitio 0.48 [modeled], objetivo 0 [estimated]), PO 21 %, percentil terrestre 62; albedo: s = 0.53 (sitio 0.16 [modeled], objetivo 0.25 [estimated]), PO 0 %, percentil terrestre 63. Excluidas por falta de datos (pending): t_mean, t_range_diurnal, rh, wind, slope_p50_100m, slope_p90_100m, roughness_100m, ndvi, cave_lava_tube, mineral_classes. Factor limitante: precip. Perfiles: rover — (cobertura 7 %), isru — (cobertura 31 %), astrobio — (cobertura 36 %), habitat — (cobertura 0 %), instrumentos — (cobertura 20 %). Límites: el clima de la Tierra viene de NASA POWER (celdas de ~50 km), el relieve de Copernicus GLO-30 (modelo de superficie); 3 de los 3 valores del objetivo usados son 'estimated'. Pesos y tolerancias son decisiones de diseño."
+   }
+  },
+  {
+   "target_id": "mars_meridiani",
+   "ifa": 15.344925132655419,
+   "coverage": 0.2692307692307692,
+   "limiting": "precip",
+   "story": {
+    "explorador": "Punto de campo ejemplo_sucre se parece a Marte en el color claro u oscuro del suelo. En el aire (presión), se parece más a Marte que 92 de cada 100 lugares de la Tierra. No se parece en la lluvia. En Marte pesarías solo 38 de cada 100 partes de lo que pesas aquí. Y no podrías respirar: allá hay 95,1 % CO₂, 2,59 % nitrógeno, 1,94 % argón, 0,16 % oxígeno.",
+    "cadete": "Parecido físico con Meridiani Planum (Opportunity) (IFA): 15 de 100, calculado con datos para el 27 % de las comparaciones (el resto falta y no se cuenta). Se parece en albedo de la superficie: aquí 0.16; en Marte 0.25. Lo que menos se parece: lluvia anual (aquí 573 mm/año; en Marte 0 mm/año). En humedad de la superficie del suelo, recorre el 21 % del camino entre un lugar típico de la Tierra y Marte. La Tierra no puede imitar la gravedad: en Marte es el 38 % de la terrestre.",
+    "cientifico": "IFA = 15.3/100 contra Meridiani Planum (Opportunity) (núcleo gaussiano, dimensiones analogables), cobertura 27 % del peso. Por dimensión — pressure: s = 0.00 (sitio 73.5 kPa [measured], objetivo 0.64 kPa (rango 0.4–0.87) [literature]), PO 6 %, percentil terrestre 92 [brecha, fuera del IFA]; precip: s = 0.00 (sitio 573 mm/año [modeled], objetivo 0 mm/año [estimated]), PO 0 %, percentil terrestre 49; soil_moisture: s = 0.01 (sitio 0.48 [modeled], objetivo 0 [estimated]), PO 21 %, percentil terrestre 62; albedo: s = 0.53 (sitio 0.16 [modeled], objetivo 0.25 [estimated]), PO 0 %, percentil terrestre 63. Excluidas por falta de datos (pending): t_mean, t_range_diurnal, rh, wind, slope_p50_100m, slope_p90_100m, roughness_100m, ndvi, cave_lava_tube, mineral_classes. Factor limitante: precip. Perfiles: rover — (cobertura 7 %), isru — (cobertura 31 %), astrobio — (cobertura 36 %), habitat — (cobertura 0 %), instrumentos — (cobertura 20 %). Límites: el clima de la Tierra viene de NASA POWER (celdas de ~50 km), el relieve de Copernicus GLO-30 (modelo de superficie); 3 de los 3 valores del objetivo usados son 'estimated'. Pesos y tolerancias son decisiones de diseño."
+   }
+  },
+  {
+   "target_id": "mars_gale",
+   "ifa": 11.93945904594247,
+   "coverage": 0.34615384615384615,
+   "limiting": "precip",
+   "story": {
+    "explorador": "Punto de campo ejemplo_sucre se parece a Marte en el color claro u oscuro del suelo. En el aire (presión), se parece más a Marte que 92 de cada 100 lugares de la Tierra. No se parece en la lluvia. En Marte pesarías solo 38 de cada 100 partes de lo que pesas aquí. Y no podrías respirar: allá hay 95,1 % CO₂, 2,59 % nitrógeno, 1,94 % argón, 0,16 % oxígeno.",
+    "cadete": "Parecido físico con Cráter Gale (Curiosity) (IFA): 12 de 100, calculado con datos para el 35 % de las comparaciones (el resto falta y no se cuenta). Se parece en albedo de la superficie: aquí 0.16; en Marte 0.25. Lo que menos se parece: lluvia anual (aquí 573 mm/año; en Marte 0 mm/año). En humedad de la superficie del suelo, recorre el 21 % del camino entre un lugar típico de la Tierra y Marte. La Tierra no puede imitar la gravedad: en Marte es el 38 % de la terrestre.",
+    "cientifico": "IFA = 11.9/100 contra Cráter Gale (Curiosity) (núcleo gaussiano, dimensiones analogables), cobertura 35 % del peso. Por dimensión — t_range_diurnal: s = 0.00 (sitio 14.2 K [modeled], objetivo 76.0 K [estimated]), PO 6 %, percentil terrestre 82; pressure: s = 0.00 (sitio 73.5 kPa [measured], objetivo 0.74 kPa (rango 0.685–0.78) [estimated]), PO 6 %, percentil terrestre 92 [brecha, fuera del IFA]; precip: s = 0.00 (sitio 573 mm/año [modeled], objetivo 0 mm/año [estimated]), PO 0 %, percentil terrestre 49; soil_moisture: s = 0.01 (sitio 0.48 [modeled], objetivo 0 [estimated]), PO 21 %, percentil terrestre 62; albedo: s = 0.53 (sitio 0.16 [modeled], objetivo 0.25 [estimated]), PO 0 %, percentil terrestre 63. Excluidas por falta de datos (pending): t_mean, rh, wind, slope_p50_100m, slope_p90_100m, roughness_100m, ndvi, cave_lava_tube, mineral_classes. Factor limitante: precip. Perfiles: rover — (cobertura 7 %), isru — (cobertura 31 %), astrobio — (cobertura 43 %), habitat — (cobertura 25 %), instrumentos — (cobertura 40 %). Límites: el clima de la Tierra viene de NASA POWER (celdas de ~50 km), el relieve de Copernicus GLO-30 (modelo de superficie); 4 de los 4 valores del objetivo usados son 'estimated'. Pesos y tolerancias son decisiones de diseño."
+   }
+  },
+  {
+   "target_id": "moon_artemis_massif",
+   "ifa": 0.23905554430377687,
+   "coverage": 0.19230769230769232,
+   "limiting": "precip",
+   "story": {
+    "explorador": "Con los datos que tenemos, Punto de campo ejemplo_sucre no se parece mucho a la Luna en ninguna medida. En el aire (presión), se parece más a la Luna que 92 de cada 100 lugares de la Tierra. No se parece en la lluvia. En la Luna pesarías solo 16 de cada 100 partes de lo que pesas aquí. Y no hay aire para respirar.",
+    "cadete": "Parecido físico con Artemis III – macizo/montaña (Malapert Massif, Mons Mouton, Peak near Cabeus B) (IFA): 0 de 100, calculado con datos para el 19 % de las comparaciones (el resto falta y no se cuenta). Lo que menos se parece: lluvia anual (aquí 573 mm/año; en la Luna 0 mm/año). En humedad de la superficie del suelo, recorre el 21 % del camino entre un lugar típico de la Tierra y la Luna. La Tierra no puede imitar la gravedad: en la Luna es el 16 % de la terrestre.",
+    "cientifico": "IFA = 0.2/100 contra Artemis III – macizo/montaña (Malapert Massif, Mons Mouton, Peak near Cabeus B) (núcleo gaussiano, dimensiones analogables), cobertura 19 % del peso. Por dimensión — pressure: s = 0.00 (sitio 73.5 kPa [measured], objetivo 3e-13 kPa [literature]), PO 1 %, percentil terrestre 92 [brecha, fuera del IFA]; precip: s = 0.00 (sitio 573 mm/año [modeled], objetivo 0 mm/año [estimated]), PO 0 %, percentil terrestre 49; soil_moisture: s = 0.01 (sitio 0.48 [modeled], objetivo 0 [estimated]), PO 21 %, percentil terrestre 62. Excluidas por falta de datos (pending): t_mean, t_range_diurnal, rh, wind, albedo, slope_p50_100m, slope_p90_100m, roughness_100m, ndvi, cave_lava_tube, mineral_classes. Factor limitante: precip. Perfiles: rover — (cobertura 0 %), isru — (cobertura 31 %), astrobio — (cobertura 36 %), habitat — (cobertura 0 %), instrumentos — (cobertura 0 %). Límites: el clima de la Tierra viene de NASA POWER (celdas de ~50 km), el relieve de Copernicus GLO-30 (modelo de superficie); 2 de los 2 valores del objetivo usados son 'estimated'. Pesos y tolerancias son decisiones de diseño."
+   }
+  },
+  {
+   "target_id": "moon_artemis_plateau",
+   "ifa": 0.23905554430377687,
+   "coverage": 0.19230769230769232,
+   "limiting": "precip",
+   "story": {
+    "explorador": "Con los datos que tenemos, Punto de campo ejemplo_sucre no se parece mucho a la Luna en ninguna medida. En el aire (presión), se parece más a la Luna que 92 de cada 100 lugares de la Tierra. No se parece en la lluvia. En la Luna pesarías solo 16 de cada 100 partes de lo que pesas aquí. Y no hay aire para respirar.",
+    "cadete": "Parecido físico con Artemis III – meseta/llanura (Mons Mouton Plateau, Slater Plain) (IFA): 0 de 100, calculado con datos para el 19 % de las comparaciones (el resto falta y no se cuenta). Lo que menos se parece: lluvia anual (aquí 573 mm/año; en la Luna 0 mm/año). En humedad de la superficie del suelo, recorre el 21 % del camino entre un lugar típico de la Tierra y la Luna. La Tierra no puede imitar la gravedad: en la Luna es el 16 % de la terrestre.",
+    "cientifico": "IFA = 0.2/100 contra Artemis III – meseta/llanura (Mons Mouton Plateau, Slater Plain) (núcleo gaussiano, dimensiones analogables), cobertura 19 % del peso. Por dimensión — pressure: s = 0.00 (sitio 73.5 kPa [measured], objetivo 3e-13 kPa [literature]), PO 1 %, percentil terrestre 92 [brecha, fuera del IFA]; precip: s = 0.00 (sitio 573 mm/año [modeled], objetivo 0 mm/año [estimated]), PO 0 %, percentil terrestre 49; soil_moisture: s = 0.01 (sitio 0.48 [modeled], objetivo 0 [estimated]), PO 21 %, percentil terrestre 62. Excluidas por falta de datos (pending): t_mean, t_range_diurnal, rh, wind, albedo, slope_p50_100m, slope_p90_100m, roughness_100m, ndvi, cave_lava_tube, mineral_classes. Factor limitante: precip. Perfiles: rover — (cobertura 0 %), isru — (cobertura 31 %), astrobio — (cobertura 36 %), habitat — (cobertura 0 %), instrumentos — (cobertura 0 %). Límites: el clima de la Tierra viene de NASA POWER (celdas de ~50 km), el relieve de Copernicus GLO-30 (modelo de superficie); 2 de los 2 valores del objetivo usados son 'estimated'. Pesos y tolerancias son decisiones de diseño."
+   }
+  },
+  {
+   "target_id": "moon_artemis_rim",
+   "ifa": 0.23905554430377687,
+   "coverage": 0.19230769230769232,
+   "limiting": "precip",
+   "story": {
+    "explorador": "Con los datos que tenemos, Punto de campo ejemplo_sucre no se parece mucho a la Luna en ninguna medida. En el aire (presión), se parece más a la Luna que 92 de cada 100 lugares de la Tierra. No se parece en la lluvia. En la Luna pesarías solo 16 de cada 100 partes de lo que pesas aquí. Y no hay aire para respirar.",
+    "cadete": "Parecido físico con Artemis III – borde de cráter (Nobile Rim 1, Nobile Rim 2, de Gerlache Rim 2, Haworth) (IFA): 0 de 100, calculado con datos para el 19 % de las comparaciones (el resto falta y no se cuenta). Lo que menos se parece: lluvia anual (aquí 573 mm/año; en la Luna 0 mm/año). En humedad de la superficie del suelo, recorre el 21 % del camino entre un lugar típico de la Tierra y la Luna. La Tierra no puede imitar la gravedad: en la Luna es el 16 % de la terrestre.",
+    "cientifico": "IFA = 0.2/100 contra Artemis III – borde de cráter (Nobile Rim 1, Nobile Rim 2, de Gerlache Rim 2, Haworth) (núcleo gaussiano, dimensiones analogables), cobertura 19 % del peso. Por dimensión — pressure: s = 0.00 (sitio 73.5 kPa [measured], objetivo 3e-13 kPa [literature]), PO 1 %, percentil terrestre 92 [brecha, fuera del IFA]; precip: s = 0.00 (sitio 573 mm/año [modeled], objetivo 0 mm/año [estimated]), PO 0 %, percentil terrestre 49; soil_moisture: s = 0.01 (sitio 0.48 [modeled], objetivo 0 [estimated]), PO 21 %, percentil terrestre 62. Excluidas por falta de datos (pending): t_mean, t_range_diurnal, rh, wind, albedo, slope_p50_100m, slope_p90_100m, roughness_100m, ndvi, cave_lava_tube, mineral_classes. Factor limitante: precip. Perfiles: rover — (cobertura 0 %), isru — (cobertura 31 %), astrobio — (cobertura 36 %), habitat — (cobertura 0 %), instrumentos — (cobertura 0 %). Límites: el clima de la Tierra viene de NASA POWER (celdas de ~50 km), el relieve de Copernicus GLO-30 (modelo de superficie); 2 de los 2 valores del objetivo usados son 'estimated'. Pesos y tolerancias son decisiones de diseño."
+   }
+  },
+  {
+   "target_id": "moon_shackleton_degerlache",
+   "ifa": 0.23905554430377687,
+   "coverage": 0.19230769230769232,
+   "limiting": "precip",
+   "story": {
+    "explorador": "Con los datos que tenemos, Punto de campo ejemplo_sucre no se parece mucho a la Luna en ninguna medida. En el aire (presión), se parece más a la Luna que 92 de cada 100 lugares de la Tierra. No se parece en la lluvia. En la Luna pesarías solo 16 de cada 100 partes de lo que pesas aquí. Y no hay aire para respirar.",
+    "cadete": "Parecido físico con Cresta Shackleton–de Gerlache (IFA): 0 de 100, calculado con datos para el 19 % de las comparaciones (el resto falta y no se cuenta). Lo que menos se parece: lluvia anual (aquí 573 mm/año; en la Luna 0 mm/año). En humedad de la superficie del suelo, recorre el 21 % del camino entre un lugar típico de la Tierra y la Luna. La Tierra no puede imitar la gravedad: en la Luna es el 16 % de la terrestre.",
+    "cientifico": "IFA = 0.2/100 contra Cresta Shackleton–de Gerlache (núcleo gaussiano, dimensiones analogables), cobertura 19 % del peso. Por dimensión — pressure: s = 0.00 (sitio 73.5 kPa [measured], objetivo 3e-13 kPa [literature]), PO 1 %, percentil terrestre 92 [brecha, fuera del IFA]; precip: s = 0.00 (sitio 573 mm/año [modeled], objetivo 0 mm/año [estimated]), PO 0 %, percentil terrestre 49; soil_moisture: s = 0.01 (sitio 0.48 [modeled], objetivo 0 [estimated]), PO 21 %, percentil terrestre 62. Excluidas por falta de datos (pending): t_mean, t_range_diurnal, rh, wind, albedo, slope_p50_100m, slope_p90_100m, roughness_100m, ndvi, cave_lava_tube, mineral_classes. Factor limitante: precip. Perfiles: rover — (cobertura 0 %), isru — (cobertura 31 %), astrobio — (cobertura 36 %), habitat — (cobertura 0 %), instrumentos — (cobertura 0 %). Límites: el clima de la Tierra viene de NASA POWER (celdas de ~50 km), el relieve de Copernicus GLO-30 (modelo de superficie); 2 de los 2 valores del objetivo usados son 'estimated'. Pesos y tolerancias son decisiones de diseño."
+   }
+  }
+ ],
+ "context": {
+  "elevation_gps": {
+   "value": 2810.0,
+   "unit": "m",
+   "status": "measured",
+   "source": "SEAL-BOX seal-box-01 (fw 0.1.0)",
+   "retrieved": "2026-11-14",
+   "note": "GPS, HDOP 1.1, 8 satélites."
+  },
+  "t_air": {
+   "value": 294.55,
+   "unit": "K",
+   "status": "measured",
+   "source": "SEAL-BOX seal-box-01 (fw 0.1.0)",
+   "retrieved": "2026-11-14",
+   "note": "BME280: 21.4 °C. Lectura puntual (10 muestras), no un promedio anual. No reemplaza a la temperatura media anual."
+  },
+  "elevation_baro": {
+   "value": 2790.0,
+   "unit": "m",
+   "status": "derived",
+   "source": "SEAL-BOX seal-box-01 (fw 0.1.0)",
+   "retrieved": "2026-11-14",
+   "note": "Altura calculada desde la presión con una fórmula; manda la del GPS."
+  },
+  "lux": {
+   "unit": "lux",
+   "status": "pending",
+   "source": "",
+   "note": "Luz saturada o sin convertir a lux."
+  },
+  "gas_anomaly": {
+   "value": 640.0,
+   "unit": "mV",
+   "status": "measured",
+   "source": "SEAL-BOX seal-box-01 (fw 0.1.0)",
+   "retrieved": "2026-11-14",
+   "note": "MQ-2 (no selectivo, ppm). NO entra al IFA: el metano de Marte se mide en ppb. Precalentamiento 600 s; sin calibrar."
+  }
+ },
+ "values": {
+  "_elevation": {
+   "value": 2794.7,
+   "unit": "m",
+   "status": "modeled",
+   "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+   "ref": "https://registry.opendata.aws/copernicus-dem/",
+   "retrieved": "2026-11-14",
+   "note": "Mediana de 3 × 3 píxeles en el centro. GLO-30 es un modelo de superficie (incluye vegetación/edificios) con ruido vertical de algunos metros."
+  },
+  "slope_p50_100m": {
+   "value": 8.76,
+   "unit": "grados",
+   "status": "derived",
+   "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+   "ref": "https://registry.opendata.aws/copernicus-dem/",
+   "retrieved": "2026-11-14",
+   "note": "Pendiente mediana remuestreada a 100 m (a 30 m: 11.98°). Ventana de 6 × 6 km; mosaicos ['-20,-66']. GLO-30 es un modelo de superficie (incluye vegetación/edificios) con ruido vertical de algunos metros."
+  },
+  "slope_p90_100m": {
+   "value": 21.07,
+   "unit": "grados",
+   "status": "derived",
+   "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+   "ref": "https://registry.opendata.aws/copernicus-dem/",
+   "retrieved": "2026-11-14",
+   "note": "Percentil 90 a 100 m (a 30 m: 27.18°). Ventana de 6 × 6 km; mosaicos ['-20,-66']. GLO-30 es un modelo de superficie (incluye vegetación/edificios) con ruido vertical de algunos metros."
+  },
+  "roughness_100m": {
+   "value": 1.335,
+   "unit": "m",
+   "status": "derived",
+   "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+   "ref": "https://registry.opendata.aws/copernicus-dem/",
+   "retrieved": "2026-11-14",
+   "note": "Mediana de la desv. estándar sin plano en bloques de ~90.2 m. Ventana de 6 × 6 km; mosaicos ['-20,-66']. GLO-30 es un modelo de superficie (incluye vegetación/edificios) con ruido vertical de algunos metros."
+  },
+  "t_mean": {
+   "value": 287.38,
+   "unit": "K",
+   "status": "modeled",
+   "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+   "ref": "https://power.larc.nasa.gov/docs/",
+   "retrieved": "2026-11-14",
+   "note": "Promedio anual de la temperatura del aire a 2 m. Es un valor de celda de rejilla, no una medición en el punto exacto."
+  },
+  "t_range_diurnal": {
+   "value": 14.15,
+   "unit": "K",
+   "status": "modeled",
+   "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+   "ref": "https://power.larc.nasa.gov/docs/",
+   "retrieved": "2026-11-14",
+   "note": "Promedio anual de la amplitud diaria del aire a 2 m. Envolvente anual (máx. de T2M_MAX − mín. de T2M_MIN): 36.5 K, NO usada. Es un valor de celda de rejilla, no una medición en el punto exacto."
+  },
+  "pressure": {
+   "value": 73.52,
+   "unit": "kPa",
+   "status": "measured",
+   "source": "SEAL-BOX seal-box-01 (fw 0.1.0)",
+   "retrieved": "2026-11-14",
+   "sigma": 0.1,
+   "note": "BME280: 735.2 hPa. Lectura puntual (10 muestras), no un promedio anual."
+  },
+  "rh": {
+   "value": 38.0,
+   "unit": "%",
+   "status": "measured",
+   "source": "SEAL-BOX seal-box-01 (fw 0.1.0)",
+   "retrieved": "2026-11-14",
+   "sigma": 5.0,
+   "note": "BME280. Lectura puntual (10 muestras), no un promedio anual. La humedad cambia mucho en el día."
+  },
+  "wind": {
+   "value": 3.24,
+   "unit": "m/s",
+   "status": "modeled",
+   "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+   "ref": "https://power.larc.nasa.gov/docs/",
+   "retrieved": "2026-11-14",
+   "note": "Viento a 10 m. Es un valor de celda de rejilla, no una medición en el punto exacto."
+  },
+  "precip": {
+   "value": 573.4425,
+   "unit": "mm/año",
+   "status": "modeled",
+   "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+   "ref": "https://power.larc.nasa.gov/docs/",
+   "retrieved": "2026-11-14",
+   "note": "Promedio diario anual (mm/día) × 365,25. Es un valor de celda de rejilla, no una medición en el punto exacto."
+  },
+  "uv_index": {
+   "value": 8.2,
+   "unit": "1",
+   "status": "measured",
+   "source": "SEAL-BOX seal-box-01 (fw 0.1.0)",
+   "retrieved": "2026-11-14",
+   "sigma": 1.0,
+   "note": "GUVA-S12SD 820 mV → índice ≈ mV/100 (fórmula sin verificar). Sin calibrar. Lectura puntual, no el promedio de 24 h de POWER."
+  },
+  "albedo": {
+   "value": 0.16,
+   "unit": "1",
+   "status": "modeled",
+   "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SRF_ALB",
+   "ref": "https://power.larc.nasa.gov/docs/",
+   "retrieved": "2026-11-14",
+   "note": "Albedo de celda; se satura con nieve o salares. Es un valor de celda de rejilla, no una medición en el punto exacto."
+  },
+  "soil_moisture": {
+   "value": 0.48,
+   "unit": "1",
+   "status": "modeled",
+   "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+   "ref": "https://power.larc.nasa.gov/docs/",
+   "retrieved": "2026-11-14",
+   "note": "Humedad de la capa superficial del suelo (MERRA-2), fracción de saturación 0–1. Es un valor de celda de rejilla, no una medición en el punto exacto."
+  },
+  "_solar_sw_dwn": {
+   "value": 6.1891,
+   "unit": "kWh/m²/día",
+   "status": "modeled",
+   "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_SW_DWN",
+   "ref": "https://power.larc.nasa.gov/docs/",
+   "retrieved": "2026-11-14",
+   "note": "Promedio anual, cielo real. Es un valor de celda de rejilla, no una medición en el punto exacto."
+  },
+  "_power_cell_elevation": {
+   "value": 2706.54,
+   "unit": "m",
+   "status": "modeled",
+   "source": "NASA POWER (elevación media de la celda)",
+   "ref": "https://power.larc.nasa.gov/docs/",
+   "retrieved": "2026-11-14"
+  }
+ }
+}

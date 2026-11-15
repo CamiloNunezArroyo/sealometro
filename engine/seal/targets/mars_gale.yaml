@@ -1,0 +1,20 @@
+# Hecho con asistencia de IA (Claude) — Seal Hackathon Team, NASA Space Apps Sucre 2026
+# Fuentes buscadas y comprobadas el 2026-11-14 (Claude Fable 5.2). Ver docs/VALORES_A_VERIFICAR.md.
+id: mars_gale
+body: mars
+name: "Cráter Gale (Curiosity)"
+group: aterrizaje
+gravity: {value: 3.73, unit: "m/s²", status: literature, source: "NASA NSSDC Mars Fact Sheet", ref: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html", retrieved: "2026-11-14"}
+note: "Martínez et al. 2017 (Space Sci. Rev., doi:10.1007/s11214-017-0360-x, leído por el equipo): amplitud anual de la temperatura media diaria del aire ~20 K en Gale; Harri et al. 2014 (doi:10.1002/2013JE004423): variación diaria de la presión ~90 Pa (~10 %), estacional ~25 % (James et al. 1992). REMS mide presión, T del aire y del suelo, HR, viento y UV (Gómez-Elvira et al. 2014, doi:10.1002/2013JE004576). Los números climáticos de abajo vienen de comunicados de NASA/JPL y Europlanet (primeras semanas de misión), no de los papers primarios: por eso 'estimated'."
+inherit_from: mars_global
+inherit_dims: [precip, ndvi, soil_moisture]
+values:
+  t_mean: {unit: K, status: pending, source: "", note: "Fuente candidata: Martínez et al. 2017, Space Sci. Rev., doi:10.1007/s11214-017-0360-x."}
+  t_range_diurnal: {range: [45, 75], unit: K, status: literature, source: "Martínez et al. 2016, Física de la Tierra 28:163-179 (REMS ATS, primeros 1160 soles)", ref: "https://doi.org/10.5209/rev_fite.2016.v28.53902", retrieved: "2026-11-14", note: "Amplitud diurna del AIRE a 1,6 m: ~45 K (sol 550, Ls~93) a ~75 K (sol 710, Ls~173); texto junto a la Fig. 4. El ATS tiene contaminación térmica del rover. Superficie (GTS): 55–100 K. Leído en texto completo (verificación Fable, 2026-11-14)."}
+  pressure: {value: 0.74, range: [0.685, 0.78], unit: kPa, status: estimated, source: "Europlanet Media Centre 2012 (cita de J. Gómez-Elvira, IP de REMS), vía ScienceDaily", ref: "https://www.sciencedaily.com/releases/2012/09/120928085216.htm", retrieved: "2026-11-14", note: "Ciclo diario de las primeras semanas (~685–780 Pa), cerca del mínimo anual; variación estacional ~25–30 %. Rango anual: Harri et al. 2014, doi:10.1002/2013JE004423."}
+  rh: {unit: "%", status: pending, source: "", note: "Martínez et al. 2017 (sec. 3.6, https://doi.org/10.1007/s11214-017-0360-x): la HR MÁXIMA diaria va de ~10 % (fin de primavera) a ~70 % (inicio del invierno, Ls 93°) y de día es < 5 % (10:00–18:00). No hay una HR MEDIA comparable con POWER RH2M (promedio de 24 h): queda pending para no comparar máximos con medias."}
+  wind: {unit: "m/s", status: pending, source: "", note: "Candidata: Martínez et al. 2017. Un sensor de viento se dañó al aterrizar."}
+  uv_index: {unit: "1", status: pending, source: "", note: "REMS mide flujo UV por banda (W/m²), no índice UV."}
+  slope_p50_100m: {unit: grados, status: pending, source: "", note: "Candidata: Golombek et al. 2012, doi:10.1007/s11214-012-9916-y."}
+  mineral_classes: {unit: "1", classes: [arcilla, sulfato, oxido_fe, basalto], status: literature, source: "Vaniman et al. 2014, Science (CheMin, Yellowknife Bay): minerales basálticos, sulfatos de Ca, óxidos de Fe, esmectitas", ref: "https://doi.org/10.1126/science.1243480", retrieved: "2026-11-14", note: "Leído solo el resumen."}
+  albedo: {range: [0.10, 0.30], unit: "1", status: literature, source: "Martínez et al. 2017, Space Sci. Rev. 212 (sec. 3.4), citando a Vasavada et al. 2017", ref: "https://doi.org/10.1007/s11214-017-0360-x", retrieved: "2026-11-14", note: "Albedo de superficie a lo largo del recorrido de Curiosity: 0,1 en terrenos arenosos a 0,3 en lutitas (mudstone). Texto leído por el equipo. Reemplaza el rango TES 0,20–0,25 (fuente secundaria)."}

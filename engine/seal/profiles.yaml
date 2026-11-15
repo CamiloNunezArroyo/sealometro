@@ -1,0 +1,35 @@
+# Hecho con asistencia de IA (Claude) — Seal Hackathon Team, NASA Space Apps Sucre 2026
+# Perfiles de misión (docs/MOTOR_SIMILITUD.md §5.3). Pesos y compuertas: DECISIONES DE DISEÑO (status: design).
+# Solo dimensiones analogables (las brechas —presión, UV— se informan aparte con PO y percentil).
+# Compuerta: si s(dimensión) < min_s, el perfil queda topado en 100·s (ley del mínimo).
+# T1: las dimensiones T2 (hielo, rocas, polvo) se agregan cuando existan.
+profiles:
+  - id: rover
+    name: Movilidad de rover / aterrizaje
+    weights: {slope_p50_100m: 2, slope_p90_100m: 2, roughness_100m: 2, albedo: 0.5}
+    gates: [{feature: slope_p90_100m, min_s: 0.4}]
+    note: "Lo que más importa para manejar o aterrizar es el relieve a la escala del vehículo."
+
+  - id: isru
+    name: ISRU / agua y hielo
+    weights: {mineral_classes: 2, t_mean: 1.5, precip: 1, rh: 1, soil_moisture: 1}
+    gates: [{feature: mineral_classes, min_s: 0.3}]
+    note: "En T1 los minerales hidratados (sulfatos, arcillas, sílice hidratada) reemplazan a ice_presence (T2)."
+
+  - id: astrobio
+    name: Astrobiología
+    weights: {mineral_classes: 2, precip: 1.5, rh: 1, soil_moisture: 1, ndvi: 1, t_range_diurnal: 0.5}
+    gates: [{feature: mineral_classes, min_s: 0.3}]
+    note: "Ambientes de preservación (sílice, sulfatos, carbonatos) bajo aridez extrema."
+
+  - id: habitat
+    name: Hábitat y operaciones humanas
+    weights: {t_mean: 1, t_range_diurnal: 1.5, cave_lava_tube: 1.5, slope_p50_100m: 1}
+    gates: []
+    note: "Ciclo térmico, viento y refugio natural (cuevas) para probar operaciones."
+
+  - id: instrumentos
+    name: Instrumentos y ciencia de campo
+    weights: {mineral_classes: 2, albedo: 1, t_range_diurnal: 1, ndvi: 1}
+    gates: []
+    note: "Probar espectrómetros y cámaras: superficie mineral expuesta, sin vegetación."

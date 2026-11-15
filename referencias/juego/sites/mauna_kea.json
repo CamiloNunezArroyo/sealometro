@@ -1,0 +1,162 @@
+{
+  "id": "mauna_kea_puu_hiwahine",
+  "name": "Mauna Kea — Pu'u Hiwahine",
+  "country": "Estados Unidos",
+  "region": "Isla de Hawái, Hawái",
+  "coords": {
+    "lat": 19.7609,
+    "lon": -155.4707
+  },
+  "biome": "volcanic",
+  "analogFor": [
+    "moon",
+    "mars"
+  ],
+  "analogRationale": {
+    "text": "Cono de ceniza bajo la cumbre del Mauna Kea, sede de las pruebas de campo ISRU de 2010 y 2012 (NORCAT con CSA, DLR y NASA, programa PISCES). Klingelhöfer et al. (2014, NASA NTRS 20140008708) describen su material volcánico como \"un análogo lunar y marciano adecuado\" para probar excavación y uso de recursos, con pendientes para pruebas de movilidad. Limitación: la fuente consultada fue solo el resumen; falta el DOI/artículo completo.",
+    "refs": [
+      "https://ntrs.nasa.gov/citations/20140008708"
+    ]
+  },
+  "terrain": {
+    "file": "data/terrain/mauna_kea_height.bin",
+    "width": 256,
+    "height": 256,
+    "metersPerPixel": 23.4375,
+    "minElevationM": 2794.081,
+    "maxElevationM": 2873.614,
+    "status": "gameplay",
+    "source": "TERRENO SINTÉTICO de relleno (tools/make_placeholder_terrain.mjs). No es el relieve real.",
+    "note": "Forma ilustrativa generada por código. Ejecuta `npm run data:mauna` para reemplazarlo por el DEM Copernicus GLO-30 real; el juego detecta el cambio solo.",
+    "slopeMean": {
+      "value": null,
+      "unit": "°",
+      "status": "pending",
+      "source": "Se calcula con el DEM real (npm run data:mauna)"
+    }
+  },
+  "elevation": {
+    "value": 2800,
+    "unit": "m",
+    "status": "literature",
+    "source": "Klingelhöfer et al. (2014), NASA NTRS 20140008708 (resumen): Pu'u Hiwahine, ~2800 m",
+    "note": "Se reemplaza por la elevación del DEM Copernicus GLO-30 al ejecutar `npm run data:mauna`.",
+    "ref": "https://ntrs.nasa.gov/citations/20140008708",
+    "retrieved": "2026-11-11"
+  },
+  "climate": {
+    "meanTemp": {
+      "value": null,
+      "unit": "K",
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:mauna` (DEM Copernicus GLO-30 y NASA POWER)"
+    },
+    "dailyRange": {
+      "value": null,
+      "unit": "K",
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:mauna` (DEM Copernicus GLO-30 y NASA POWER)"
+    },
+    "pressure": {
+      "value": 71.91,
+      "unit": "kPa",
+      "status": "derived",
+      "source": "Atmósfera estándar internacional (ISA) evaluada a 2800 m (elevación de la literatura)",
+      "note": "Aproximación. NASA POWER (PS) la reemplaza al ejecutar el comando de datos del sitio."
+    },
+    "humidity": {
+      "value": null,
+      "unit": "%",
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:mauna` (DEM Copernicus GLO-30 y NASA POWER)"
+    },
+    "wind": {
+      "value": null,
+      "unit": "m/s",
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:mauna` (DEM Copernicus GLO-30 y NASA POWER)"
+    },
+    "albedo": {
+      "value": null,
+      "unit": "-",
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:mauna` (DEM Copernicus GLO-30 y NASA POWER)"
+    },
+    "monthly": {
+      "tMaxC": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "tMinC": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:mauna` (DEM Copernicus GLO-30 y NASA POWER)"
+    }
+  },
+  "radiation": {
+    "solarSurface": {
+      "value": null,
+      "unit": "kWh/m²/día",
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:mauna` (DEM Copernicus GLO-30 y NASA POWER)"
+    },
+    "uvIndex": {
+      "value": null,
+      "unit": "índice UV",
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:mauna` (DEM Copernicus GLO-30 y NASA POWER)"
+    }
+  },
+  "soil": {
+    "claySandSilt": {
+      "value": null,
+      "unit": "%",
+      "status": "pending",
+      "source": "Pendiente: aún no hay fuente de suelo en el pipeline (candidata: ISRIC SoilGrids). Este dato NO lo trae `npm run data:*`."
+    },
+    "ph": {
+      "value": null,
+      "unit": "pH",
+      "status": "pending",
+      "source": "Pendiente: aún no hay fuente de suelo en el pipeline (candidata: ISRIC SoilGrids). Este dato NO lo trae `npm run data:*`."
+    },
+    "minerals": []
+  },
+  "water": {
+    "precipitation": {
+      "value": null,
+      "unit": "mm/año",
+      "status": "pending",
+      "source": "Pendiente: se carga con `npm run data:mauna` (DEM Copernicus GLO-30 y NASA POWER)"
+    },
+    "note": "Información pendiente de referencia."
+  },
+  "gameplay": {
+    "sampleSeed": 20260204,
+    "sampleCount": 8,
+    "missionSamplesRequired": 4,
+    "sampleStatus": "gameplay"
+  }
+}

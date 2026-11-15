@@ -1,0 +1,4812 @@
+{
+ "generated": "2026-11-14T19:32:13-06:00",
+ "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data; ventana de 3 × 3 km remuestreada",
+ "honesty": "Relieve grande REAL (DEM 30 m). Detalle chico, rocas, arena blanda, muestras y cuevas: JUEGO. Bioma y agua: decisiones de diseño.",
+ "sites": [
+  {
+   "id": "siloli",
+   "name": "Desierto de Siloli – Árbol de Piedra",
+   "country": "Bolivia",
+   "lat": -22.06,
+   "lon": -67.8833,
+   "role": "candidate",
+   "file": "terrain/siloli.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 4543.77,
+   "h_max": 4624.58,
+   "tiles": [
+    "-23,-68"
+   ],
+   "water_level": null,
+   "biome": "desierto",
+   "cave": false,
+   "minerals": {
+    "classes": [
+     "arcilla",
+     "oxido_fe"
+    ],
+    "status": "modeled",
+    "source": "NASA EMIT L2B Mineral (EMITL2BMIN v002), gránulo EMIT_L2B_MIN_002_20231202T125143 (2023-12-02, nubes 0 %)"
+   },
+   "climate": {
+    "t_mean": {
+     "value": 277.58,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 15.67,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 60.78,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.85,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 40.1775,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 27.19,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.63,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.13,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.045,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 2.2,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 7.16,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.153,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 4577.6,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "laguna_colorada",
+   "name": "Laguna Colorada – orilla (mirador)",
+   "country": "Bolivia",
+   "lat": -22.1704,
+   "lon": -67.8046,
+   "role": "candidate",
+   "file": "terrain/laguna_colorada.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 4288.0,
+   "h_max": 4475.97,
+   "tiles": [
+    "-23,-68"
+   ],
+   "water_level": 4288.25,
+   "biome": "lago",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 276.05,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 16.95,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 59.05,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.85,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 149.7525,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 32.31,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 4.27,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.23,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.069,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 2.29,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 13.7,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.17,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 4305.5,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "coipasa",
+   "name": "Salar de Coipasa",
+   "country": "Bolivia",
+   "lat": -19.3833,
+   "lon": -68.1667,
+   "role": "candidate",
+   "file": "terrain/coipasa.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 3656.5,
+   "h_max": 3656.5,
+   "tiles": [
+    "-20,-69"
+   ],
+   "water_level": null,
+   "biome": "salar",
+   "cave": false,
+   "minerals": {
+    "classes": [
+     "cloruro"
+    ],
+    "status": "literature",
+    "source": "Estudio IRD de los salares de Uyuni y Coipasa (halita 98,5–99,8 %; visto solo en el extracto del buscador)"
+   },
+   "climate": {
+    "t_mean": {
+     "value": 281.99,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 18.04,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 65.08,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.71,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 222.8025,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 37.13,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.06,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.35,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.021,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 0.0,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 0.0,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.05,
+     "unit": "m",
+     "status": "estimated",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 3656.5,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "poopo",
+   "name": "Lago Poopó – lecho",
+   "country": "Bolivia",
+   "lat": -18.55,
+   "lon": -67.083,
+   "role": "candidate",
+   "file": "terrain/poopo.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 3685.5,
+   "h_max": 3688.35,
+   "tiles": [
+    "-19,-68"
+   ],
+   "water_level": null,
+   "biome": "desierto",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 281.08,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 15.31,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 63.28,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.77,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 471.1725,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 55.46,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.58,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.41,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.074,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 0.0,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 0.16,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.05,
+     "unit": "m",
+     "status": "estimated",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 3685.5,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "sajama",
+   "name": "Parque Nacional Sajama – puna al pie del volcán",
+   "country": "Bolivia",
+   "lat": -18.0833,
+   "lon": -68.9167,
+   "role": "candidate",
+   "file": "terrain/sajama.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 4538.83,
+   "h_max": 5183.72,
+   "tiles": [
+    "-19,-69"
+   ],
+   "water_level": null,
+   "biome": "volcanico",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 276.39,
+     "unit": "K",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M, ajustada por elevación",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 16.53,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 57.144,
+     "unit": "kPa",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS, ajustada por elevación (atmósfera estándar ISA)",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.74,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 376.2075,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 46.63,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.38,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.31,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.092,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 11.07,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 22.0,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.738,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 4763.1,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "valle_de_la_luna",
+   "name": "Valle de la Luna (La Paz)",
+   "country": "Bolivia",
+   "lat": -16.5672,
+   "lon": -68.0944,
+   "role": "candidate",
+   "file": "terrain/valle_de_la_luna.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 3143.27,
+   "h_max": 3598.88,
+   "tiles": [
+    "-17,-69"
+   ],
+   "water_level": null,
+   "biome": "desierto",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 284.55,
+     "unit": "K",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M, ajustada por elevación",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 13.0,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 69.076,
+     "unit": "kPa",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS, ajustada por elevación (atmósfera estándar ISA)",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.56,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 646.4925,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 74.64,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.23,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.65,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.172,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 14.2,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 27.23,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 2.031,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 3294.7,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "valle_de_las_animas",
+   "name": "Valle de las Ánimas (La Paz)",
+   "country": "Bolivia",
+   "lat": -16.5286,
+   "lon": -68.0264,
+   "role": "candidate",
+   "file": "terrain/valle_de_las_animas.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 3598.57,
+   "h_max": 4366.78,
+   "tiles": [
+    "-17,-69"
+   ],
+   "water_level": null,
+   "biome": "desierto",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 280.79,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 13.0,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 64.11,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.56,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 646.4925,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 74.64,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.23,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.65,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.211,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 14.59,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 23.97,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 2.097,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 3841.1,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "canones_de_palca",
+   "name": "Cañón de Palca",
+   "country": "Bolivia",
+   "lat": -16.5651,
+   "lon": -67.9715,
+   "role": "candidate",
+   "file": "terrain/canones_de_palca.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 3319.74,
+   "h_max": 4174.36,
+   "tiles": [
+    "-17,-68"
+   ],
+   "water_level": null,
+   "biome": "desierto",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 280.79,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 13.0,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 64.11,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.08,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 646.4925,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 74.64,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.23,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.65,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.196,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 18.64,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 29.2,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 1.964,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 3639.9,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "chacaltaya",
+   "name": "Chacaltaya – estación GAW (5240 m)",
+   "country": "Bolivia",
+   "lat": -16.3505,
+   "lon": -68.1314,
+   "role": "candidate",
+   "file": "terrain/chacaltaya.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 4736.0,
+   "h_max": 5365.18,
+   "tiles": [
+    "-17,-69"
+   ],
+   "water_level": null,
+   "biome": "desierto",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 272.01,
+     "unit": "K",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M, ajustada por elevación",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 13.0,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 53.63,
+     "unit": "kPa",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS, ajustada por elevación (atmósfera estándar ISA)",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.56,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 646.4925,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 74.64,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.23,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.65,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.002,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 18.03,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 31.35,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 1.169,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 5224.0,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "torotoro_umajalanta",
+   "name": "Caverna de Umajalanta (Torotoro)",
+   "country": "Bolivia",
+   "lat": -18.1145,
+   "lon": -65.8115,
+   "role": "candidate",
+   "file": "terrain/torotoro_umajalanta.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 2719.95,
+   "h_max": 3300.06,
+   "tiles": [
+    "-19,-66"
+   ],
+   "water_level": null,
+   "biome": "desierto",
+   "cave": true,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 287.11,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 15.23,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 72.55,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.39,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 533.265,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 66.34,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.3,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.36,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.237,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 12.74,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 29.89,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 1.188,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 2808.3,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "cordillera_real_glaciar_roca",
+   "name": "Glaciar de roca de Pico Austria (Cordillera Real)",
+   "country": "Bolivia",
+   "lat": -16.1931,
+   "lon": -68.2647,
+   "role": "candidate",
+   "file": "terrain/cordillera_real_glaciar_roca.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 4529.0,
+   "h_max": 5352.95,
+   "tiles": [
+    "-17,-69"
+   ],
+   "water_level": null,
+   "biome": "frio",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 273.01,
+     "unit": "K",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M, ajustada por elevación",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 9.82,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 56.237,
+     "unit": "kPa",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS, ajustada por elevación (atmósfera estándar ISA)",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.56,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 792.5925,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 81.17,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 2.86,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.63,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.043,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 22.2,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 36.67,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 1.509,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 4865.6,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "sol_de_manana",
+   "name": "Sol de Mañana – campo geotérmico",
+   "country": "Bolivia",
+   "lat": -22.426,
+   "lon": -67.76,
+   "role": "candidate",
+   "file": "terrain/sol_de_manana.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 4817.99,
+   "h_max": 5064.8,
+   "tiles": [
+    "-23,-68"
+   ],
+   "water_level": null,
+   "biome": "desierto",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 274.22,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 15.66,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 57.69,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.85,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 135.1425,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 32.44,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 4.49,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.23,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.073,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 4.27,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 14.23,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.328,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 4895.3,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "laguna_verde_licancabur",
+   "name": "Laguna Verde – Volcán Licancabur",
+   "country": "Bolivia",
+   "lat": -22.795,
+   "lon": -67.825,
+   "role": "control_pos",
+   "file": "terrain/laguna_verde_licancabur.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 4320.0,
+   "h_max": 4456.45,
+   "tiles": [
+    "-23,-68"
+   ],
+   "water_level": 4320.25,
+   "biome": "lago",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 277.36,
+     "unit": "K",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M, ajustada por elevación",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 17.32,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 59.91,
+     "unit": "kPa",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS, ajustada por elevación (atmósfera estándar ISA)",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.85,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 29.22,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 18.3,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.87,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.11,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": null
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 3.25,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 9.69,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.186,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 4320.0,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "uyuni_incahuasi",
+   "name": "Salar de Uyuni – Isla Incahuasi",
+   "country": "Bolivia",
+   "lat": -20.2417,
+   "lon": -67.6197,
+   "role": "candidate",
+   "file": "terrain/uyuni_incahuasi.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 3653.5,
+   "h_max": 3722.42,
+   "tiles": [
+    "-21,-68"
+   ],
+   "water_level": null,
+   "biome": "salar",
+   "cave": false,
+   "minerals": {
+    "classes": [
+     "cloruro",
+     "sulfato"
+    ],
+    "status": "estimated",
+    "source": "Juego: halita (costra de sal) y yeso, marcados estimated con referencia pendiente"
+   },
+   "climate": {
+    "t_mean": {
+     "value": 280.63,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 16.59,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 65.44,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.4,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 332.3775,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 42.84,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 2.82,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.37,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.004,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 0.0,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 0.0,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.05,
+     "unit": "m",
+     "status": "estimated",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 3653.5,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "atacama_yungay",
+   "name": "Desierto de Atacama – Yungay",
+   "country": "Chile",
+   "lat": -24.0786,
+   "lon": -69.9431,
+   "role": "control_pos",
+   "file": "terrain/atacama_yungay.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 958.93,
+   "h_max": 1035.13,
+   "tiles": [
+    "-25,-70"
+   ],
+   "water_level": null,
+   "biome": "desierto",
+   "cave": false,
+   "minerals": {
+    "classes": [
+     "sulfato",
+     "cloruro",
+     "carbonato"
+    ],
+    "status": "literature",
+    "source": "Sutter et al. 2005, LPSC XXXVI, resumen 2182 (XRD + IR, calicata de 0-146 cm cerca de Yungay)"
+   },
+   "climate": {
+    "t_mean": {
+     "value": 292.17,
+     "unit": "K",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M, ajustada por elevación",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 14.74,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 90.758,
+     "unit": "kPa",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS, ajustada por elevación (atmósfera estándar ISA)",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.64,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 7.305,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 44.09,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.03,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.1,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.109,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 2.09,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 8.9,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.216,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 960.4,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "dry_valleys_wright",
+   "name": "Valles Secos de McMurdo – Wright Valley",
+   "country": "Antártida",
+   "lat": -77.5,
+   "lon": 162.0,
+   "role": "control_pos",
+   "file": "terrain/dry_valleys_wright.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 225.82,
+   "h_max": 1348.64,
+   "tiles": [
+    "-78,161",
+    "-78,162"
+   ],
+   "water_level": null,
+   "biome": "frio",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 245.92,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 5.61,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 85.12,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 0.55,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 80.355,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 79.0,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 7.04,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 1.0,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": null
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 15.01,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 30.44,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.583,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 937.4,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "mauna_kea_puu_hiwahine",
+   "name": "Mauna Kea – Pu'u Hiwahine",
+   "country": "Estados Unidos",
+   "lat": 19.7609,
+   "lon": -155.4707,
+   "role": "control_pos",
+   "file": "terrain/mauna_kea_puu_hiwahine.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 2367.41,
+   "h_max": 3262.42,
+   "tiles": [
+    "19,-156"
+   ],
+   "water_level": null,
+   "biome": "volcanico",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 280.09,
+     "unit": "K",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M, ajustada por elevación",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 5.2,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 72.538,
+     "unit": "kPa",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS, ajustada por elevación (atmósfera estándar ISA)",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 1.98,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 1610.7525,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 82.05,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 4.83,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.65,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.149,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 14.84,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 21.66,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.669,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 2782.5,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "cinder_lake_az",
+   "name": "Cinder Lake – campo de cráteres",
+   "country": "Estados Unidos",
+   "lat": 35.319732,
+   "lon": -111.517103,
+   "role": "control_pos",
+   "file": "terrain/cinder_lake_az.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 2014.22,
+   "h_max": 2107.47,
+   "tiles": [
+    "35,-112"
+   ],
+   "water_level": null,
+   "biome": "volcanico",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 284.09,
+     "unit": "K",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M, ajustada por elevación",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 15.45,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 79.645,
+     "unit": "kPa",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS, ajustada por elevación (atmósfera estándar ISA)",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 1.6,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 339.6825,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 41.85,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.74,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.35,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.091,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 1.78,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 7.95,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.79,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 2029.4,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "askja_iceland",
+   "name": "Askja – Dyngjufjöll",
+   "country": "Islandia",
+   "lat": 65.03,
+   "lon": -16.75,
+   "role": "control_pos",
+   "file": "terrain/askja_iceland.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 1055.5,
+   "h_max": 1244.88,
+   "tiles": [
+    "65,-17"
+   ],
+   "water_level": null,
+   "biome": "volcanico",
+   "cave": false,
+   "minerals": {
+    "classes": [
+     "basalto",
+     "sulfato",
+     "oxido_fe",
+     "silice_hidratada"
+    ],
+    "status": "literature",
+    "source": "Cousins et al. 2013, J. Volcanol. Geotherm. Res. 256:61-77 (XRD, Raman, SEM-EDS)"
+   },
+   "climate": {
+    "t_mean": {
+     "value": 270.31,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 4.1,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 91.1,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 0.43,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 861.99,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 94.09,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 6.3,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.85,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": -0.022,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 1.91,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 23.33,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.415,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 1055.5,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "lava_beds_ca",
+   "name": "Lava Beds – Medicine Lake",
+   "country": "Estados Unidos",
+   "lat": 41.711889,
+   "lon": -121.505535,
+   "role": "control_pos",
+   "file": "terrain/lava_beds_ca.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 1349.95,
+   "h_max": 1557.2,
+   "tiles": [
+    "41,-122"
+   ],
+   "water_level": null,
+   "biome": "volcanico",
+   "cave": true,
+   "minerals": {
+    "classes": [
+     "basalto",
+     "silice_hidratada",
+     "carbonato"
+    ],
+    "status": "estimated",
+    "source": "Kulkarni et al. 2022, Chemical Geology (espeleotemas de las cuevas de Lava Beds)"
+   },
+   "climate": {
+    "t_mean": {
+     "value": 281.98,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 13.51,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 85.56,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 1.24,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 675.7125,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 63.7,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.17,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.55,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.212,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 2.72,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 7.72,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.708,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 1453.2,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "etna_italy",
+   "name": "Monte Etna",
+   "country": "Italia",
+   "lat": 37.75,
+   "lon": 15.0,
+   "role": "control_pos",
+   "file": "terrain/etna_italy.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 2416.11,
+   "h_max": 3323.24,
+   "tiles": [
+    "37,14",
+    "37,15"
+   ],
+   "water_level": null,
+   "biome": "volcanico",
+   "cave": true,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 272.21,
+     "unit": "K",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M, ajustada por elevación",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 6.85,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 69.092,
+     "unit": "kPa",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS, ajustada por elevación (atmósfera estándar ISA)",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 1.15,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 628.23,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 72.5,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 4.12,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.57,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.034,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 21.74,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 29.62,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 1.27,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 3144.7,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "haughton_devon",
+   "name": "Cráter Haughton – estación HMP (isla Devon)",
+   "country": "Canadá",
+   "lat": 75.4333,
+   "lon": -89.8667,
+   "role": "control_pos",
+   "file": "terrain/haughton_devon.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 175.31,
+   "h_max": 283.22,
+   "tiles": [
+    "75,-90"
+   ],
+   "water_level": null,
+   "biome": "frio",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 258.35,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 4.97,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 98.87,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 0.32,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 321.42,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 94.49,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 4.19,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.88,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": -0.033,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 2.98,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 6.08,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.499,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 225.3,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "rio_tinto",
+   "name": "Río Tinto – Peña de Hierro (cabecera)",
+   "country": "España",
+   "lat": 37.7207,
+   "lon": -6.5547,
+   "role": "control_pos",
+   "file": "terrain/rio_tinto.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 334.66,
+   "h_max": 692.99,
+   "tiles": [
+    "37,-7"
+   ],
+   "water_level": null,
+   "biome": "desierto",
+   "cave": false,
+   "minerals": {
+    "classes": [
+     "sulfato",
+     "oxido_fe"
+    ],
+    "status": "literature",
+    "source": "Fernández-Remolar et al. 2005 (jarosita y otros sulfatos; hematita)"
+   },
+   "climate": {
+    "t_mean": {
+     "value": 291.16,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 13.45,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 99.51,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 1.22,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 467.52,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 62.53,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.61,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.51,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.249,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 7.72,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 17.5,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 2.2,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 415.9,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "amazonia_manaus",
+   "name": "Amazonía – torre K34 (Reserva Cuieiras)",
+   "country": "Brasil",
+   "lat": -2.6091,
+   "lon": -60.2093,
+   "role": "control_neg",
+   "file": "terrain/amazonia_manaus.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 58.87,
+   "h_max": 129.93,
+   "tiles": [
+    "-3,-61"
+   ],
+   "water_level": null,
+   "biome": "vegetado",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 299.43,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 6.59,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 99.94,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 1.88,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 1983.3075,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 87.06,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 0.8,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.78,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.846,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 4.59,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 10.42,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 1.124,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 119.3,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "pantanal",
+   "name": "Pantanal",
+   "country": "Brasil",
+   "lat": -17.4,
+   "lon": -57.5,
+   "role": "control_neg",
+   "file": "terrain/pantanal.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 91.45,
+   "h_max": 103.49,
+   "tiles": [
+    "-18,-58"
+   ],
+   "water_level": null,
+   "biome": "vegetado",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 301.14,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 11.61,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 99.84,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 1.91,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 1026.3525,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 59.83,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 2.95,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.42,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.127,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 0.12,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 0.66,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.096,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 92.0,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "ciudad_santa_cruz",
+   "name": "Santa Cruz de la Sierra – Plaza 24 de Septiembre",
+   "country": "Bolivia",
+   "lat": -17.7833,
+   "lon": -63.1821,
+   "role": "control_neg",
+   "file": "terrain/ciudad_santa_cruz.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 404.85,
+   "h_max": 431.25,
+   "tiles": [
+    "-18,-64"
+   ],
+   "water_level": null,
+   "biome": "vegetado",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 297.64,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 10.1,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 95.57,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 1.81,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 1139.58,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 65.48,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 4.49,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.4,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.171,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 0.59,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 1.48,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.689,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 422.0,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "namib_sossusvlei",
+   "name": "Namib – dunas de Sossusvlei",
+   "country": "Namibia",
+   "lat": -24.72739,
+   "lon": 15.342391,
+   "role": "candidate",
+   "file": "terrain/namib_sossusvlei.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 556.34,
+   "h_max": 711.97,
+   "tiles": [
+    "-25,15"
+   ],
+   "water_level": null,
+   "biome": "desierto",
+   "cave": false,
+   "minerals": {
+    "classes": [
+     "arcilla",
+     "oxido_fe"
+    ],
+    "status": "modeled",
+    "source": "NASA EMIT L2B Mineral (EMITL2BMIN v002), gránulo EMIT_L2B_MIN_002_20230113T145839 (2023-01-13, nubes 0 %)"
+   },
+   "climate": {
+    "t_mean": {
+     "value": 295.57,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 16.07,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 91.63,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.23,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 80.355,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 30.27,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 4.18,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.09,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.072,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 1.37,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 14.73,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.297,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 574.9,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "campo_piedra_pomez",
+   "name": "Campo de Piedra Pómez",
+   "country": "Argentina",
+   "lat": -26.6597,
+   "lon": -67.5142,
+   "role": "control_pos",
+   "file": "terrain/campo_piedra_pomez.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 3397.81,
+   "h_max": 3571.65,
+   "tiles": [
+    "-27,-68"
+   ],
+   "water_level": null,
+   "biome": "desierto",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 280.97,
+     "unit": "K",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M, ajustada por elevación",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 17.06,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 67.363,
+     "unit": "kPa",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS, ajustada por elevación (atmósfera estándar ISA)",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 3.05,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 562.485,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 39.49,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 4.32,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.43,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.065,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 2.7,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 4.67,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.287,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 3459.8,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "payunia",
+   "name": "La Payunia – Payún Matrú",
+   "country": "Argentina",
+   "lat": -36.422,
+   "lon": -69.241,
+   "role": "candidate",
+   "file": "terrain/payunia.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 3190.19,
+   "h_max": 3667.56,
+   "tiles": [
+    "-37,-70"
+   ],
+   "water_level": null,
+   "biome": "volcanico",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 270.46,
+     "unit": "K",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M, ajustada por elevación",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 15.49,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 64.689,
+     "unit": "kPa",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS, ajustada por elevación (atmósfera estándar ISA)",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 1.65,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 310.4625,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 47.46,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 4.35,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.38,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.028,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 13.37,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 22.15,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 1.521,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 3662.9,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "pinacate",
+   "name": "El Pinacate",
+   "country": "México",
+   "lat": 31.77,
+   "lon": -113.49,
+   "role": "candidate",
+   "file": "terrain/pinacate.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 691.1,
+   "h_max": 1200.28,
+   "tiles": [
+    "31,-114"
+   ],
+   "water_level": null,
+   "biome": "volcanico",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 290.51,
+     "unit": "K",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M, ajustada por elevación",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 14.21,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 90.006,
+     "unit": "kPa",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS, ajustada por elevación (atmósfera estándar ISA)",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 1.7,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 138.795,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 40.84,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.68,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.23,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.154,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 9.76,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 19.6,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.994,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 986.0,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "teide",
+   "name": "Parque Nacional del Teide",
+   "country": "España",
+   "lat": 28.2731,
+   "lon": -16.6394,
+   "role": "control_pos",
+   "file": "terrain/teide.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 2551.71,
+   "h_max": 3704.28,
+   "tiles": [
+    "28,-17"
+   ],
+   "water_level": null,
+   "biome": "volcanico",
+   "cave": true,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 271.08,
+     "unit": "K",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M, ajustada por elevación",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 2.24,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 65.668,
+     "unit": "kPa",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS, ajustada por elevación (atmósfera estándar ISA)",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 1.56,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 248.37,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 77.2,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 5.75,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.59,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.021,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 23.46,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 32.36,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 1.295,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 3557.5,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "lanzarote",
+   "name": "Lanzarote – Cueva de los Verdes (tubo de La Corona)",
+   "country": "España",
+   "lat": 29.1611,
+   "lon": -13.4389,
+   "role": "control_pos",
+   "file": "terrain/lanzarote.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 0.0,
+   "h_max": 130.35,
+   "tiles": [
+    "29,-14"
+   ],
+   "water_level": null,
+   "biome": "volcanico",
+   "cave": true,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 293.27,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 2.35,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 101.48,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 1.5,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 109.575,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 78.06,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 6.45,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.28,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.23,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 2.19,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 5.29,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.239,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 54.2,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "svalbard_bockfjorden",
+   "name": "Svalbard – Sverrefjellet (Bockfjorden)",
+   "country": "Noruega",
+   "lat": 79.4317,
+   "lon": 13.305,
+   "role": "control_pos",
+   "file": "terrain/svalbard_bockfjorden.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 0.0,
+   "h_max": 665.34,
+   "tiles": [
+    "79,13"
+   ],
+   "water_level": null,
+   "biome": "frio",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 265.53,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 3.57,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 96.67,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 0.27,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 664.755,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 94.8,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 4.4,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.93,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": -0.053,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 6.75,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 29.02,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.456,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 487.4,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "ries",
+   "name": "Cráter de Ries – Nördlingen",
+   "country": "Alemania",
+   "lat": 48.8833,
+   "lon": 10.5667,
+   "role": "candidate",
+   "file": "terrain/ries.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 413.46,
+   "h_max": 444.35,
+   "tiles": [
+    "48,10"
+   ],
+   "water_level": null,
+   "biome": "vegetado",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 281.89,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 9.0,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 96.11,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 0.7,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 748.7625,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 81.27,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.95,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.69,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.74,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 0.52,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 1.45,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.21,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 423.6,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "vatnajokull_kverkfjoll",
+   "name": "Vatnajökull – Kverkfjöll (margen norte)",
+   "country": "Islandia",
+   "lat": 64.65,
+   "lon": -16.7167,
+   "role": "control_pos",
+   "file": "terrain/vatnajokull_kverkfjoll.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 1315.6,
+   "h_max": 1862.8,
+   "tiles": [
+    "64,-17"
+   ],
+   "water_level": null,
+   "biome": "frio",
+   "cave": true,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 264.35,
+     "unit": "K",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M, ajustada por elevación",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 3.96,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 80.474,
+     "unit": "kPa",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS, ajustada por elevación (atmósfera estándar ISA)",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 0.54,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 2932.9575,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 97.37,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 7.39,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.9,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": -0.059,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 4.85,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 15.4,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.28,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 1812.0,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "danakil_dallol",
+   "name": "Dallol (Depresión de Danakil)",
+   "country": "Etiopía",
+   "lat": 14.2386,
+   "lon": 40.2936,
+   "role": "control_pos",
+   "file": "terrain/danakil_dallol.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": -124.7,
+   "h_max": -81.07,
+   "tiles": [
+    "14,40"
+   ],
+   "water_level": null,
+   "biome": "desierto",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 306.57,
+     "unit": "K",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M, ajustada por elevación",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 11.94,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 102.738,
+     "unit": "kPa",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS, ajustada por elevación (atmósfera estándar ISA)",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.1,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 449.2575,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 46.84,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.51,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.28,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.021,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 0.08,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 2.16,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.121,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": -84.5,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "desierto_blanco",
+   "name": "Desierto Blanco (Farafra)",
+   "country": "Egipto",
+   "lat": 27.2773,
+   "lon": 28.2004,
+   "role": "candidate",
+   "file": "terrain/desierto_blanco.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 7.21,
+   "h_max": 31.01,
+   "tiles": [
+    "27,28"
+   ],
+   "water_level": null,
+   "biome": "desierto",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 295.01,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 14.26,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 99.62,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 1.77,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 14.61,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 38.65,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 4.09,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.1,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.069,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 0.66,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 1.72,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.2,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 18.3,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "wadi_rum",
+   "name": "Wadi Rum",
+   "country": "Jordania",
+   "lat": 29.5931,
+   "lon": 35.42,
+   "role": "candidate",
+   "file": "terrain/wadi_rum.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 882.59,
+   "h_max": 1570.78,
+   "tiles": [
+    "29,35"
+   ],
+   "water_level": null,
+   "biome": "desierto",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 291.27,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 16.16,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 89.34,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 1.78,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 40.1775,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 41.77,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.92,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.17,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.104,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 18.8,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 41.11,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 2.283,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 957.3,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "dasht_e_lut",
+   "name": "Dasht-e Lut",
+   "country": "Irán",
+   "lat": 30.605,
+   "lon": 59.0678,
+   "role": "candidate",
+   "file": "terrain/dasht_e_lut.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 548.15,
+   "h_max": 582.18,
+   "tiles": [
+    "30,59"
+   ],
+   "water_level": null,
+   "biome": "desierto",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 297.35,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 15.11,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 92.33,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 1.67,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 69.3975,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 22.84,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 4.85,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.13,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.068,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 0.52,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 1.37,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 0.112,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 566.5,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "capadocia",
+   "name": "Capadocia – Göreme",
+   "country": "Turquía",
+   "lat": 38.6528,
+   "lon": 34.8631,
+   "role": "candidate",
+   "file": "terrain/capadocia.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 1053.75,
+   "h_max": 1328.14,
+   "tiles": [
+    "38,34"
+   ],
+   "water_level": null,
+   "biome": "desierto",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 283.82,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 12.71,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 86.39,
+     "unit": "kPa",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 1.24,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 368.9025,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 59.97,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 3.42,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.42,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.185,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 5.55,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 15.94,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 1.82,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 1207.8,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  },
+  {
+   "id": "bromo",
+   "name": "Monte Bromo",
+   "country": "Indonesia",
+   "lat": -7.9417,
+   "lon": 112.95,
+   "role": "candidate",
+   "file": "terrain/bromo.bin",
+   "n": 129,
+   "size_m": 3000.0,
+   "m_per_px": 23.44,
+   "h_min": 2123.27,
+   "h_max": 2589.13,
+   "tiles": [
+    "-8,112"
+   ],
+   "water_level": null,
+   "biome": "volcanico",
+   "cave": false,
+   "minerals": null,
+   "climate": {
+    "t_mean": {
+     "value": 285.96,
+     "unit": "K",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M, ajustada por elevación",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "t_range_diurnal": {
+     "value": 6.91,
+     "unit": "K",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro T2M_RANGE",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "pressure": {
+     "value": 76.639,
+     "unit": "kPa",
+     "status": "derived",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PS, ajustada por elevación (atmósfera estándar ISA)",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "uv_index": {
+     "value": 2.18,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro ALLSKY_SFC_UV_INDEX",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "precip": {
+     "value": 1756.8525,
+     "unit": "mm/año",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro PRECTOTCORR",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "rh": {
+     "value": 80.29,
+     "unit": "%",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro RH2M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "wind": {
+     "value": 2.9,
+     "unit": "m/s",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro WS10M",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "soil_moisture": {
+     "value": 0.67,
+     "unit": "1",
+     "status": "modeled",
+     "source": "NASA POWER, climatología (modelo/reanálisis de rejilla gruesa, ~50 km), parámetro GWETTOP",
+     "ref": "https://power.larc.nasa.gov/docs/"
+    },
+    "ndvi": {
+     "value": 0.064,
+     "unit": "1",
+     "status": "modeled",
+     "source": "MODIS MOD13Q1 v061 (NASA), NDVI 250 m, vía ORNL DAAC MODIS subsets",
+     "ref": "https://modis.ornl.gov/data/modis_webservice.html"
+    }
+   },
+   "terrain_stats": {
+    "slope_p50_100m": {
+     "value": 9.71,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "slope_p90_100m": {
+     "value": 29.25,
+     "unit": "grados",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "roughness_100m": {
+     "value": 1.227,
+     "unit": "m",
+     "status": "derived",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    },
+    "_elevation": {
+     "value": 2285.5,
+     "unit": "m",
+     "status": "modeled",
+     "source": "Copernicus DEM GLO-30 (ESA), AWS Open Data",
+     "ref": "https://registry.opendata.aws/copernicus-dem/"
+    }
+   }
+  }
+ ]
+}

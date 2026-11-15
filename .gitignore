@@ -1,0 +1,19 @@
+engine/cache/
+engine/.venv/
+__pycache__/
+*.pyc
+node_modules/
+game/node_modules/
+game/dist/
+.DS_Store
+engine/out/
+game/public/data/
+data/shared/photos/candidates/
+firmware/seal_box/secrets.h
+game/.env.local
+
+# no publicar
+.firebase/
+.claude/settings.local.json
+engine/.pytest_cache/
+*.log

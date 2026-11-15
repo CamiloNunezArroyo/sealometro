@@ -1,0 +1,14 @@
+# Hecho con asistencia de IA (Claude) — Seal Hackathon Team, NASA Space Apps Sucre 2026
+# Fuentes buscadas y comprobadas el 2026-11-14 (Claude Fable 5.2). Ver docs/VALORES_A_VERIFICAR.md.
+id: mars_meridiani
+body: mars
+name: "Meridiani Planum (Opportunity)"
+group: astrobiologia
+gravity: {value: 3.73, unit: "m/s²", status: literature, source: "NASA NSSDC Mars Fact Sheet", ref: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html", retrieved: "2026-11-14"}
+note: "Agua ácida antigua: sulfatos (jarosita) y hematita, como en Río Tinto. Opportunity no tenía sensor de presión: se hereda de mars_global."
+inherit_from: mars_global
+inherit_dims: [pressure, precip, ndvi, soil_moisture]
+values:
+  t_mean: {unit: K, status: pending, source: "", note: "Candidata: Martínez et al. 2017, doi:10.1007/s11214-017-0360-x."}
+  slope_p50_100m: {unit: grados, status: pending, source: "", note: "Candidata: Golombek et al. 2005, Nature, doi:10.1038/nature03600."}
+  mineral_classes: {unit: "1", classes: [sulfato, oxido_fe, basalto], status: literature, source: "Squyres et al. 2004, Science (sulfatos de Mg y jarosita, hematita en concreciones, suelo basáltico); Klingelhöfer et al. 2004, Science (Mössbauer, doi:10.1126/science.1104653)", ref: "https://doi.org/10.1126/science.1104559", retrieved: "2026-11-14", note: "Leídos solo los resúmenes."}

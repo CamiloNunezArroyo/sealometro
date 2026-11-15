@@ -1,0 +1,832 @@
+{
+ "source": "Copernicus Sentinel-2 L2A (ESA) vía Earth Search",
+ "sites": [
+  {
+   "id": "siloli",
+   "file": "imagery/siloli.jpg",
+   "px": 512,
+   "bounds": [
+    -67.897839,
+    -22.073475,
+    -67.868761,
+    -22.046525
+   ],
+   "scene": "S2C_19KFR_20260412_0_L2A",
+   "date": "2026-04-12",
+   "cloud_pct": 0.02,
+   "snow_pct": 1.1,
+   "status": "measured_satellite",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "credit": "Contains modified Copernicus Sentinel data 2026",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "uyuni_incahuasi",
+   "file": "imagery/uyuni_incahuasi.jpg",
+   "px": 512,
+   "bounds": [
+    -67.634062,
+    -20.255175,
+    -67.605338,
+    -20.228225
+   ],
+   "scene": "S2C_19KFT_20260919_0_L2A",
+   "date": "2026-09-19",
+   "cloud_pct": 0.26,
+   "snow_pct": 26.28,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data) — contraste ajustado (superficie muy brillante)",
+   "enhanced": true,
+   "credit": "Contains modified Copernicus Sentinel data 2026",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "coipasa",
+   "file": "imagery/coipasa.jpg",
+   "px": 512,
+   "bounds": [
+    -68.180984,
+    -19.396775,
+    -68.152416,
+    -19.369825
+   ],
+   "scene": "S2B_19KEU_20250412_0_L2A",
+   "date": "2025-04-12",
+   "cloud_pct": 0.03,
+   "snow_pct": 9.09,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data) — contraste ajustado (superficie muy brillante)",
+   "enhanced": true,
+   "credit": "Contains modified Copernicus Sentinel data 2025",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "laguna_colorada",
+   "file": "imagery/laguna_colorada.jpg",
+   "px": 512,
+   "bounds": [
+    -67.81915,
+    -22.183875,
+    -67.79005,
+    -22.156925
+   ],
+   "scene": "S2C_19KFR_20260412_0_L2A",
+   "date": "2026-04-12",
+   "cloud_pct": 0.02,
+   "snow_pct": 1.1,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2026",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "poopo",
+   "file": "imagery/poopo.jpg",
+   "px": 512,
+   "bounds": [
+    -67.097213,
+    -18.563475,
+    -67.068787,
+    -18.536525
+   ],
+   "scene": "S2B_19KGV_20230113_0_L2A",
+   "date": "2023-01-13",
+   "cloud_pct": 0.01,
+   "snow_pct": 0.4,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data) — contraste ajustado (superficie muy brillante)",
+   "enhanced": true,
+   "credit": "Contains modified Copernicus Sentinel data 2023",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "uturuncu",
+   "error": "TypeError: must be real number, not NoneType"
+  },
+  {
+   "id": "sajama",
+   "file": "imagery/sajama.jpg",
+   "px": 512,
+   "bounds": [
+    -68.930875,
+    -18.096775,
+    -68.902525,
+    -18.069825
+   ],
+   "scene": "S2B_19KEA_20231122_0_L2A",
+   "date": "2023-11-22",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.03,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2023",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "valle_de_la_luna",
+   "file": "imagery/valle_de_la_luna.jpg",
+   "px": 512,
+   "bounds": [
+    -68.108458,
+    -16.580675,
+    -68.080342,
+    -16.553725
+   ],
+   "scene": "S2B_19KEB_20230625_0_L2A",
+   "date": "2023-06-25",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.17,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2023",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "valle_de_las_animas",
+   "file": "imagery/valle_de_las_animas.jpg",
+   "px": 512,
+   "bounds": [
+    -68.040455,
+    -16.542075,
+    -68.012345,
+    -16.515125
+   ],
+   "scene": "S2B_19KFB_20260808_0_L2A",
+   "date": "2026-08-08",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2026",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "canones_de_palca",
+   "file": "imagery/canones_de_palca.jpg",
+   "px": 512,
+   "bounds": [
+    -67.985558,
+    -16.578575,
+    -67.957442,
+    -16.551625
+   ],
+   "scene": "S2C_19KFB_20260611_0_L2A",
+   "date": "2026-06-11",
+   "cloud_pct": 0.0,
+   "snow_pct": 1.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2026",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "chacaltaya",
+   "file": "imagery/chacaltaya.jpg",
+   "px": 512,
+   "bounds": [
+    -68.145443,
+    -16.363975,
+    -68.117357,
+    -16.337025
+   ],
+   "scene": "S2B_19KEB_20230625_0_L2A",
+   "date": "2023-06-25",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.17,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2023",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "torotoro_umajalanta",
+   "file": "imagery/torotoro_umajalanta.jpg",
+   "px": 512,
+   "bounds": [
+    -65.825677,
+    -18.127975,
+    -65.797323,
+    -18.101025
+   ],
+   "scene": "S2A_20KKE_20240807_0_L2A",
+   "date": "2024-08-07",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2024",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "cordillera_real_glaciar_roca",
+   "file": "imagery/cordillera_real_glaciar_roca.jpg",
+   "px": 512,
+   "bounds": [
+    -68.278731,
+    -16.206575,
+    -68.250669,
+    -16.179625
+   ],
+   "scene": "S2A_19LEC_20230421_0_L2A",
+   "date": "2023-04-21",
+   "cloud_pct": 2.58,
+   "snow_pct": 1.93,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2023",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "sol_de_manana",
+   "file": "imagery/sol_de_manana.jpg",
+   "px": 512,
+   "bounds": [
+    -67.774577,
+    -22.439475,
+    -67.745423,
+    -22.412525
+   ],
+   "scene": "S2C_19KFR_20260412_0_L2A",
+   "date": "2026-04-12",
+   "cloud_pct": 0.02,
+   "snow_pct": 1.1,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data) — contraste ajustado (superficie muy brillante)",
+   "enhanced": true,
+   "credit": "Contains modified Copernicus Sentinel data 2026",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "laguna_verde_licancabur",
+   "file": "imagery/laguna_verde_licancabur.jpg",
+   "px": 512,
+   "bounds": [
+    -67.839616,
+    -22.808475,
+    -67.810384,
+    -22.781525
+   ],
+   "scene": "S2B_19KFQ_20250201_0_L2A",
+   "date": "2025-02-01",
+   "cloud_pct": 0.01,
+   "snow_pct": 0.03,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data) — contraste ajustado (superficie muy brillante)",
+   "enhanced": true,
+   "credit": "Contains modified Copernicus Sentinel data 2025",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "atacama_yungay",
+   "file": "imagery/atacama_yungay.jpg",
+   "px": 512,
+   "bounds": [
+    -69.957859,
+    -24.092075,
+    -69.928341,
+    -24.065125
+   ],
+   "scene": "S2B_19KDP_20260927_0_L2A",
+   "date": "2026-09-27",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data) — contraste ajustado (superficie muy brillante)",
+   "enhanced": true,
+   "credit": "Contains modified Copernicus Sentinel data 2026",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "dry_valleys_wright",
+   "file": "imagery/dry_valleys_wright.jpg",
+   "px": 512,
+   "bounds": [
+    161.937744,
+    -77.513475,
+    162.062256,
+    -77.486525
+   ],
+   "scene": "S2B_58CDV_20260108_0_L2A",
+   "date": "2026-01-08",
+   "cloud_pct": 1.02,
+   "snow_pct": 74.98,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data) — contraste ajustado (superficie muy brillante)",
+   "enhanced": true,
+   "credit": "Contains modified Copernicus Sentinel data 2026",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "mauna_kea_puu_hiwahine",
+   "file": "imagery/mauna_kea_puu_hiwahine.jpg",
+   "px": 512,
+   "bounds": [
+    -155.485018,
+    19.747425,
+    -155.456382,
+    19.774375
+   ],
+   "scene": "S2B_4QHG_20240125_0_L2A",
+   "date": "2024-01-25",
+   "cloud_pct": 0.44,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2024",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "cinder_lake_az",
+   "file": "imagery/cinder_lake_az.jpg",
+   "px": 512,
+   "bounds": [
+    -111.533617,
+    35.306257,
+    -111.500589,
+    35.333207
+   ],
+   "scene": "S2B_12SVE_20240913_0_L2A",
+   "date": "2024-09-13",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2024",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "askja_iceland",
+   "file": "imagery/askja_iceland.jpg",
+   "px": 512,
+   "bounds": [
+    -16.78192,
+    65.016525,
+    -16.71808,
+    65.043475
+   ],
+   "scene": "S2C_28WDT_20250821_0_L2A",
+   "date": "2025-08-21",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.02,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2025",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "lava_beds_ca",
+   "file": "imagery/lava_beds_ca.jpg",
+   "px": 512,
+   "bounds": [
+    -121.523585,
+    41.698414,
+    -121.487485,
+    41.725364
+   ],
+   "scene": "S2B_10TFM_20231004_0_L2A",
+   "date": "2023-10-04",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2023",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "etna_italy",
+   "file": "imagery/etna_italy.jpg",
+   "px": 512,
+   "bounds": [
+    14.982958,
+    37.736525,
+    15.017042,
+    37.763475
+   ],
+   "scene": "S2B_33SVB_20240715_0_L2A",
+   "date": "2024-07-15",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2024",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "haughton_devon",
+   "file": "imagery/haughton_devon.jpg",
+   "px": 512,
+   "bounds": [
+    -89.920276,
+    75.419825,
+    -89.813124,
+    75.446775
+   ],
+   "scene": "S2A_16XDJ_20230728_0_L2A",
+   "date": "2023-07-28",
+   "cloud_pct": 0.0,
+   "snow_pct": 11.61,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2023",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "rio_tinto",
+   "file": "imagery/rio_tinto.jpg",
+   "px": 512,
+   "bounds": [
+    -6.571735,
+    37.707225,
+    -6.537665,
+    37.734175
+   ],
+   "scene": "S2B_29SQB_20260828_0_L2A",
+   "date": "2026-08-28",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2026",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "amazonia_manaus",
+   "file": "imagery/amazonia_manaus.jpg",
+   "px": 512,
+   "bounds": [
+    -60.222789,
+    -2.622575,
+    -60.195811,
+    -2.595625
+   ],
+   "scene": "S2A_20MRC_20250804_1_L2A",
+   "date": "2025-08-04",
+   "cloud_pct": 0.06,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2025",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "pantanal",
+   "file": "imagery/pantanal.jpg",
+   "px": 512,
+   "bounds": [
+    -57.514121,
+    -17.413475,
+    -57.485879,
+    -17.386525
+   ],
+   "scene": "S2C_21KVA_20261007_0_L2A",
+   "date": "2026-10-07",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2026",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "ciudad_santa_cruz",
+   "file": "imagery/ciudad_santa_cruz.jpg",
+   "px": 512,
+   "bounds": [
+    -63.196251,
+    -17.796775,
+    -63.167949,
+    -17.769825
+   ],
+   "scene": "S2A_20KMF_20240127_0_L2A",
+   "date": "2024-01-27",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2024",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "namib_sossusvlei",
+   "file": "imagery/namib_sossusvlei.jpg",
+   "px": 512,
+   "bounds": [
+    15.327556,
+    -24.740865,
+    15.357226,
+    -24.713915
+   ],
+   "scene": "S2B_33JWN_20240515_0_L2A",
+   "date": "2024-05-15",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data) — contraste ajustado (superficie muy brillante)",
+   "enhanced": true,
+   "credit": "Contains modified Copernicus Sentinel data 2024",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "pampas_la_joya",
+   "error": "TypeError: must be real number, not NoneType"
+  },
+  {
+   "id": "campo_piedra_pomez",
+   "file": "imagery/campo_piedra_pomez.jpg",
+   "px": 512,
+   "bounds": [
+    -67.529278,
+    -26.673175,
+    -67.499122,
+    -26.646225
+   ],
+   "scene": "S2B_19JFL_20250906_1_L2A",
+   "date": "2025-09-06",
+   "cloud_pct": 0.01,
+   "snow_pct": 0.33,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data) — contraste ajustado (superficie muy brillante)",
+   "enhanced": true,
+   "credit": "Contains modified Copernicus Sentinel data 2025",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "payunia",
+   "file": "imagery/payunia.jpg",
+   "px": 512,
+   "bounds": [
+    -69.257746,
+    -36.435475,
+    -69.224254,
+    -36.408525
+   ],
+   "scene": "S2A_19HDV_20250317_0_L2A",
+   "date": "2025-03-17",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2025",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "pinacate",
+   "file": "imagery/pinacate.jpg",
+   "px": 512,
+   "bounds": [
+    -113.505849,
+    31.756525,
+    -113.474151,
+    31.783475
+   ],
+   "scene": "S2B_12STA_20240615_0_L2A",
+   "date": "2024-06-15",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2024",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "teide",
+   "file": "imagery/teide.jpg",
+   "px": 512,
+   "bounds": [
+    -16.6547,
+    28.259625,
+    -16.6241,
+    28.286575
+   ],
+   "scene": "S2B_28RCS_20231012_0_L2A",
+   "date": "2023-10-12",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2023",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "lanzarote",
+   "file": "imagery/lanzarote.jpg",
+   "px": 512,
+   "bounds": [
+    -13.45433,
+    29.147625,
+    -13.42347,
+    29.174575
+   ],
+   "scene": "S2B_28RFT_20240127_0_L2A",
+   "date": "2024-01-27",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2024",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "svalbard_bockfjorden",
+   "file": "imagery/svalbard_bockfjorden.jpg",
+   "px": 512,
+   "bounds": [
+    13.231532,
+    79.418225,
+    13.378468,
+    79.445175
+   ],
+   "scene": "S2A_33XVJ_20230704_2_L2A",
+   "date": "2023-07-04",
+   "cloud_pct": 0.1,
+   "snow_pct": 28.63,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data) — contraste ajustado (superficie muy brillante)",
+   "enhanced": true,
+   "credit": "Contains modified Copernicus Sentinel data 2023",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "ries",
+   "file": "imagery/ries.jpg",
+   "px": 512,
+   "bounds": [
+    10.546209,
+    48.869825,
+    10.587191,
+    48.896775
+   ],
+   "scene": "S2C_32UPV_20250306_0_L2A",
+   "date": "2025-03-06",
+   "cloud_pct": 0.01,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2025",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "vatnajokull_kverkfjoll",
+   "file": "imagery/vatnajokull_kverkfjoll.jpg",
+   "px": 512,
+   "bounds": [
+    -16.748172,
+    64.636525,
+    -16.685228,
+    64.663475
+   ],
+   "scene": "S2B_28WDS_20250816_0_L2A",
+   "date": "2025-08-16",
+   "cloud_pct": 0.06,
+   "snow_pct": 39.47,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data) — contraste ajustado (superficie muy brillante)",
+   "enhanced": true,
+   "credit": "Contains modified Copernicus Sentinel data 2025",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "danakil_dallol",
+   "file": "imagery/danakil_dallol.jpg",
+   "px": 512,
+   "bounds": [
+    40.279698,
+    14.225125,
+    40.307502,
+    14.252075
+   ],
+   "scene": "S2C_37PFR_20251203_0_L2A",
+   "date": "2025-12-03",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2025",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "desierto_blanco",
+   "file": "imagery/desierto_blanco.jpg",
+   "px": 512,
+   "bounds": [
+    28.185239,
+    27.263825,
+    28.215561,
+    27.290775
+   ],
+   "scene": "S2B_35RPL_20241221_0_L2A",
+   "date": "2024-12-21",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data) — contraste ajustado (superficie muy brillante)",
+   "enhanced": true,
+   "credit": "Contains modified Copernicus Sentinel data 2024",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "wadi_rum",
+   "file": "imagery/wadi_rum.jpg",
+   "px": 512,
+   "bounds": [
+    35.404504,
+    29.579625,
+    35.435496,
+    29.606575
+   ],
+   "scene": "S2A_36RYT_20230808_0_L2A",
+   "date": "2023-08-08",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data) — contraste ajustado (superficie muy brillante)",
+   "enhanced": true,
+   "credit": "Contains modified Copernicus Sentinel data 2023",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "dasht_e_lut",
+   "file": "imagery/dasht_e_lut.jpg",
+   "px": 512,
+   "bounds": [
+    59.052144,
+    30.591525,
+    59.083456,
+    30.618475
+   ],
+   "scene": "S2B_40RFU_20231221_0_L2A",
+   "date": "2023-12-21",
+   "cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2023",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "capadocia",
+   "file": "imagery/capadocia.jpg",
+   "px": 512,
+   "bounds": [
+    34.845846,
+    38.639325,
+    34.880354,
+    38.666275
+   ],
+   "scene": "S2A_36SXH_20230702_0_L2A",
+   "date": "2023-07-02",
+   "cloud_pct": 0.03,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data) — contraste ajustado (superficie muy brillante)",
+   "enhanced": true,
+   "credit": "Contains modified Copernicus Sentinel data 2023",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  },
+  {
+   "id": "bromo",
+   "file": "imagery/bromo.jpg",
+   "px": 512,
+   "bounds": [
+    112.936395,
+    -7.955175,
+    112.963605,
+    -7.928225
+   ],
+   "scene": "S2B_49MGM_20231027_0_L2A",
+   "date": "2023-10-27",
+   "cloud_pct": 0.01,
+   "snow_pct": 0.0,
+   "status": "modeled",
+   "source": "Copernicus Sentinel-2 L2A (ESA), color verdadero TCI 10 m, vía Earth Search (Element84, AWS Open Data)",
+   "enhanced": false,
+   "credit": "Contains modified Copernicus Sentinel data 2023",
+   "ref": "https://registry.opendata.aws/sentinel-2-l2a-cogs/"
+  }
+ ]
+}

@@ -1,0 +1,164 @@
+{
+  "id": "moon",
+  "name": "Luna",
+  "gravity": {
+    "value": 1.62,
+    "unit": "m/s²",
+    "status": "literature",
+    "source": "NASA NSSDC Moon Fact Sheet (gravedad superficial)",
+    "retrieved": "2026-11-11",
+    "ref": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+    "note": "Ficha actualizada el 11 de enero de 2024. No se usa en el puntaje; reservado para la física del rover."
+  },
+  "categories": [
+    {
+      "id": "thermal",
+      "label": "Térmico",
+      "weight": 0.2,
+      "note": "Los pesos son un juicio de diseño (estimated), no un resultado científico. Se pueden cambiar en el informe.",
+      "criteria": [
+        {
+          "id": "mean_temp",
+          "label": "Temperatura media",
+          "kind": "linear",
+          "tolerance": 100,
+          "sitePath": "climate.meanTemp",
+          "target": {
+            "value": null,
+            "unit": "K",
+            "status": "pending",
+            "source": "Pendiente: la ficha NSSDC no da temperatura media superficial (solo temperatura de cuerpo negro 270,4 K, que no es la media del suelo). Fuente prevista: LRO Diviner (PDS)."
+          }
+        },
+        {
+          "id": "diurnal_range",
+          "label": "Amplitud térmica diaria",
+          "kind": "linear",
+          "tolerance": 300,
+          "sitePath": "climate.dailyRange",
+          "target": {
+            "value": 295,
+            "unit": "K",
+            "range": [
+              95,
+              390
+            ],
+            "status": "literature",
+            "source": "NASA NSSDC Moon Fact Sheet (rango diurno en el ecuador: 95 K a 390 K)",
+            "retrieved": "2026-11-11",
+            "ref": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+            "note": "Amplitud = 390 - 95 = 295 K (derivado de la ficha); es en el ecuador lunar. Tolerancia 300 K: decisión de diseño (estimated), para que el puntaje distinga sitios terrestres."
+          }
+        }
+      ]
+    },
+    {
+      "id": "radiation",
+      "label": "Radiación",
+      "weight": 0.2,
+      "note": "PENDIENTE: la Luna no tiene atmósfera, así que la radiación en superficie (UV, rayos cósmicos, viento solar) es mucho mayor que en la Tierra. Fuente prevista: LRO CRaTER (PDS). La ficha NSSDC solo da irradiancia solar (1361 W/m²), que no es comparable con el índice UV del sitio.",
+      "criteria": [
+        {
+          "id": "uv",
+          "label": "Radiación UV en superficie",
+          "kind": "log",
+          "tolerance": 2,
+          "sitePath": "radiation.uvIndex",
+          "target": {
+            "value": null,
+            "unit": "índice UV",
+            "status": "pending",
+            "source": "Pendiente: LRO CRaTER / literatura de radiación lunar (PDS)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "soil",
+      "label": "Suelo y mineralogía",
+      "weight": 0.2,
+      "note": "PENDIENTE: el regolito lunar no tiene un pH comparable de forma sencilla; hace falta literatura (muestras Apolo) y definir el criterio.",
+      "criteria": [
+        {
+          "id": "ph",
+          "label": "pH del suelo",
+          "kind": "linear",
+          "tolerance": 4,
+          "sitePath": "soil.ph",
+          "target": {
+            "value": null,
+            "unit": "pH",
+            "status": "pending",
+            "source": "Pendiente: literatura de muestras Apolo / criterio de suelo lunar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "label": "Agua",
+      "weight": 0.15,
+      "note": "Simplificación: sin atmósfera ni agua líquida en superficie, la precipitación es 0 mm/año.",
+      "criteria": [
+        {
+          "id": "precipitation",
+          "label": "Precipitación anual",
+          "kind": "linear",
+          "tolerance": 600,
+          "sitePath": "water.precipitation",
+          "target": {
+            "value": 0,
+            "unit": "mm/año",
+            "status": "estimated",
+            "source": "Simplificación: sin atmósfera ni precipitación en la Luna",
+            "note": "Tolerancia 600 mm/año: decisión de diseño."
+          }
+        }
+      ]
+    },
+    {
+      "id": "terrain",
+      "label": "Terreno y movilidad",
+      "weight": 0.15,
+      "note": "PENDIENTE: falta un criterio de terreno con respaldo (p. ej. pendientes de LOLA en sitios de aterrizaje).",
+      "criteria": [
+        {
+          "id": "slope",
+          "label": "Pendiente media",
+          "kind": "linear",
+          "tolerance": 15,
+          "sitePath": "terrain.slopeMean",
+          "target": {
+            "value": null,
+            "unit": "°",
+            "status": "pending",
+            "source": "Pendiente: criterio de terreno con referencia (LRO LOLA)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pressure",
+      "label": "Presión atmosférica",
+      "weight": 0.1,
+      "criteria": [
+        {
+          "id": "pressure",
+          "label": "Presión en superficie",
+          "kind": "log",
+          "tolerance": 3,
+          "sitePath": "climate.pressure",
+          "target": {
+            "value": 3e-13,
+            "unit": "kPa",
+            "status": "literature",
+            "source": "NASA NSSDC Moon Fact Sheet (presión superficial nocturna: 3 x 10^-15 bar)",
+            "retrieved": "2026-11-11",
+            "ref": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+            "note": "Conversión: 1 bar = 100 kPa, así que 3e-15 bar = 3e-13 kPa. Es la presión NOCTURNA (casi vacío). Con tolerancia de 3 décadas todo sitio terrestre puntúa 0 aquí: es lo físicamente honesto, no un error."
+          }
+        }
+      ]
+    }
+  ]
+}

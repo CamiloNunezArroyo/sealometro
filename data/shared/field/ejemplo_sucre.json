@@ -1,0 +1,13 @@
+{
+  "ejemplo": true,
+  "_nota": "EJEMPLO INVENTADO para probar el motor (los valores son los de ejemplo de docs/CAJA_CAMPO.md §3). No son mediciones reales.",
+  "device": "seal-box-01", "fw": "0.1.0", "t_utc": "2026-11-14T19:30:00Z",
+  "gps":   {"fix": true, "lat": -19.04, "lon": -65.26, "alt_m": 2810, "hdop": 1.1, "sats": 8},
+  "air":   {"t_c": 21.4, "rh_pct": 38.0, "p_hpa": 735.2, "alt_baro_m": 2790},
+  "uv":    {"model": "GUVA-S12SD", "mv": 820, "uvi_est": 8.2, "saturated": false, "calibrated": false},
+  "light": {"model": "TEMT6000", "mv": 3290, "lux_est": null, "saturated": true},
+  "gas":   {"model": "MQ-2", "mv": 640, "warmup_s": 600, "calibrated": false},
+  "photos": ["foto_01.jpg"],
+  "n_samples": 10,
+  "notes": "tierra suelta, sol directo"
+}

@@ -1,0 +1,169 @@
+{
+  "id": "uyuni_incahuasi",
+  "name": "Salar de Uyuni — Isla Incahuasi",
+  "country": "Bolivia",
+  "region": "Potosí, Altiplano sur",
+  "coords": {
+    "lat": -20.2417,
+    "lon": -67.6197
+  },
+  "biome": "salt_flat",
+  "analogFor": [
+    "mars"
+  ],
+  "analogRationale": {
+    "text": "Salar de altura con costra de sales (evaporitas), alta radiación UV por la altitud y aridez. Se usa como análogo de ambientes evaporíticos de Marte. Justificación general: PENDIENTE de citas (DOI) por sitio; ver docs/DATA_SOURCES.md. Limitación importante: la presión (~64 kPa) es unas 100 veces la de Marte.",
+    "refs": []
+  },
+  "terrain": {
+    "file": "data/terrain/uyuni_height.bin",
+    "width": 256,
+    "height": 256,
+    "metersPerPixel": 23.4375,
+    "minElevationM": 3655.957,
+    "maxElevationM": 3722.163,
+    "status": "gameplay",
+    "source": "TERRENO SINTÉTICO de relleno (tools/make_placeholder_terrain.py). No es el relieve real.",
+    "note": "Ejecuta tools/build_site.py para reemplazarlo por el DEM Copernicus GLO-30 real. El juego detecta el cambio de estado automáticamente.",
+    "slopeMean": {
+      "value": null,
+      "unit": "°",
+      "status": "pending",
+      "source": "Se calcula con el DEM real (tools/build_site.py)"
+    }
+  },
+  "elevation": {
+    "value": 3656,
+    "unit": "m",
+    "status": "estimated",
+    "source": "Cifra comúnmente citada para el Salar de Uyuni (~3656 m), sin fuente primaria cargada",
+    "note": "Se reemplaza por la elevación del DEM Copernicus GLO-30 al ejecutar tools/build_site.py."
+  },
+  "climate": {
+    "meanTemp": {
+      "value": null,
+      "unit": "K",
+      "status": "pending",
+      "source": "Pendiente: NASA POWER (T2M, climatología) vía tools/build_site.py"
+    },
+    "dailyRange": {
+      "value": null,
+      "unit": "K",
+      "status": "pending",
+      "source": "Pendiente: NASA POWER (T2M_MAX - T2M_MIN, climatología) vía tools/build_site.py"
+    },
+    "pressure": {
+      "value": 64.45,
+      "unit": "kPa",
+      "status": "derived",
+      "source": "Atmósfera estándar internacional (ISA) evaluada a 3656 m (elevación estimada)",
+      "note": "Aproximación. NASA POWER (PS) la reemplaza al ejecutar tools/build_site.py."
+    },
+    "humidity": {
+      "value": null,
+      "unit": "%",
+      "status": "pending",
+      "source": "Pendiente: NASA POWER (RH2M)"
+    },
+    "wind": {
+      "value": null,
+      "unit": "m/s",
+      "status": "pending",
+      "source": "Pendiente: NASA POWER (WS10M)"
+    },
+    "albedo": {
+      "value": null,
+      "unit": "-",
+      "status": "pending",
+      "source": "Pendiente: NASA POWER (ALLSKY_SRF_ALB)"
+    },
+    "monthly": {
+      "tMaxC": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "tMinC": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "status": "pending",
+      "source": "Pendiente: NASA POWER (T2M_MAX / T2M_MIN, climatología mensual)"
+    }
+  },
+  "radiation": {
+    "solarSurface": {
+      "value": null,
+      "unit": "kWh/m²/día",
+      "status": "pending",
+      "source": "Pendiente: NASA POWER (ALLSKY_SFC_SW_DWN)"
+    },
+    "uvIndex": {
+      "value": null,
+      "unit": "índice UV",
+      "status": "pending",
+      "source": "Pendiente: NASA POWER (ALLSKY_SFC_UV_INDEX)"
+    }
+  },
+  "soil": {
+    "claySandSilt": {
+      "value": null,
+      "unit": "%",
+      "status": "pending",
+      "source": "Pendiente: ISRIC SoilGrids (descarga/WCS)",
+      "note": "SoilGrids es un modelo y funciona mal en salares: usar con mucha cautela."
+    },
+    "ph": {
+      "value": null,
+      "unit": "pH",
+      "status": "pending",
+      "source": "Pendiente: ISRIC SoilGrids o literatura"
+    },
+    "minerals": [
+      {
+        "name": "Halita (costra de sal)",
+        "status": "estimated",
+        "ref": "Conocimiento general del salar; PENDIENTE de referencia bibliográfica"
+      },
+      {
+        "name": "Yeso",
+        "status": "estimated",
+        "ref": "Conocimiento general del salar; PENDIENTE de referencia bibliográfica"
+      }
+    ]
+  },
+  "water": {
+    "precipitation": {
+      "value": null,
+      "unit": "mm/año",
+      "status": "pending",
+      "source": "Pendiente: NASA POWER (PRECTOTCORR, climatología)"
+    },
+    "note": "Información general, pendiente de referencia: bajo la costra hay salmuera somera y el salar se inunda parcialmente en la época de lluvias."
+  },
+  "gameplay": {
+    "sampleSeed": 20260101,
+    "sampleCount": 8,
+    "missionSamplesRequired": 4,
+    "sampleStatus": "gameplay"
+  }
+}

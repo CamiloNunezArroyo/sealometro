@@ -1,0 +1,13 @@
+# Hecho con asistencia de IA (Claude) — Seal Hackathon Team, NASA Space Apps Sucre 2026
+# Fuentes buscadas y comprobadas el 2026-11-14 (Claude Fable 5.2). Ver docs/VALORES_A_VERIFICAR.md.
+id: mars_ice_arcadia
+body: mars
+name: "Arcadia Planitia (hielo enterrado)"
+group: hielo
+gravity: {value: 3.73, unit: "m/s²", status: literature, source: "NASA NSSDC Mars Fact Sheet", ref: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html", retrieved: "2026-11-14"}
+note: "Hielo en exceso de decenas de metros (Bramson et al. 2015, GRL, doi:10.1002/2015GL064844); SWIM: Arcadia y Deuteronilus Mensae son las mejores zonas (Morgan et al. 2021, Nat. Astron., doi:10.1038/s41550-020-01290-z). Ninguna da valores para nuestras dimensiones T1: la dimensión clave (ice_presence) es T2. Cobertura baja a propósito."
+inherit_from: mars_global
+inherit_dims: [pressure, precip, ndvi, soil_moisture]
+values:
+  t_mean: {unit: K, status: pending, source: "", note: "Sin medición in situ; candidata: Mars Climate Database (modelo)."}
+  mineral_classes: {unit: "1", status: pending, source: "", note: "Las fuentes hablan de hielo de agua, que no está en la lista de clases."}

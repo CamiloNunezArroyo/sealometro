@@ -1,0 +1,160 @@
+{
+  "id": "askja_iceland",
+  "name": "Askja — Dyngjufjöll",
+  "country": "Islandia",
+  "region": "Highlands, Islandia",
+  "coords": {
+    "lat": 65.03,
+    "lon": -16.75
+  },
+  "biome": "volcanic",
+  "analogFor": [
+    "moon"
+  ],
+  "analogRationale": {
+    "text": "Caldera usada como campo de entrenamiento geológico de astronautas Apollo (julio de 1967, entre ellos Armstrong, Aldrin, Duke, Mitchell, Schmitt y Scott). Fuentes de divulgación: pendiente una referencia primaria (NASA/USGS). Coordenadas: Coordenadas de volcanodiscovery.com (65.03°N, 16.75°W; cima 1080 m).",
+    "refs": [
+      "https://www.atlasobscura.com/articles/planetary-analogues-space-on-earth",
+      "https://www.utterlyinteresting.com/post/training-for-the-moon-how-nine-of-the-twelve-apollo-astronauts-rehearsed-their-missions-in-iceland"
+    ]
+  },
+  "terrain": {
+    "file": "data/terrain/askja_iceland_height.bin",
+    "width": 256,
+    "height": 256,
+    "metersPerPixel": 23.4375,
+    "minElevationM": 1059.397,
+    "maxElevationM": 1096.152,
+    "status": "gameplay",
+    "source": "TERRENO SINTÉTICO de relleno (tools/make_placeholder_terrain.mjs). No es el relieve real.",
+    "slopeMean": {
+      "value": null,
+      "unit": "°",
+      "status": "pending",
+      "source": "Se calcula con el DEM real (node tools/build_site.mjs --site public/data/sites/askja_iceland.json)"
+    },
+    "note": "Forma ilustrativa generada por código. Ejecuta `node tools/build_site.mjs --site public/data/sites/askja_iceland.json` para reemplazarlo por el DEM Copernicus GLO-30 real; el juego detecta el cambio solo."
+  },
+  "elevation": {
+    "value": 1080,
+    "unit": "m",
+    "status": "estimated",
+    "source": "Valor provisional pasado por el usuario (--base-elev 1080 m), sin fuente",
+    "note": "Se reemplaza por la elevación del DEM Copernicus GLO-30 al ejecutar `node tools/build_site.mjs --site public/data/sites/askja_iceland.json`."
+  },
+  "climate": {
+    "meanTemp": {
+      "value": null,
+      "unit": "K",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "dailyRange": {
+      "value": null,
+      "unit": "K",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "pressure": {
+      "value": 89.01,
+      "unit": "kPa",
+      "status": "derived",
+      "source": "Atmósfera estándar internacional (ISA) evaluada a 1080 m (elevación provisional)",
+      "note": "Aproximación. NASA POWER (PS) la reemplaza al ejecutar el comando de datos del sitio."
+    },
+    "humidity": {
+      "value": null,
+      "unit": "%",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "wind": {
+      "value": null,
+      "unit": "m/s",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "albedo": {
+      "value": null,
+      "unit": "-",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "monthly": {
+      "tMaxC": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "tMinC": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada"
+    }
+  },
+  "radiation": {
+    "solarSurface": {
+      "value": null,
+      "unit": "kWh/m²/día",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "uvIndex": {
+      "value": null,
+      "unit": "índice UV",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    }
+  },
+  "soil": {
+    "claySandSilt": {
+      "value": null,
+      "unit": "%",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "ph": {
+      "value": null,
+      "unit": "pH",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "minerals": []
+  },
+  "water": {
+    "precipitation": {
+      "value": null,
+      "unit": "mm/año",
+      "status": "pending",
+      "source": "Pendiente: aún sin fuente cargada (se completa con el comando de datos del sitio o con datos oficiales)"
+    },
+    "note": "Sin información cargada."
+  },
+  "gameplay": {
+    "sampleSeed": 3118175451,
+    "sampleCount": 8,
+    "missionSamplesRequired": 4,
+    "sampleStatus": "gameplay"
+  }
+}

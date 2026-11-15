@@ -1,0 +1,526 @@
+# Hecho con asistencia de IA (Claude) — Seal Hackathon Team, NASA Space Apps Sucre 2026
+# Lugares de la Tierra a evaluar (docs/SITIOS_CANDIDATOS.md). Coordenadas y referencias buscadas y comprobadas con
+# WebSearch/WebFetch el 2026-11-14 (Claude Fable 5.2). Ver docs/VALORES_A_VERIFICAR.md.
+# - Los 11 sitios del juego conservan sus coordenadas tal como están en referencias/juego/sites/.
+# - coord.status: literature (paper/sitio oficial) · estimated (Wikipedia/GeoNames/OSM) · pending (no se procesa).
+# - role: candidate · control_pos (necesita una ref que lo llame análogo) · control_neg.
+# - Borde de mosaico: algunos puntos quedan a < 0,05° de un grado entero (Etna, Valles Secos, Askja, Valle de las
+#   Ánimas, Palca, Bromo). fetch/dem.py une los mosaicos vecinos cuando la ventana cruza el borde.
+# - Reserva Eduardo Avaroa = REGIÓN (region: reserva_eduardo_avaroa), no un sitio.
+sites:
+  # ============================================================ Bolivia — candidatos
+  - id: siloli
+    name: "Desierto de Siloli – Árbol de Piedra"
+    country: Bolivia
+    region: reserva_eduardo_avaroa
+    lat: -22.0600
+    lon: -67.8833
+    coord: {status: estimated, source: "Wikipedia EN (Árbol de Piedra: -22.05167, -67.88333); latitud movida ~0,9 km al sur, a la llanura", ref: "https://en.wikipedia.org/wiki/%C3%81rbol_de_Piedra"}
+    role: candidate
+    refs: []
+    rationale: "Llanura hiperárida de altura con rocas esculpidas por el viento; no se encontró un estudio que la use como análogo."
+
+  - id: laguna_colorada
+    name: "Laguna Colorada – orilla (mirador)"
+    country: Bolivia
+    region: reserva_eduardo_avaroa
+    lat: -22.1704
+    lon: -67.8046
+    coord: {status: estimated, source: "OpenStreetMap/Nominatim 'Mirador Laguna Colorada' (centro del lago en Wikipedia: -22.19861, -67.78111)", ref: "https://www.openstreetmap.org/"}
+    role: candidate
+    refs: ["https://en.wikipedia.org/wiki/Laguna_Colorada"]
+    rationale: "Lago salino somero con islas de bórax. El color rojo es biológico (algas), no óxido de hierro."
+
+  - id: coipasa
+    name: "Salar de Coipasa"
+    country: Bolivia
+    region: altiplano_oruro
+    lat: -19.3833
+    lon: -68.1667
+    coord: {status: estimated, source: "Wikipedia ES (Salar de Coipasa)", ref: "https://es.wikipedia.org/wiki/Salar_de_Coipasa"}
+    role: candidate
+    refs: ["https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_6/b_fdi_43-44/010005592.pdf", "https://pubs.usgs.gov/publication/70012613"]
+    rationale: "Costra de halita porosa con salmuera rica en Li-K-Mg-B; transición de lago a salar."
+    values:
+      mineral_classes: {unit: "1", classes: [cloruro], status: literature, source: "Estudio IRD de los salares de Uyuni y Coipasa (halita 98,5–99,8 %; visto solo en el extracto del buscador)", ref: "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_6/b_fdi_43-44/010005592.pdf", retrieved: "2026-11-14"}
+
+  - id: poopo
+    name: "Lago Poopó – lecho"
+    country: Bolivia
+    region: altiplano_oruro
+    lat: -18.5500
+    lon: -67.0830
+    coord: {status: estimated, source: "Wikipedia EN (Lake Poopó); la coordenada de Wikipedia ES (-18.7819, -67.0247) se descartó por quedar pegada a 67°O", ref: "https://en.wikipedia.org/wiki/Lake_Poop%C3%B3"}
+    role: candidate
+    refs: []
+    rationale: "Lago que se seca (agua temporal). La analogía con Marte es hipótesis nuestra, sin fuente."
+
+  - id: uturuncu
+    name: "Volcán Uturuncu – falda baja"
+    country: Bolivia
+    region: sur_lipez
+    lat: null
+    lon: null
+    coord: {status: pending, source: "Solo se encontró la cumbre (-22.27, -67.18, Wikipedia EN); ningún punto publicado de la falda", ref: "https://en.wikipedia.org/wiki/Uturuncu"}
+    role: candidate
+    refs: []
+    rationale: "Volcán dacítico; se compararía el suelo (ceniza) con el simulante lunar. No se procesa hasta tener un punto."
+
+  - id: sajama
+    name: "Parque Nacional Sajama – puna al pie del volcán"
+    country: Bolivia
+    region: sajama
+    lat: -18.0833
+    lon: -68.9167
+    coord: {status: estimated, source: "Wikipedia EN (Sajama National Park, coordenada genérica del parque); los géiseres de Juchusuma/Manasaya no tienen coordenada publicada encontrada", ref: "https://en.wikipedia.org/wiki/Sajama_National_Park"}
+    role: candidate
+    refs: ["https://repositorio.umsa.bo/xmlui/handle/123456789/35517"]
+    rationale: "Geotermia de altura y periglaciar; no se encontró uso formal como análogo."
+
+  - id: valle_de_la_luna
+    name: "Valle de la Luna (La Paz)"
+    country: Bolivia
+    region: la_paz
+    lat: -16.5672
+    lon: -68.0944
+    coord: {status: estimated, source: "Wikipedia EN (Valle de la Luna, Bolivia)", ref: "https://en.wikipedia.org/wiki/Valle_de_la_Luna_(Bolivia)"}
+    role: candidate
+    refs: []
+    rationale: "Prueba de 'impostor': cárcavas de arcilla y arenisca con aspecto lunar y lluvia estacional."
+
+  - id: valle_de_las_animas
+    name: "Valle de las Ánimas (La Paz)"
+    country: Bolivia
+    region: la_paz
+    lat: -16.5286
+    lon: -68.0264
+    coord: {status: estimated, source: "Wikipedia EN (Valle de las Ánimas); a 0,026° de 68°O (el DEM une mosaicos)", ref: "https://en.wikipedia.org/wiki/Valle_de_las_%C3%81nimas"}
+    role: candidate
+    refs: []
+    rationale: "Agujas de erosión; impostor / movilidad en cárcavas."
+
+  - id: canones_de_palca
+    name: "Cañón de Palca"
+    country: Bolivia
+    region: la_paz
+    lat: -16.5651
+    lon: -67.9715
+    coord: {status: estimated, source: "OpenStreetMap/Nominatim 'Canyon de Palca'; a 0,029° de 68°O (el DEM une mosaicos)", ref: "https://www.openstreetmap.org/"}
+    role: candidate
+    refs: []
+    rationale: "Cañón de conglomerados erosionados; impostor / movilidad."
+
+  - id: chacaltaya
+    name: "Chacaltaya – estación GAW (5240 m)"
+    country: Bolivia
+    region: la_paz
+    lat: -16.3505
+    lon: -68.1314
+    coord: {status: literature, source: "ACP 2024, estación GAW Chacaltaya (16,3505°S, 68,1314°O, 5240 m)", ref: "https://acp.copernicus.org/articles/24/2837/2024/acp-24-2837-2024.html"}
+    role: candidate
+    refs: ["https://acp.copernicus.org/articles/24/2837/2024/acp-24-2837-2024.html"]
+    rationale: "Laboratorio histórico de rayos cósmicos: sirve para la sección 'dónde se rompe la analogía' (radiación)."
+
+  - id: torotoro_umajalanta
+    name: "Caverna de Umajalanta (Torotoro)"
+    country: Bolivia
+    region: torotoro
+    lat: -18.1145
+    lon: -65.8115
+    coord: {status: estimated, source: "Wikipedia ES (Caverna de Umajalanta)", ref: "https://es.wikipedia.org/wiki/Caverna_de_Umajalanta"}
+    role: candidate
+    refs: []
+    rationale: "Cueva accesible de ~4,6 km para practicar operaciones en cuevas. Es kárstica, NO un tubo de lava."
+    values:
+      cave_lava_tube: {value: 1, unit: "1", status: estimated, source: "Wikipedia ES: caverna de 4600 m; es una cueva kárstica, no un tubo de lava", ref: "https://es.wikipedia.org/wiki/Caverna_de_Umajalanta", retrieved: "2026-11-14"}
+
+  - id: cordillera_real_glaciar_roca
+    name: "Glaciar de roca de Pico Austria (Cordillera Real)"
+    country: Bolivia
+    region: cordillera_real
+    lat: -16.1931
+    lon: -68.2647
+    coord: {status: literature, source: "Rangecroft et al. 2015, Arctic, Antarctic, and Alpine Research 47(1), pie de figura: 16°11'35\"S, 68°15'53\"O", ref: "https://doi.org/10.1657/AAAR0014-029"}
+    role: candidate
+    refs: ["https://doi.org/10.1657/AAAR0014-029"]
+    rationale: "Glaciar de roca con estudio publicado: hipótesis de análogo del hielo bajo detritos de Marte."
+
+  # ============================================================ Bolivia — sitios del juego (coordenadas sin tocar)
+  - id: sol_de_manana
+    name: "Sol de Mañana – campo geotérmico"
+    country: Bolivia
+    region: reserva_eduardo_avaroa
+    lat: -22.426
+    lon: -67.76
+    coord: {status: estimated, source: "Wikipedia (Sol de Mañana), coordenada del juego", ref: "https://en.wikipedia.org/wiki/Sol_de_Ma%C3%B1ana"}
+    role: candidate
+    refs: ["https://doi.org/10.1038/ncomms13554"]
+    rationale: "Ruff & Farmer 2016 (Nat. Commun. 7:13554) compara los sínteres de El Tatio (Chile) con Home Plate (Gusev); NO menciona Sol de Mañana: la analogía boliviana es hipótesis nuestra."
+
+  - id: laguna_verde_licancabur
+    name: "Laguna Verde – Volcán Licancabur"
+    country: Bolivia
+    region: reserva_eduardo_avaroa
+    lat: -22.795
+    lon: -67.825
+    coord: {status: estimated, source: "Wikipedia (Laguna Verde, Bolivia), coordenada del juego", ref: "https://en.wikipedia.org/wiki/Laguna_Verde_(Bolivia)"}
+    role: control_pos
+    analog_for: [mars]
+    refs: ["https://doi.org/10.1029/2008JG000818", "https://astrobiology.nasa.gov/news/2008-high-lakes-project-from-early-mars-to-todays-earth/"]
+    rationale: "High Lakes Project (Cabrol et al. 2009, JGR 114, G00D06; NASA NAI) estudia los lagos del Licancabur como modelo de Marte temprano."
+
+  - id: uyuni_incahuasi
+    name: "Salar de Uyuni – Isla Incahuasi"
+    country: Bolivia
+    region: salar_de_uyuni
+    lat: -20.2417
+    lon: -67.6197
+    coord: {status: estimated, source: "coordenada del juego (referencias/juego/sites/uyuni.json)", ref: ""}
+    role: candidate
+    refs: ["https://meetingorganizer.copernicus.org/EPSC2024/EPSC2024-483.html"]
+    rationale: "Solo un resumen de congreso (EPSC 2024) compara cloruros de Marte con Uyuni; sin paper revisado por pares."
+    values:
+      mineral_classes: {unit: "1", classes: [cloruro, sulfato], status: estimated, source: "Juego: halita (costra de sal) y yeso, marcados estimated con referencia pendiente", retrieved: "2026-11-13"}
+
+  # ============================================================ Controles positivos (con referencia de análogo)
+  - id: atacama_yungay
+    name: "Desierto de Atacama – Yungay"
+    country: Chile
+    region: atacama
+    lat: -24.0786
+    lon: -69.9431
+    coord: {status: estimated, source: "coordenada del juego", ref: ""}
+    role: control_pos
+    analog_for: [mars]
+    refs: ["https://doi.org/10.1126/science.1089143"]
+    rationale: "Navarro-González et al. 2003 (Science 302:1018): suelos tipo Marte en el núcleo hiperárido."
+    values:
+      mineral_classes: {unit: "1", classes: [sulfato, cloruro, carbonato], status: literature, source: "Sutter et al. 2005, LPSC XXXVI, resumen 2182 (XRD + IR, calicata de 0-146 cm cerca de Yungay)", ref: "https://ntrs.nasa.gov/citations/20050175994", retrieved: "2026-11-14", note: "Tabla 2: anhidrita, yeso, halita, calcita (más cuarzo, feldespato y nitratita, sin clase en la lista). Sitio cerca de Yungay; no se verificó que coincida con el punto exacto."}
+
+  - id: dry_valleys_wright
+    name: "Valles Secos de McMurdo – Wright Valley"
+    country: Antártida
+    region: mcmurdo_dry_valleys
+    lat: -77.5
+    lon: 162.0
+    coord: {status: estimated, source: "coordenada del juego; longitud en grado entero (el DEM une mosaicos)", ref: ""}
+    role: control_pos
+    analog_for: [mars]
+    refs: ["https://doi.org/10.1016/j.epsl.2022.117582", "https://doi.org/10.2138/am-2022-8381"]
+    rationale: "Toner et al. 2022 (EPSL) y Burton et al. 2023 (Am. Mineral.) usan Wright Valley como análogo de Marte (DOIs vistos en extracto)."
+
+  - id: mauna_kea_puu_hiwahine
+    name: "Mauna Kea – Pu'u Hiwahine"
+    country: Estados Unidos
+    region: hawai
+    lat: 19.7609
+    lon: -155.4707
+    coord: {status: literature, source: "NASA NTRS 20140008708 (Klingelhöfer et al. 2014): 19°45′39,29″N 155°28′14,56″O", ref: "https://ntrs.nasa.gov/citations/20140008708"}
+    role: control_pos
+    analog_for: [moon, mars]
+    refs: ["https://ntrs.nasa.gov/citations/20140008708"]
+    rationale: "Pruebas ISRU: material volcánico fino, 'análogo lunar y marciano adecuado'."
+
+  - id: cinder_lake_az
+    name: "Cinder Lake – campo de cráteres"
+    country: Estados Unidos
+    region: arizona
+    lat: 35.319732
+    lon: -111.517103
+    coord: {status: estimated, source: "coordenada del juego", ref: ""}
+    role: control_pos
+    analog_for: [moon]
+    refs: ["https://www.usgs.gov/node/279552"]
+    rationale: "Campo de cráteres artificial del USGS para entrenar astronautas del Apollo (análogo lunar)."
+
+  - id: askja_iceland
+    name: "Askja – Dyngjufjöll"
+    country: Islandia
+    region: islandia
+    lat: 65.03
+    lon: -16.75
+    coord: {status: estimated, source: "coordenada del juego; a 0,03° de 65°N (el DEM une mosaicos)", ref: ""}
+    role: control_pos
+    analog_for: [moon, mars]
+    refs: ["https://doi.org/10.1016/j.jvolgeores.2013.02.009", "https://www.nasa.gov/wp-content/uploads/static/history/alsj/AstronautGeologyTraining.pdf"]
+    rationale: "Cousins et al. 2013 (JVGR 256:61) la usa como análogo de Marte; entrenamiento Apollo 1965/1967."
+    values:
+      mineral_classes: {unit: "1", classes: [basalto, sulfato, oxido_fe, silice_hidratada], status: literature, source: "Cousins et al. 2013, J. Volcanol. Geotherm. Res. 256:61-77 (XRD, Raman, SEM-EDS)", ref: "https://doi.org/10.1016/j.jvolgeores.2013.02.009", retrieved: "2026-11-14", note: "Hialoclastitas palagonitizadas y lava almohadillada con sílice, sulfatos (jarosita probable) y óxidos de Fe; sílice y sulfato por EDS. Muestras del macizo Askja, no necesariamente del punto exacto. Leído en preprint."}
+
+  - id: lava_beds_ca
+    name: "Lava Beds – Medicine Lake"
+    country: Estados Unidos
+    region: california
+    lat: 41.711889
+    lon: -121.505535
+    coord: {status: estimated, source: "coordenada del juego", ref: ""}
+    role: control_pos
+    analog_for: [mars]
+    refs: ["https://www.nasa.gov/feature/ames/braille"]
+    rationale: "Proyecto BRAILLE de la NASA: análogo de Marte en tubos de lava."
+    values:
+      cave_lava_tube: {value: 1, unit: "1", status: literature, source: "NASA BRAILLE (cuevas volcánicas de Lava Beds)", ref: "https://www.nasa.gov/feature/ames/braille", retrieved: "2026-11-14"}
+      mineral_classes: {unit: "1", classes: [basalto, silice_hidratada, carbonato], status: estimated, source: "Kulkarni et al. 2022, Chemical Geology (espeleotemas de las cuevas de Lava Beds)", ref: "https://doi.org/10.1016/j.chemgeo.2022.120759", retrieved: "2026-11-14", note: "Solo resumen leído: sílice amorfa y calcita en espeleotemas sobre basalto. estimated hasta leer el texto completo."}
+
+  - id: etna_italy
+    name: "Monte Etna"
+    country: Italia
+    region: sicilia
+    lat: 37.75
+    lon: 15.0
+    coord: {status: estimated, source: "coordenada PROVISIONAL del juego; longitud en grado entero (el DEM une mosaicos)", ref: ""}
+    role: control_pos
+    analog_for: [moon]
+    refs: ["https://www.dlr.de/en/research-and-transfer/projects-and-missions/arches/arches-space-analogue-demonstration-mission"]
+    rationale: "Campaña ARCHES 2022 (DLR con ESA): el Etna como terreno análogo lunar."
+    values:
+      cave_lava_tube: {value: 1, unit: "1", status: literature, source: "Calvari y Puglisi 2007 (INGV Catania): más de 250 cavidades conocidas en el Etna, en su mayoría tubos de lava", ref: "https://www.earth-prints.org/handle/2122/4286", retrieved: "2026-11-14"}
+
+  - id: haughton_devon
+    name: "Cráter Haughton – estación HMP (isla Devon)"
+    country: Canadá
+    region: isla_devon
+    lat: 75.4333
+    lon: -89.8667
+    coord: {status: literature, source: "Mars Institute, estación HMP: 75°26'N, 89°52'O", ref: "https://www.marsinstitute.no/hmp"}
+    role: control_pos
+    analog_for: [moon, mars]
+    refs: ["https://www.marsinstitute.no/hmp", "https://ntrs.nasa.gov/citations/20050170975"]
+    rationale: "Haughton-Mars Project: análogo planetario de la Luna y Marte."
+
+  - id: rio_tinto
+    name: "Río Tinto – Peña de Hierro (cabecera)"
+    country: España
+    region: huelva
+    lat: 37.7207
+    lon: -6.5547
+    coord: {status: estimated, source: "OpenStreetMap/Nominatim 'Camino Local a la Peña de Hierro' (Nerva); camino junto a la cabecera, no un punto de muestreo publicado", ref: "https://www.openstreetmap.org/"}
+    role: control_pos
+    analog_for: [mars]
+    refs: ["https://doi.org/10.1016/j.epsl.2005.09.043"]
+    rationale: "Fernández-Remolar et al. 2005 (EPSL 240:149): análogo de Meridiani Planum."
+    values:
+      mineral_classes: {unit: "1", classes: [sulfato, oxido_fe], status: literature, source: "Fernández-Remolar et al. 2005 (jarosita y otros sulfatos; hematita)", ref: "https://doi.org/10.1016/j.epsl.2005.09.043", retrieved: "2026-11-14"}
+
+  # ============================================================ Controles negativos
+  - id: amazonia_manaus
+    name: "Amazonía – torre K34 (Reserva Cuieiras)"
+    country: Brasil
+    region: amazonas
+    lat: -2.6091
+    lon: -60.2093
+    coord: {status: literature, source: "AmeriFlux BR-Ma2 (Manaus ZF2 K34), selva primaria ~60 km al norte de Manaus", ref: "https://ameriflux.lbl.gov/sites/siteinfo/BR-Ma2"}
+    role: control_neg
+    rationale: "Selva tropical húmeda: lo opuesto a un análogo."
+
+  - id: pantanal
+    name: "Pantanal"
+    country: Brasil
+    region: pantanal
+    lat: -17.4000
+    lon: -57.5000
+    coord: {status: estimated, source: "Wikipedia EN (Pantanal, coordenada genérica de la región)", ref: "https://en.wikipedia.org/wiki/Pantanal"}
+    role: control_neg
+    rationale: "Humedal tropical inundable."
+
+  - id: ciudad_santa_cruz
+    name: "Santa Cruz de la Sierra – Plaza 24 de Septiembre"
+    country: Bolivia
+    region: santa_cruz
+    lat: -17.7833
+    lon: -63.1821
+    coord: {status: estimated, source: "Wikipedia ES (Plaza 24 de Septiembre)", ref: "https://es.wikipedia.org/wiki/Plaza_24_de_Septiembre"}
+    role: control_neg
+    rationale: "Centro de una ciudad húmeda de llanura."
+
+  # ============================================================ Latinoamérica
+  - id: namib_sossusvlei
+    name: "Namib – dunas de Sossusvlei"
+    country: Namibia
+    region: namibia
+    lat: -24.72739
+    lon: 15.342391
+    coord: {status: estimated, source: "coordenada del juego", ref: ""}
+    role: candidate
+    refs: []
+    rationale: "Solo se encontró literatura que usa el Namib como análogo de Titán, no de Marte ni de la Luna: pasa a candidato."
+
+  - id: pampas_la_joya
+    name: "Pampas de La Joya"
+    country: Perú
+    region: arequipa
+    lat: null
+    lon: null
+    coord: {status: pending, source: "El paper solo da el rango 16–17°S; no se encontró un punto", ref: "https://doi.org/10.1016/j.gca.2011.01.017"}
+    role: control_pos
+    analog_for: [mars]
+    refs: ["https://doi.org/10.1016/j.gca.2011.01.017"]
+    rationale: "Valdivia-Silva et al. 2011 (GCA 75:1975): 'nuevo análogo de suelo tipo Marte'. No se procesa hasta tener un punto."
+
+  - id: campo_piedra_pomez
+    name: "Campo de Piedra Pómez"
+    country: Argentina
+    region: catamarca
+    lat: -26.6597
+    lon: -67.5142
+    coord: {status: estimated, source: "Wikipedia ES (Área natural protegida Campo de Piedra Pómez)", ref: "https://es.wikipedia.org/wiki/%C3%81rea_natural_protegida_Campo_de_Piedra_P%C3%B3mez"}
+    role: control_pos
+    analog_for: [mars]
+    refs: ["https://doi.org/10.1130/B30916.1", "https://doi.org/10.1016/j.aeolia.2015.01.007"]
+    rationale: "Megaóndulas de grava de la Puna como análogo de las TAR marcianas (de Silva et al. 2013; Bridges et al. 2015)."
+
+  - id: payunia
+    name: "La Payunia – Payún Matrú"
+    country: Argentina
+    region: mendoza
+    lat: -36.4220
+    lon: -69.2410
+    coord: {status: estimated, source: "Wikipedia EN (Payún Matrú)", ref: "https://en.wikipedia.org/wiki/Pay%C3%BAn_Matr%C3%BA"}
+    role: candidate
+    refs: []
+    rationale: "Coladas largas comparadas con Marte solo en resúmenes de congreso."
+
+  - id: pinacate
+    name: "El Pinacate"
+    country: México
+    region: sonora
+    lat: 31.7700
+    lon: -113.4900
+    coord: {status: estimated, source: "Wikipedia EN (Pinacate Peaks)", ref: "https://en.wikipedia.org/wiki/Pinacate_Peaks"}
+    role: candidate
+    refs: []
+    rationale: "Entrenamiento Apollo (1970, según NASA Earth Observatory); ninguna fuente leída lo llama 'análogo' textualmente."
+
+  # ============================================================ Europa
+  - id: teide
+    name: "Parque Nacional del Teide"
+    country: España
+    region: tenerife
+    lat: 28.2731
+    lon: -16.6394
+    coord: {status: estimated, source: "Wikipedia EN (Teide, cumbre); el sitio de pruebas de la ESA (Minas de San José) no tiene coordenada encontrada", ref: "https://en.wikipedia.org/wiki/Teide"}
+    role: control_pos
+    analog_for: [moon]
+    refs: ["https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Rovers_drive_through_Tenerife_darkness"]
+    rationale: "La ESA probó rovers en 2017 en terreno 'tipo lunar' del Teide."
+    values:
+      cave_lava_tube: {value: 1, unit: "1", status: literature, source: "INVOLCAN, ficha de geoturismo 25: Cueva del Viento (Icod de los Vinos), tubo de lava de ~17 km en coladas del Pico Viejo (complejo del Teide)", ref: "https://tfgeoturismo.involcan.org/wp-content/uploads/2020/02/Ficha-25.pdf", retrieved: "2026-11-14", note: "La cueva está en la ladera norte, fuera de la ventana de 3 km del sitio."}
+
+  - id: lanzarote
+    name: "Lanzarote – Cueva de los Verdes (tubo de La Corona)"
+    country: España
+    region: lanzarote
+    lat: 29.1611
+    lon: -13.4389
+    coord: {status: estimated, source: "Wikipedia EN (Cueva de los Verdes)", ref: "https://en.wikipedia.org/wiki/Cueva_de_los_Verdes"}
+    role: control_pos
+    analog_for: [moon, mars]
+    refs: ["https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/CAVES_and_PANGAEA/What_is_PANGAEA"]
+    rationale: "ESA PANGAEA: entrenamiento geológico en análogos de la Luna y Marte, incluido el tubo de lava de La Corona."
+    values:
+      cave_lava_tube: {value: 1, unit: "1", status: estimated, source: "Tubo de lava de La Corona (ESA PANGAEA)", ref: "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/CAVES_and_PANGAEA/What_is_PANGAEA", retrieved: "2026-11-14"}
+
+  - id: svalbard_bockfjorden
+    name: "Svalbard – Sverrefjellet (Bockfjorden)"
+    country: Noruega
+    region: svalbard
+    lat: 79.4317
+    lon: 13.3050
+    coord: {status: estimated, source: "Wikipedia EN (Sverrefjellet)", ref: "https://en.wikipedia.org/wiki/Sverrefjellet"}
+    role: control_pos
+    analog_for: [mars]
+    refs: ["https://astrobiology.nasa.gov/nai/annual-reports/2010/ciw/project-6-application-of-laboratory-experimentation-to-flight-instrument-testing/index.html"]
+    rationale: "AMASE (Arctic Mars Analogue Svalbard Expedition): carbonatos comparables a los del meteorito ALH84001."
+
+  - id: ries
+    name: "Cráter de Ries – Nördlingen"
+    country: Alemania
+    region: baviera
+    lat: 48.8833
+    lon: 10.5667
+    coord: {status: estimated, source: "Wikipedia EN (Nördlinger Ries)", ref: "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"}
+    role: candidate
+    refs: ["https://www.nasa.gov/history/alsj/a14/a14ries-News3.html"]
+    rationale: "Entrenamiento Apollo 14/17 en 1970 (prensa reproducida en el ALSJ); falta una ref que lo llame análogo."
+
+  - id: vatnajokull_kverkfjoll
+    name: "Vatnajökull – Kverkfjöll (margen norte)"
+    country: Islandia
+    region: vatnajokull
+    lat: 64.6500
+    lon: -16.7167
+    coord: {status: estimated, source: "Wikipedia EN (Kverkfjöll); no se comprobó que el punto esté libre de hielo", ref: "https://en.wikipedia.org/wiki/Kverkfj%C3%B6ll"}
+    role: control_pos
+    analog_for: [mars]
+    refs: ["https://doi.org/10.1016/j.jvolgeores.2013.02.009"]
+    rationale: "Cousins et al. 2013: ambientes hidrotermales glaciovolcánicos de Kverkfjöll como análogo de Marte."
+    values:
+      cave_lava_tube: {value: 1, unit: "1", status: estimated, source: "Cuevas de hielo geotermales de Kverkjökull (aguas termales bajo el glaciar); NO es un tubo de lava. El parque nacional prohíbe entrar sin guía (colapsos, gases)", ref: "https://www.northiceland.is/en/place/kverkfjoll", retrieved: "2026-11-14"}
+
+  # ============================================================ África y Asia
+  - id: danakil_dallol
+    name: "Dallol (Depresión de Danakil)"
+    country: Etiopía
+    region: afar
+    lat: 14.2386
+    lon: 40.2936
+    coord: {status: estimated, source: "Wikipedia EN (Dallol)", ref: "https://en.wikipedia.org/wiki/Dallol_(ghost_town)"}
+    role: control_pos
+    analog_for: [mars]
+    refs: ["https://doi.org/10.1089/ast.2018.1926"]
+    rationale: "Cavalazzi et al. 2019 (Astrobiology 19:553): 'análogo planetario de campo excepcional'."
+
+  - id: desierto_blanco
+    name: "Desierto Blanco (Farafra)"
+    country: Egipto
+    region: farafra
+    lat: 27.2773
+    lon: 28.2004
+    coord: {status: estimated, source: "Wikipedia EN (White Desert National Park)", ref: "https://en.wikipedia.org/wiki/White_Desert_National_Park"}
+    role: candidate
+    refs: []
+    rationale: "Impostor probable: caliza y yeso con aspecto 'lunar'."
+
+  - id: wadi_rum
+    name: "Wadi Rum"
+    country: Jordania
+    region: aqaba
+    lat: 29.5931
+    lon: 35.4200
+    coord: {status: estimated, source: "Wikipedia EN (Wadi Rum)", ref: "https://en.wikipedia.org/wiki/Wadi_Rum"}
+    role: candidate
+    refs: []
+    rationale: "Parecido visual y uso en cine; ningún paper de análogo."
+
+  - id: dasht_e_lut
+    name: "Dasht-e Lut"
+    country: Irán
+    region: kerman
+    lat: 30.6050
+    lon: 59.0678
+    coord: {status: estimated, source: "Wikipedia EN (Lut Desert)", ref: "https://en.wikipedia.org/wiki/Dasht-e_Lut"}
+    role: candidate
+    refs: []
+    rationale: "Yardangs y megaóndulas propuestos como análogo de Marte (paper no leído)."
+
+  - id: capadocia
+    name: "Capadocia – Göreme"
+    country: Turquía
+    region: nevsehir
+    lat: 38.6528
+    lon: 34.8631
+    coord: {status: estimated, source: "Wikipedia EN (Göreme National Park)", ref: "https://en.wikipedia.org/wiki/G%C3%B6reme_National_Park"}
+    role: candidate
+    refs: []
+    rationale: "Toba volcánica erosionada; sin referencia de análogo."
+
+  - id: bromo
+    name: "Monte Bromo"
+    country: Indonesia
+    region: java_oriental
+    lat: -7.9417
+    lon: 112.9500
+    coord: {status: estimated, source: "Wikipedia EN (Mount Bromo); a 0,05° de 113°E (el DEM une mosaicos)", ref: "https://en.wikipedia.org/wiki/Mount_Bromo"}
+    role: candidate
+    refs: []
+    rationale: "Ceniza volcánica; sin referencia de análogo."

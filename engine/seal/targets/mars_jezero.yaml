@@ -1,0 +1,19 @@
+# Hecho con asistencia de IA (Claude) — Seal Hackathon Team, NASA Space Apps Sucre 2026
+# Fuentes buscadas y comprobadas el 2026-11-14 (Claude Fable 5.2). Ver docs/VALORES_A_VERIFICAR.md.
+id: mars_jezero
+body: mars
+name: "Cráter Jezero (Perseverance)"
+group: aterrizaje
+gravity: {value: 3.73, unit: "m/s²", status: literature, source: "NASA NSSDC Mars Fact Sheet", ref: "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html", retrieved: "2026-11-14"}
+note: "MEDA (Rodriguez-Manfredi et al. 2023, Nat. Geosci., doi:10.1038/s41561-022-01084-0). Sitio de aterrizaje 18,4446°N, 77,4509°E."
+inherit_from: mars_global
+inherit_dims: [precip, ndvi, soil_moisture]
+values:
+  t_mean: {value: 217, range: [209, 225], unit: K, status: estimated, source: "Munguira et al. 2024, JGR Planets (MEDA, año marciano 36)", ref: "https://doi.org/10.1029/2024JE008385", retrieved: "2026-11-14", note: "Rango de las medias diarias del aire a 1,45 m; 217 = punto medio (nuestro). Cifra vista solo en un extracto del buscador."}
+  t_range_diurnal: {range: [40, 65], unit: K, status: literature, source: "Munguira et al. 2023, JGR Planets 128, e2022JE007559 (MEDA ATS/TIRS, soles 1-400)", ref: "https://doi.org/10.1029/2022JE007559", retrieved: "2026-11-14", note: "Amplitud del ciclo diurno del AIRE de 40 a 65 K (conclusiones); cubre ~medio año marciano (Ls 13-203). Superficie: 55-105 K. Leído en texto completo (verificación Fable, 2026-11-14)."}
+  pressure: {value: 0.693, range: [0.625, 0.761], unit: kPa, status: derived, source: "Sánchez-Lavega et al. 2023, JGR Planets (MEDA PS)", ref: "https://doi.org/10.1029/2022JE007480", retrieved: "2026-11-14", note: "Texto completo (PMC10078360): máx 761 Pa (sol ~105), mín 625 Pa (sol 306); cubre soles 15–460, no el año entero. 0,693 = punto medio (nuestro)."}
+  wind: {value: 3.24, unit: "m/s", status: literature, source: "Viúdez-Moreiras et al. 2022, JGR Planets (Winds at the Mars 2020 landing site, parte 2)", ref: "https://doi.org/10.1029/2022JE007523", retrieved: "2026-11-14", note: "Media a 1,5 m (POWER es a 10 m: el viento terrestre a 1,5 m sería menor). 95 % < 7,46 m/s. Texto completo PMC10078282."}
+  rh: {unit: "%", status: pending, source: "", note: "Polkko et al. 2023 (https://doi.org/10.1029/2022JE007447): de día la HR cae cerca de 0 % (< 2 %, bajo la incertidumbre); de noche sube hasta un pico de 100 % (aire, sol 319, Ls 157°); VMR nocturno máx. 120 ppm. No hay una HR MEDIA comparable con POWER RH2M: pending."}
+  uv_index: {unit: "1", status: pending, source: ""}
+  mineral_classes: {unit: "1", classes: [carbonato, arcilla, sulfato], status: literature, source: "Goudge et al. 2015, JGR Planets (CRISM: carbonato de Mg, esmectita Fe/Mg); Farley et al. 2022, Science (carbonatos y sulfatos in situ, doi:10.1126/science.abo2196)", ref: "https://doi.org/10.1002/2014JE004782", retrieved: "2026-11-14", note: "Rocas ígneas ricas en olivino (Farley 2022): no se agrega 'basalto' porque el resumen no lo dice."}
+  albedo: {range: [0.12, 0.14], unit: "1", status: literature, source: "Polkko et al. 2023, JGR Planets 128, e2022JE007447 (sec. 6: albedo de superficie observado 14 % en Ls 70–74° y 12 % en Ls 141–146°)", ref: "https://doi.org/10.1029/2022JE007447", retrieved: "2026-11-14", note: "Texto leído por el equipo. Coincide con MEDA 0,12 ± 0,01 (Munguira et al. 2023)."}
