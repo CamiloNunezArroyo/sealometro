@@ -25,9 +25,11 @@ verify — and play.
 ## Project (public link)
 https://seal-box.web.app/?lang=en
 
-(If the GitHub repository is published, mention it in Project Details: https://github.com/<user>/sealometro)
+Source code (public): https://github.com/CamiloNunezArroyo/sealometro — mention it at the start of Project Details.
 
 ## Project Details
+**Live app:** https://seal-box.web.app/?lang=en · **Code:** https://github.com/CamiloNunezArroyo/sealometro
+
 **What it does.** Sealometro answers three questions about any place on Earth: How similar is it to a specific site on
 Mars or the Moon? How far does it go from a typical Earth place toward that site? And where does the analogy break?
 

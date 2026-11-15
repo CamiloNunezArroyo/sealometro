@@ -132,7 +132,7 @@ npx tsc --noEmit && npx vitest run && npm run build
 - Comandos útiles: `/juez` (simula al jurado y ataca el proyecto), `/verificar-dato` (busca la fuente de una cifra).
 
 ## 9. Estado (actualizar en cada hito)
-- [ ] Repo creado y público · [ ] Página del proyecto en borrador en spaceappschallenge.org
+- [x] Repo creado y público (https://github.com/CamiloNunezArroyo/sealometro) · [ ] Página del proyecto en borrador en spaceappschallenge.org
 - [x] Motor v1 (sitios + objetivos + puntaje + validación; AUC 0,56 tras quitar el albedo de Bond; informado tal cual) · [x] Web + juego v2 (`game/`, globo, imagen satelital, peligros, clima, 6 cuevas, ES/EN, fotos reales, laboratorio de 29 minerales, 48 tests; falta probar en celulares reales) · [x] Conexión caja/celular/página lista (firmware compilado, Firebase + simulador; guía docs/CONEXION_ESTACION.md) · [x] Página publicada: https://seal-box.web.app (Firebase Hosting; reglas y sesión anónima verificadas) · [x] Caja real enviando a Firebase por Wi-Fi (hotspot Android 2,4 GHz, firmware 1.4.1, 2026-11-15)
 - [ ] Prueba de campo de día (sábado antes de las 18:00) · [ ] Integración caja → motor → juego
 - [ ] Simulacro 23:00 · [ ] Video de 30 s con subtítulos · [ ] Entrega global enviada

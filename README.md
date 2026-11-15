@@ -2,7 +2,7 @@
 
 *NASA Space Apps Challenge 2026 · Sucre, Bolivia · Challenge: "Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars".*
 
-**Live app (no login):** https://seal-box.web.app/?lang=en
+**Live app (no login):** https://seal-box.web.app/?lang=en · **Code:** https://github.com/CamiloNunezArroyo/sealometro
 
 > No place on Earth is Mars. But some places go a long way there. Sealometro finds them with open NASA and partner data,
 > anyone can check a place with a low-cost field box, and then drive a rover in that same place.
