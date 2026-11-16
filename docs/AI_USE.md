@@ -46,3 +46,4 @@ in AI-generated material; code files written with AI help carry the header `Hech
 - 2026-11-15: Firmware 1.5.0 subido y medido por streaming de Firebase: 1 lectura cada 0,50 s; envío caja->nube mediana 392 ms (máx 1,4 s); espera en la caja 3 ms (Claude Opus).
 - 2026-11-15: Preparación de la entrega: README en inglés, docs/SUBMISSION_EN.md (textos del formulario y fuentes), nombre Sealometro en la página, enlace ?lang=en, declaración de IA y de trabajo previo en Créditos, nombres propios reemplazados por roles (Claude Opus).
 - 2026-11-15: Repositorio público en GitHub (sin secretos; autor con correo noreply) (Claude Opus).
+- 2026-11-15: Revisión de los textos de la entrega con investigación de ganadores anteriores (Claude Fable).
