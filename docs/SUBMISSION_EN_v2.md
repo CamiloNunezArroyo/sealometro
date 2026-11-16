@@ -29,7 +29,9 @@ measures the place, a web station checks each sensor against independent referen
 map where you drive a rover under Mars or Moon gravity.
 
 ## Link to Project Demo
-(Pending. See "Demo recommendation" at the end of this file.)
+https://github.com/CamiloNunezArroyo/sealometro/blob/main/docs/demo/Sealometro_slides.pdf
+
+(7 slides, English, real screenshots of the app; NASA stickers on the box photo are blurred.)
 
 ## Link to Final Project
 https://seal-box.web.app/?lang=en

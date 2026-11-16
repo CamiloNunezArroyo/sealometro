@@ -47,3 +47,4 @@ in AI-generated material; code files written with AI help carry the header `Hech
 - 2026-11-15: Preparación de la entrega: README en inglés, docs/SUBMISSION_EN.md (textos del formulario y fuentes), nombre Sealometro en la página, enlace ?lang=en, declaración de IA y de trabajo previo en Créditos, nombres propios reemplazados por roles (Claude Opus).
 - 2026-11-15: Repositorio público en GitHub (sin secretos; autor con correo noreply) (Claude Opus).
 - 2026-11-15: Revisión de los textos de la entrega con investigación de ganadores anteriores (Claude Fable).
+- 2026-11-15: Diapositivas del demo (7, inglés) con capturas reales de la app tomadas con Chrome automatizado; stickers con logos NASA difuminados en la foto de la caja; PDF en docs/demo (Claude Opus).
